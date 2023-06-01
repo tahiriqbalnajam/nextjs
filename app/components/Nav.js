@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import logo from './images/logo.png';
+
 
 export default function Nav() {
     return (
@@ -43,7 +43,7 @@ export default function Nav() {
 					<div className="profile-box">
 						<div className="dropdown">
 							<div className="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-								<span><img src="images/profile-Image.png" alt="" /></span> <p>BERNARDO GONZALEZ</p>  <i className="fa-solid fa-chevron-down"></i>
+								<span><Image src="/images/profile-img.png" alt="" width="64" height="64" /></span> <p>BERNARDO GONZALEZ</p>  <i className="fa-solid fa-chevron-down"></i>
 							</div>
 							<ul className="dropdown-menu">
 								<li><Link className="dropdown-item" href="#">Action</Link></li>
