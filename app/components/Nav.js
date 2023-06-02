@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import TextInput from './TextInput.js'
+import Input from './TextInput.js'
 
 
 export default function Nav() {
@@ -155,7 +155,7 @@ export default function Nav() {
 								<div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
 									<div className="mb-4">
 										<label for="" className="font-bold">User</label>
-										<TextInput value='' placeholder='mypplaceholder'/>
+										<Input value='' placeholder='mypplaceholder'/>
 										<input type="text" className="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-[#eeeeee] h-16 text-[rgba(0, 0, 0, 0.36)] border border-gray-200 rounded" placeholder="Bernie" />
 									</div>
 									<div className="mb-4">
