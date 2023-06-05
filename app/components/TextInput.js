@@ -1,42 +1,15 @@
-"use client"; 
-import React, { useContext, useEffect } from "react";
-import { FormCtx } from './form' ;
-const TextInput = props => {
-    const { setFields, addField } = useContext(FormCtx);
-    const {
-      id,
-      value,
-      classes,
-      onChange,
-      validate,
-      placeholder,
-      label = ""
-    } = props;
-    const { contClass, fieldClass, errorClass } = classes;
-  
-    useEffect(() => {
-      addField({
-        field: props,
-        value
-      });
-    }, []);
-  
-    return (
-      <div class={contClass}>
-        {label}
-        <input
-          id={id}
-          type="text"
-          value={value}
-          class={fieldClass}
-          onChange={onChange}
-          validatge={validate}
-          placeholder={placeholder}
-        />
-        <p class={errorClass}>// place for errors</p>
-      </div>
-    );
-  };
-  
-  export default TextInput;
-  
+import React from 'react';
+
+
+const TextInput = ({ value, onChange, placeholder }) => {
+  return (
+    <input 
+    type="text" 
+    value={value} 
+    onChange={onChange} 
+    placeholder={placeholder} 
+    className="bg-fieldGray h-16 p-3 w-full border-none focus:outline-none focus:shadow-outline" />
+  );
+}
+
+export default TextInput;
