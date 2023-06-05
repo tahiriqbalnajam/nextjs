@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Input from '../../components/TextInput'
+import Button from '../../components/Button'
 import InputMail from '../../components/MailInput.js'
 
 export default function Home() {
@@ -52,8 +53,8 @@ export default function Home() {
                                     <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Repite nueva contraseña</label>
                                     <Input placeholder="**********" type="password"/>
                                 </div>
-                                <div  className="mb-12">
-                                    <button>asdadsfsdf</button>
+                                <div  className="mb-12 container mx-0 min-w-full flex flex-col items-center">
+                                    <Button type="submit" button="primary" text="Actualizar"/>
                                 </div>
                             </div>
                         </form>
