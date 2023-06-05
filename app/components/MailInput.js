@@ -1,9 +1,9 @@
 import React from 'react';
 
-const MailInput = ({ value, onChange, placeholder }) => {
+const MailInput = ({ type, value, onChange, placeholder }) => {
   return (
     <input 
-    type="text" 
+    type={(type) ? type : 'password'}
     value={value} 
     onChange={onChange} 
     placeholder={placeholder} 

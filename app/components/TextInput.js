@@ -1,10 +1,10 @@
 import React from 'react';
 
 
-const TextInput = ({ value, onChange, placeholder }) => {
+const TextInput = ({ type, value, onChange, placeholder }) => {
   return (
     <input 
-    type="text" 
+    type={(type) ?? 'text'}
     value={value} 
     onChange={onChange} 
     placeholder={placeholder} 
