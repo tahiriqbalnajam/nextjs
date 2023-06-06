@@ -25,15 +25,33 @@ export default function Home() {
                             <div class="main-content-area w-full">
                                 <div class="services-quote mt-5 pt-5 w-full">
                                     <div class="default-heading flex justify-between w-full">
-                                        <H2 textlow="Mis" texthigh="Anuncios" />
-                                        <ButtonLink href="#" text="Crear Anuncio" />
+                                        <h2>Mis <span>Anuncios</span> </h2>
+                                        <a href="#" class="btn-red text-capitalize">Crear Anuncio</a>
                                     </div>
                                     <div class="services-quote-box">
                                         <div class="list-quotes-header">
-                                            <a href="#" class="active">Publicados <span>1</span></a>
-                                            <a href="#">En revisión <span>1</span></a>
+                                            <Link href="/myaccount/your-ads" className='active'>Publicados <span>1</span></Link>
+                                            <Link href="/myaccount/your-ads/in-review">En revisión <span>1</span></Link>
                                         </div>
                                     </div>
+                                    <div class="list-quotes-table">
+                                            <table class="table default-table w-full">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Anuncio</th>
+                                                        <th colspan="2">Estado</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Terraza</td>
+                                                        <td>Publicado</td>
+                                                        <td class="text-end"><a href="#" class="view-btn"><i class="fa-solid fa-eye"></i></a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                   
                                 </div>
                             </div>
                         </div>

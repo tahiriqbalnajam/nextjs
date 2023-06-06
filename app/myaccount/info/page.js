@@ -2,7 +2,7 @@ import Input from '../../components/TextInput'
 import Image from 'next/image'
 import InputMail from '../../components/MailInput'
 import LeftNav from '../../components/LeftNav'
-
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -29,7 +29,7 @@ export default function Home() {
                                     <h3  className="text-xl font-bold">CDMX</h3>
                                 </div>
                             </div>
-                            <a href="#"  className="text-xl text-colorRed inline-block">Contraseña</a>
+                            <Link href="/myaccount/password"  className="text-xl text-colorRed inline-block">Contraseña</Link>
                         </div>
                         <form action="">
                             <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-24">
