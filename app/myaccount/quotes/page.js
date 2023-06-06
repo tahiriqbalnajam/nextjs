@@ -8,11 +8,7 @@ import QoutesImageSlider from '../../components/qoutes-slider'
 import '../../css/style.css';
 
 export default function Home() {
-	const images = [
-		'/images/propiedades.png',
-		'/images/barcos.png',
-		'/images/salones.png',
-	  ];
+	
   return (
 	
         <section  className="lg:py-20 py-5 bg-white">
@@ -33,75 +29,70 @@ export default function Home() {
                         </div>
                     </aside>
 
-                    <div class="main-content-area">
-					<div class="your-event mt-5 pt-5">
-						<div class="default-heading">
+                    <div className="main-content-area">
+					<div className="your-event mt-5 pt-5">
+						<div className="default-heading">
 							<h2><span>Cuéntanos</span> sobre tu evento</h2>
 						</div>
-						<form class="default-form border-fields">
-							<div class="mb-4">
+						<form className="default-form border-fields">
+							<div className="mb-4">
 								<label for="">Tipo de evento</label>
-								<Input type="password" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" placeholder="Boda, cumpleaños, empresarial, etc" />
+								<Input type="password" className="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" placeholder="Boda, cumpleaños, empresarial, etc" />
 							</div>
-							<div class="mb-4">
+							<div className="mb-4">
 								<label for="">No Aproximado de Asistentes</label>
-								<Input type="password" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" placeholder="" />
+								<Input type="password" className="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" placeholder="" />
 							</div>
-							<div class="mb-4">
+							<div className="mb-4">
 								<label for="">Presupuesto</label>
-								<Input type="password" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" placeholder="$0.00" />
+								<Input type="password" className="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" placeholder="$0.00" />
 							</div>
-							<div class="mb-4">
-								<label for="">Presupuesto</label>
-								<div class="banner-slider-wrapp mt-3">
-									<QoutesImageSlider />
-								</div>
-							</div>
-							<div class="mb-4">
+							<QoutesImageSlider />
+							<div className="mb-4">
 								<label for="">Creemos que estos también te podrían interesar</label>
-								<div class="flex flex-wrap  mt-3 custom-col20">
-									<div class="relative flex-grow max-w-full flex-1 px-4">
-										<div class="service-box">
+								<div className="flex flex-wrap  mt-3 custom-col20">
+									<div className="relative flex-grow max-w-full flex-1 px-4">
+										<div className="service-box">
 											<Image src="/images/propiedades.png" alt="" height='50' width='50' />
 											<p>Propiedades</p>
 										</div>
 									</div>
-									<div class="relative flex-grow max-w-full flex-1 px-4">
-										<div class="service-box">
+									<div className="relative flex-grow max-w-full flex-1 px-4">
+										<div className="service-box">
 											<Image src="/images/propiedades.png" alt="" height='50' width='50' />
 											<p>Propiedades</p>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="mb-4">
+							<div className="mb-4">
 								<label for="">Mensaje</label>
-								<textarea class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" placeholder="Cualquier detalle nos será de utilidad"></textarea>
+								<textarea className="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" placeholder="Cualquier detalle nos será de utilidad"></textarea>
 							</div>
-							<div class="mb-4">
+							<div className="mb-4">
 								<label for="">¿Cómo te contactamos?</label>
-								<div class="custom-radio-button-wrapp mt-3">
-									<div class="custom-radio-button">
+								<div className="custom-radio-button-wrapp mt-3">
+									<div className="custom-radio-button">
 										<Input type="radio" id="Mail" name="radio-group" checked />
 										<label for="Mail">Mail</label>
 									</div>
-									<div class="custom-radio-button">
+									<div className="custom-radio-button">
 										<Input type="radio" id="Llamada" name="radio-group" />
 										<label for="Llamada">Llamada</label>
 									</div>
-									<div class="custom-radio-button">
+									<div className="custom-radio-button">
 										<Input type="radio" id="WhatsApp" name="radio-group" />
 										<label for="WhatsApp">WhatsApp</label>
 									</div>
-									<div class="custom-radio-button">
+									<div className="custom-radio-button">
 										<Input type="radio" id="Todo" name="radio-group" />
 										<label for="Todo">Todo</label>
 									</div>
 								</div>
 							</div>
 							
-							<div class="mb-4 text-end">
-								<a href="#" class="btn-red">Enviar</a>
+							<div className="mb-4 text-end">
+								<a href="#" className="btn-red">Enviar</a>
 							</div>
 						</form>
 					</div>
