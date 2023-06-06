@@ -1,9 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Input from '../../components/TextInput'
+import InputMail from '../../components/MailInput'
+import LeftNav from '../../components/LeftNav'
 import InputMail from '../../components/MailInput.js'
 import SubmitButton from '../../components/SubmitButton.js'
 import Button from '../../components/Button'
+import LeftNav from '../../components/LeftNav'
+
 
 export default function Home() {
   return (
@@ -13,15 +17,7 @@ export default function Home() {
                 <div  className="flex flex-wrap">
                     <aside  className="w-1/5">
                         <div  className="border-r-2">
-                            <ul  className="py-20">
-                                <li><a href="#"  className="active flex mb-10 text-2xl border-r-4 border-red-600"><span  className="w-10 mr-2 inline-block"><Image src="/images/info.png" width='50' height='50' alt=""  className="text-center" /></span> Info</a></li>
-                                <li><a href="#"  className="flex mb-10 text-2xl"><span  className="w-10 mr-2 inline-block"><Image src="/images/favo.png" alt=""  className="text-center" width='50' height='50' /></span> Favoritos</a></li>
-                                <li><a href="#"  className="flex mb-10 text-2xl"><span  className="w-10 mr-2 inline-block"><Image src="/images/quotes.png" alt=""  className="text-center" width='50' height='50' /></span> Cotizaciones</a></li>
-                                <li><a href="#"  className="flex mb-10 text-2xl"><span  className="w-10 mr-2 inline-block"><Image src="/images/your-ads.png" alt=""  className="text-center" width='50' height='50' /></span> Tus Anuncios</a></li>
-                                <li><a href="#"  className="flex mb-10 text-2xl"><span  className="w-10 mr-2 inline-block"><Image src="/images/pro.png" alt=""  className="text-center" width='50' height='50' /></span> PRO</a></li>
-                                <li><a href="#"  className="flex mb-10 text-2xl"><span  className="w-10 mr-2 inline-block"><Image src="/images/your-profile.png" alt=""  className="text-center" width='50' height='50' /></span> Tu Perfil</a></li>
-                                <li><a href="#"  className="flex mb-10 text-2xl text-colorRed signoff">Cerrar Sesión</a></li>
-                            </ul>
+                           <LeftNav />
                         </div>
                     </aside>
 
@@ -43,31 +39,21 @@ export default function Home() {
                         <form action="">
                             <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-24">
                                 <div  className="mb-12">
-                                    <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">User</label>
+                                    <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Name</label>
+                                    <Input placeholder="Bernie"/>
+                                    
+                                </div>
+                                <div  className="mb-12">
+                                    <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Name</label>
                                     <Input placeholder="Bernie"/>
                                 </div>
                                 <div  className="mb-12">
-                                    <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Names)</label>
-                                    <Input placeholder="Bernard"/>
+                                    <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Name</label>
+                                    <Input placeholder="Bernie"/>
                                 </div>
                                 <div  className="mb-12">
-                                    <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Surnames)</label>
-                                    <Input placeholder="gonzalez"/>
-                                </div>
-                                <div  className="mb-12">
-                                    <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Email</label>
-                                    <Input type='email' placeholder="Bernardo@twotapmedia.com"/>
-                                </div>
-                                <div  className="mb-12">
-                                    <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Cell phone)</label>
-                                    <Input placeholder="55 12345678"/>
-                                </div>
-                                <div  className="mb-12">
-                                    <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Location</label>
-                                    <Input placeholder="CDMX"/>
-                                </div>
-                                <div className='col-span-2 inline-block text-center'>
-                                    <Button type='submit' />
+                                    <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Name</label>
+                                    <Input placeholder="Bernie"/>
                                 </div>
                             </div>
                         </form>
