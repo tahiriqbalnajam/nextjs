@@ -10,6 +10,16 @@ export default function Nav() {
 	
     return (
         <ul  className="py-20">
+    <li>
+      <Link href="#" passHref legacyBehavior>
+        <a className="active flex mb-10 text-2xl border-r-4 border-red-600">
+          <span className="w-10 mr-2 inline-block">
+            <Image src="/images/info.png" width={50} height={50} alt="" className="text-center" />
+          </span>
+          Info
+        </a>
+      </Link>
+    </li>
             <li><a href="#"  className="active flex mb-10 text-2xl border-r-4 border-red-600"><span  className="w-10 mr-2 inline-block"><Image src="/images/info.png" width='50' height='50' alt=""  className="text-center" /></span> Info</a></li>
             <li><a href="#"  className="flex mb-10 text-2xl"><span  className="w-10 mr-2 inline-block"><Image src="/images/favo.png" alt=""  className="text-center" width='50' height='50' /></span> Favoritos</a></li>
             <li><a href="#"  className="flex mb-10 text-2xl"><span  className="w-10 mr-2 inline-block"><Image src="/images/quotes.png" alt=""  className="text-center" width='50' height='50' /></span> Cotizaciones</a></li>
