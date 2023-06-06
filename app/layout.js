@@ -1,6 +1,6 @@
 import './globals.css';
 import { Inter } from 'next/font/google';
-//import './css/all.min2.css';
+import './css/all.min2.css';
 //import './css/bootstrap.min.css';
 //import './css/owl.carousel.min.css';
 //import './css/style.css';
