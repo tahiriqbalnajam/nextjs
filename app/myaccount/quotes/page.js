@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Input from '../../components/TextInput'
 import Button from '../../components/Button'
 import InputMail from '../../components/MailInput.js'
+import '../../css/style.css';
 
 export default function Home() {
   return (
@@ -24,7 +25,130 @@ export default function Home() {
                         </div>
                     </aside>
 
-                    <div className="main-content-area">
+                    <div class="main-content-area">
+					<div class="your-event mt-5 pt-5">
+						<div class="default-heading">
+							<h2><span>Cuéntanos</span> sobre tu evento</h2>
+						</div>
+						<form class="default-form border-fields">
+							<div class="mb-4">
+								<label for="">Tipo de evento</label>
+								<Input type="password" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" placeholder="Boda, cumpleaños, empresarial, etc" />
+							</div>
+							<div class="mb-4">
+								<label for="">No Aproximado de Asistentes</label>
+								<Input type="password" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" placeholder="" />
+							</div>
+							<div class="mb-4">
+								<label for="">Presupuesto</label>
+								<Input type="password" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" placeholder="$0.00" />
+							</div>
+							<div class="mb-4">
+								<label for="">Presupuesto</label>
+								<div class="banner-slider-wrapp mt-3">
+									<div class="owl-carousel owl-theme service-slider">
+										<div class="item">
+											<div class="service-box">
+												<Image src="/images/propiedades.png" alt="" height='50' width='50' />
+												<p>Propiedades</p>
+											</div>
+										</div>
+										<div class="item">
+											<div class="service-box">
+												<Image src="/images/barcos.png" alt="" height='50' width='50' />
+												<p>Barcos</p>
+											</div>
+										</div>
+										<div class="item">
+											<div class="service-box">
+												<Image src="/images/salones.png" alt="" height='50' width='50' /> 
+												<p>Salones de Fiesta</p>
+											</div>
+										</div>
+										<div class="item">
+											<div class="service-box">
+												<Image src="/images/terrazas.png" alt="" height='50' width='50' />
+												<p>Terrazas</p>
+											</div>
+										</div>
+										<div class="item">
+											<div class="service-box">
+												<Image src="/images/tickets.png" alt="" height='50' width='50' />
+												<p>Boletos</p>
+											</div>
+										</div>
+										<div class="item">
+											<div class="service-box">
+												<Image src="/images/jardines.png" alt="" height='50' width='50' />
+												<p>Jardines</p>
+											</div>
+										</div>
+										<div class="item">
+											<div class="service-box">
+												<Image src="/images/hotels.png" alt="" height='50' width='50' />
+												<p>Hoteles</p>
+											</div>
+										</div>
+										<div class="item">
+											<div class="service-box">
+												<Image src="/images/tickets.png" alt="" height='50' width='50' />
+												<p>Boletos</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="mb-4">
+								<label for="">Creemos que estos también te podrían interesar</label>
+								<div class="flex flex-wrap  mt-3 custom-col20">
+									<div class="relative flex-grow max-w-full flex-1 px-4">
+										<div class="service-box">
+											<Image src="/images/propiedades.png" alt="" height='50' width='50' />
+											<p>Propiedades</p>
+										</div>
+									</div>
+									<div class="relative flex-grow max-w-full flex-1 px-4">
+										<div class="service-box">
+											<Image src="/images/propiedades.png" alt="" height='50' width='50' />
+											<p>Propiedades</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="mb-4">
+								<label for="">Mensaje</label>
+								<textarea class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" placeholder="Cualquier detalle nos será de utilidad"></textarea>
+							</div>
+							<div class="mb-4">
+								<label for="">¿Cómo te contactamos?</label>
+								<div class="custom-radio-button-wrapp mt-3">
+									<div class="custom-radio-button">
+										<Input type="radio" id="Mail" name="radio-group" checked />
+										<label for="Mail">Mail</label>
+									</div>
+									<div class="custom-radio-button">
+										<Input type="radio" id="Llamada" name="radio-group" />
+										<label for="Llamada">Llamada</label>
+									</div>
+									<div class="custom-radio-button">
+										<Input type="radio" id="WhatsApp" name="radio-group" />
+										<label for="WhatsApp">WhatsApp</label>
+									</div>
+									<div class="custom-radio-button">
+										<Input type="radio" id="Todo" name="radio-group" />
+										<label for="Todo">Todo</label>
+									</div>
+								</div>
+							</div>
+							
+							<div class="mb-4 text-end">
+								<a href="#" class="btn-red">Enviar</a>
+							</div>
+						</form>
+					</div>
+				</div>                    
+
+                <div className="main-content-area">
 					<div className="your-event mt-5 pt-5">
 						<div className="default-heading">
 							<h2><span>Cuéntanos</span> sobre tu evento</h2>
@@ -48,49 +172,49 @@ export default function Home() {
 									<div className="owl-carousel owl-theme service-slider">
 										<div className="item">
 											<div className="service-box">
-												<Image src="images/propiedades.png" alt="" height='50' width='50' />
+												<Image src="/images/propiedades.png" alt="" height='50' width='50' />
 												<p>Propiedades</p>
 											</div>
 										</div>
 										<div className="item">
 											<div className="service-box">
-												<Image src="images/barcos.png" alt="" height='50' width='50' />
+												<Image src="/images/barcos.png" alt="" height='50' width='50' />
 												<p>Barcos</p>
 											</div>
 										</div>
 										<div className="item">
 											<div className="service-box">
-												<Image src="images/salones.png" alt="" height='50' width='50' />
+												<Image src="/images/salones.png" alt="" height='50' width='50' />
 												<p>Salones de Fiesta</p>
 											</div>
 										</div>
 										<div className="item">
 											<div className="service-box">
-												<Image src="images/terrazas.png" alt="" height='50' width='50' />
+												<Image src="/images/terrazas.png" alt="" height='50' width='50' />
 												<p>Terrazas</p>
 											</div>
 										</div>
 										<div className="item">
 											<div className="service-box">
-												<Image src="images/tickets.png" alt="" height='50' width='50' />
+												<Image src="/images/tickets.png" alt="" height='50' width='50' />
 												<p>Boletos</p>
 											</div>
 										</div>
 										<div className="item">
 											<div className="service-box">
-												<Image src="images/jardines.png" alt="" height='50' width='50' />
+												<Image src="/images/jardines.png" alt="" height='50' width='50' />
 												<p>Jardines</p>
 											</div>
 										</div>
 										<div className="item">
 											<div className="service-box">
-												<Image src="images/hotels.png" alt="" height='50' width='50' />
+												<Image src="/images/hotels.png" alt="" height='50' width='50' />
 												<p>Hoteles</p>
 											</div>
 										</div>
 										<div className="item">
 											<div className="service-box">
-												<Image src="images/tickets.png" alt=""height='50' width='50' />
+												<Image src="/images/tickets.png" alt=""height='50' width='50' />
 												<p>Boletos</p>
 											</div>
 										</div>
@@ -102,13 +226,13 @@ export default function Home() {
 								<div className="row mt-3 custom-col20">
 									<div className="col">
 										<div className="service-box">
-											<Image src="images/propiedades.png" alt="" height='50' width='50' />
+											<Image src="/images/propiedades.png" alt="" height='50' width='50' />
 											<p>Propiedades</p>
 										</div>
 									</div>
 									<div className="col">
 										<div className="service-box">
-											<Image src="images/propiedades.png" alt="">
+											<Image src="/images/propiedades.png" alt="" height='50' width='50' />
 											<p>Propiedades</p>
 										</div>
 									</div>
@@ -122,19 +246,19 @@ export default function Home() {
 								<label for="">¿Cómo te contactamos?</label>
 								<div className="custom-radio-button-wrapp mt-3">
 									<div className="custom-radio-button">
-										<Input type="radio" id="Mail" name="radio-group" checked>
+										<Input type="radio" id="Mail" name="radio-group" checked />
 										<label for="Mail">Mail</label>
 									</div>
 									<div className="custom-radio-button">
-										<Input type="radio" id="Llamada" name="radio-group">
+										<Input type="radio" id="Llamada" name="radio-group" />
 										<label for="Llamada">Llamada</label>
 									</div>
 									<div className="custom-radio-button">
-										<Input type="radio" id="WhatsApp" name="radio-group">
+										<Input type="radio" id="WhatsApp" name="radio-group" />
 										<label for="WhatsApp">WhatsApp</label>
 									</div>
 									<div className="custom-radio-button">
-										<Input type="radio" id="Todo" name="radio-group">
+										<Input type="radio" id="Todo" name="radio-group" />
 										<label for="Todo">Todo</label>
 									</div>
 								</div>
