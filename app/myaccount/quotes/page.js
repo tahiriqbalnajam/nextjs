@@ -3,10 +3,16 @@ import Link from 'next/link';
 import Input from '../../components/TextInput'
 import LeftNav from '../../components/LeftNav'
 import Button from '../../components/Button'
-import InputMail from '../../components/MailInput.js'
+import QoutesImageSlider from '../../components/qoutes-slider'
+
 import '../../css/style.css';
 
 export default function Home() {
+	const images = [
+		'/images/propiedades.png',
+		'/images/propiedades.png',
+		'/images/propiedades.png',
+	  ];
   return (
         <section  className="lg:py-20 py-5 bg-white">
             <div  className="container mx-auto px-4 max-w-[92%]">
@@ -25,6 +31,9 @@ export default function Home() {
                             </ul>
                         </div>
                     </aside>
+
+
+					<QoutesImageSlider />
 
                     <div class="main-content-area">
 					<div class="your-event mt-5 pt-5">
