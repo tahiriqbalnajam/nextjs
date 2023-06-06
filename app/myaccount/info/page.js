@@ -2,6 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Input from '../../components/TextInput'
 import InputMail from '../../components/MailInput.js'
+import SubmitButton from '../../components/SubmitButton.js'
+import Button from '../../components/Button'
 
 export default function Home() {
   return (
@@ -41,21 +43,31 @@ export default function Home() {
                         <form action="">
                             <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-24">
                                 <div  className="mb-12">
-                                    <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Name</label>
-                                    <Input placeholder="Bernie"/>
-                                    
-                                </div>
-                                <div  className="mb-12">
-                                    <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Name</label>
+                                    <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">User</label>
                                     <Input placeholder="Bernie"/>
                                 </div>
                                 <div  className="mb-12">
-                                    <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Name</label>
-                                    <Input placeholder="Bernie"/>
+                                    <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Names)</label>
+                                    <Input placeholder="Bernard"/>
                                 </div>
                                 <div  className="mb-12">
-                                    <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Name</label>
-                                    <Input placeholder="Bernie"/>
+                                    <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Surnames)</label>
+                                    <Input placeholder="gonzalez"/>
+                                </div>
+                                <div  className="mb-12">
+                                    <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Email</label>
+                                    <Input type='email' placeholder="Bernardo@twotapmedia.com"/>
+                                </div>
+                                <div  className="mb-12">
+                                    <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Cell phone)</label>
+                                    <Input placeholder="55 12345678"/>
+                                </div>
+                                <div  className="mb-12">
+                                    <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Location</label>
+                                    <Input placeholder="CDMX"/>
+                                </div>
+                                <div className='col-span-2 inline-block text-center'>
+                                    <Button type='submit' />
                                 </div>
                             </div>
                         </form>
