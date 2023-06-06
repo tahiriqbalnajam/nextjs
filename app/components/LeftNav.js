@@ -10,19 +10,9 @@ export default function Nav() {
 	
     return (
         <ul  className="py-20">
-    <li>
-      <Link href="#" passHref legacyBehavior>
-        <a className="active flex mb-10 text-2xl border-r-4 border-red-600">
-          <span className="w-10 mr-2 inline-block">
-            <Image src="/images/info.png" width={50} height={50} alt="" className="text-center" />
-          </span>
-          Info
-        </a>
-      </Link>
-    </li>
-            <li><a href="#"  className="active flex mb-10 text-2xl border-r-4 border-red-600"><span  className="w-10 mr-2 inline-block"><Image src="/images/info.png" width='50' height='50' alt=""  className="text-center" /></span> Info</a></li>
-            <li><a href="#"  className="flex mb-10 text-2xl"><span  className="w-10 mr-2 inline-block"><Image src="/images/favo.png" alt=""  className="text-center" width='50' height='50' /></span> Favoritos</a></li>
-            <li><a href="#"  className="flex mb-10 text-2xl"><span  className="w-10 mr-2 inline-block"><Image src="/images/quotes.png" alt=""  className="text-center" width='50' height='50' /></span> Cotizaciones</a></li>
+            <li><Link href="/myaccount/info" className="active flex mb-10 text-2xl border-r-4 border-red-600"><span  className="w-10 mr-2 inline-block"><Image src="/images/info.png" width='50' height='50' alt=""  className="text-center" /></span>Info</Link></li>
+            <li><Link href="/myaccount/favourites" className="active flex mb-10 text-2xl "><span  className="w-10 mr-2 inline-block"><Image src="/images/favo.png" width='50' height='50' alt=""  className="text-center" /></span>Favoritos</Link></li>
+            <li><Link href="/myaccount/quotes" className="active flex mb-10 text-2xl "><span  className="w-10 mr-2 inline-block"><Image src="/images/quotes.png" width='50' height='50' alt=""  className="text-center" /></span>Cotizaciones</Link></li>
             <li><a href="#"  className="flex mb-10 text-2xl"><span  className="w-10 mr-2 inline-block"><Image src="/images/your-ads.png" alt=""  className="text-center" width='50' height='50' /></span> Tus Anuncios</a></li>
             <li><a href="#"  className="flex mb-10 text-2xl"><span  className="w-10 mr-2 inline-block"><Image src="/images/pro.png" alt=""  className="text-center" width='50' height='50' /></span> PRO</a></li>
             <li><a href="#"  className="flex mb-10 text-2xl"><span  className="w-10 mr-2 inline-block"><Image src="/images/your-profile.png" alt=""  className="text-center" width='50' height='50' /></span> Tu Perfil</a></li>
