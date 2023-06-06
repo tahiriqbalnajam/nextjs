@@ -4,15 +4,17 @@ import Input from '../../components/TextInput'
 import Button from '../../components/Button'
 import QoutesImageSlider from '../../components/qoutes-slider'
 
+
 import '../../css/style.css';
 
 export default function Home() {
 	const images = [
 		'/images/propiedades.png',
-		'/images/propiedades.png',
-		'/images/propiedades.png',
+		'/images/barcos.png',
+		'/images/salones.png',
 	  ];
   return (
+	
         <section  className="lg:py-20 py-5 bg-white">
             <div  className="container mx-auto px-4 max-w-[92%]">
                 <h3  className="text-4xl mb-16">Mi <span  className="font-bold">Cuenta</span></h3>
@@ -30,9 +32,6 @@ export default function Home() {
                             </ul>
                         </div>
                     </aside>
-
-
-					<QoutesImageSlider />
 
                     <div class="main-content-area">
 					<div class="your-event mt-5 pt-5">
@@ -55,56 +54,7 @@ export default function Home() {
 							<div class="mb-4">
 								<label for="">Presupuesto</label>
 								<div class="banner-slider-wrapp mt-3">
-									<div class="owl-carousel owl-theme service-slider">
-										<div class="item">
-											<div class="service-box">
-												<Image src="/images/propiedades.png" alt="" height='50' width='50' />
-												<p>Propiedades</p>
-											</div>
-										</div>
-										<div class="item">
-											<div class="service-box">
-												<Image src="/images/barcos.png" alt="" height='50' width='50' />
-												<p>Barcos</p>
-											</div>
-										</div>
-										<div class="item">
-											<div class="service-box">
-												<Image src="/images/salones.png" alt="" height='50' width='50' /> 
-												<p>Salones de Fiesta</p>
-											</div>
-										</div>
-										<div class="item">
-											<div class="service-box">
-												<Image src="/images/terrazas.png" alt="" height='50' width='50' />
-												<p>Terrazas</p>
-											</div>
-										</div>
-										<div class="item">
-											<div class="service-box">
-												<Image src="/images/tickets.png" alt="" height='50' width='50' />
-												<p>Boletos</p>
-											</div>
-										</div>
-										<div class="item">
-											<div class="service-box">
-												<Image src="/images/jardines.png" alt="" height='50' width='50' />
-												<p>Jardines</p>
-											</div>
-										</div>
-										<div class="item">
-											<div class="service-box">
-												<Image src="/images/hotels.png" alt="" height='50' width='50' />
-												<p>Hoteles</p>
-											</div>
-										</div>
-										<div class="item">
-											<div class="service-box">
-												<Image src="/images/tickets.png" alt="" height='50' width='50' />
-												<p>Boletos</p>
-											</div>
-										</div>
-									</div>
+									<QoutesImageSlider />
 								</div>
 							</div>
 							<div class="mb-4">
