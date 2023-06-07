@@ -986,7 +986,7 @@ p{
 
 /** My Account Inner **/
 .main-content-area {
-	width: 80%;
+	width: 100%;
 	padding-left: 190px;
 	overflow-x: hidden;
 }
@@ -2107,4 +2107,14 @@ p{
 .modal-profiledit .middle-content {
 	padding: 40px 0;
 	min-height: 410px;
+}
+
+.pro-section .default-heading h2 {
+    font-size: 32px;
+    color: #000000;
+    font-weight: 400;
+}
+.pro-section .default-form .label-bg label {
+    font-size: 30px;
+    line-height: 46px;
 }

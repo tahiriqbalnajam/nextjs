@@ -20,7 +20,7 @@ export default function Home() {
 							<LeftNav />
                         </div>
                     </aside>
-                    <div className="main-content-area">
+                    <div className="main-content-area2 pl-28 w-[50rem]">
 					<div className="your-event mt-5 pt-5">
 						<div className="default-heading">
 							<h2><span>Cuéntanos</span> sobre tu evento</h2>
