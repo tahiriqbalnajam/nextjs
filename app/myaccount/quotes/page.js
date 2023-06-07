@@ -3,32 +3,23 @@ import Link from 'next/link';
 import Input from '../../components/TextInput'
 import Button from '../../components/Button'
 import QoutesImageSlider from '../../components/qoutes-slider'
-
-
+import LeftNav from '../../components/LeftNav'
 import '../../css/style.css';
+import TextArea from '../../components/TextArea'
+
+
 
 export default function Home() {
-	
   return (
-	
-        <section  className="lg:py-20 py-5 bg-white">
+        <section  className="lg:py-20 py-5 bg-white font-[Ubuntu, sans-serif]">
             <div  className="container mx-auto px-4 max-w-[92%]">
                 <h3  className="text-4xl mb-16">Mi <span  className="font-bold">Cuenta</span></h3>
                 <div  className="flex flex-wrap">
                     <aside  className="w-1/5">
                         <div  className="border-r-2">
-                            <ul  className="py-20">
-                                <li><a href="#"  className="active flex mb-10 text-2xl border-r-4 border-red-600"><span  className="w-10 mr-2 inline-block"><Image src="/images/info.png" width='50' height='50' alt=""  className="text-center" /></span> Info</a></li>
-                                <li><a href="#"  className="flex mb-10 text-2xl"><span  className="w-10 mr-2 inline-block"><Image src="/images/favo.png" alt=""  className="text-center" width='50' height='50' /></span> Favoritos</a></li>
-                                <li><a href="#"  className="flex mb-10 text-2xl"><span  className="w-10 mr-2 inline-block"><Image src="/images/quotes.png" alt=""  className="text-center" width='50' height='50' /></span> Cotizaciones</a></li>
-                                <li><a href="#"  className="flex mb-10 text-2xl"><span  className="w-10 mr-2 inline-block"><Image src="/images/your-ads.png" alt=""  className="text-center" width='50' height='50' /></span> Tus Anuncios</a></li>
-                                <li><a href="#"  className="flex mb-10 text-2xl"><span  className="w-10 mr-2 inline-block"><Image src="/images/pro.png" alt=""  className="text-center" width='50' height='50' /></span> PRO</a></li>
-                                <li><a href="#"  className="flex mb-10 text-2xl"><span  className="w-10 mr-2 inline-block"><Image src="/images/your-profile.png" alt=""  className="text-center" width='50' height='50' /></span> Tu Perfil</a></li>
-                                <li><a href="#"  className="flex mb-10 text-2xl text-colorRed signoff">Cerrar Sesión</a></li>
-                            </ul>
+							<LeftNav />
                         </div>
                     </aside>
-
                     <div className="main-content-area">
 					<div className="your-event mt-5 pt-5">
 						<div className="default-heading">
@@ -37,15 +28,15 @@ export default function Home() {
 						<form className="default-form border-fields">
 							<div className="mb-4">
 								<label for="">Tipo de evento</label>
-								<Input type="password" className="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" placeholder="Boda, cumpleaños, empresarial, etc" />
+								<Input type="password" className="block appearance-none mt-1 h-14 w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-[#797979] rounded" placeholder="Boda, cumpleaños, empresarial, etc" />
 							</div>
 							<div className="mb-4">
 								<label for="">No Aproximado de Asistentes</label>
-								<Input type="password" className="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" placeholder="" />
+								<Input type="password" className="block appearance-none mt-1 h-14 w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-[#797979] rounded" placeholder="" />
 							</div>
 							<div className="mb-4">
 								<label for="">Presupuesto</label>
-								<Input type="password" className="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" placeholder="$0.00" />
+								<Input type="password" className="block appearance-none mt-1 h-14 w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-[#797979] rounded" placeholder="$0.00" />
 							</div>
 							<QoutesImageSlider />
 							<div className="mb-4">
@@ -67,30 +58,29 @@ export default function Home() {
 							</div>
 							<div className="mb-4">
 								<label for="">Mensaje</label>
-								<textarea className="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" placeholder="Cualquier detalle nos será de utilidad"></textarea>
+								<TextArea id="mytextarea" name="w3review" rows="6" cols="50" />
 							</div>
 							<div className="mb-4">
 								<label for="">¿Cómo te contactamos?</label>
 								<div className="custom-radio-button-wrapp mt-3">
 									<div className="custom-radio-button">
-										<Input type="radio" id="Mail" name="radio-group" checked />
+										<Input type="radio" id="Mail" value="Mail" className="bg-white" name="radio-group"  />
 										<label for="Mail">Mail</label>
 									</div>
 									<div className="custom-radio-button">
-										<Input type="radio" id="Llamada" name="radio-group" />
+										<Input type="radio" id="Llamada" value="Llamada" name="radio-group" />
 										<label for="Llamada">Llamada</label>
 									</div>
 									<div className="custom-radio-button">
-										<Input type="radio" id="WhatsApp" name="radio-group" />
+										<Input type="radio" id="WhatsApp" value="WhatsApp" name="radio-group" />
 										<label for="WhatsApp">WhatsApp</label>
 									</div>
 									<div className="custom-radio-button">
-										<Input type="radio" id="Todo" name="radio-group" />
+										<Input type="radio" id="Todo" value="Todo" name="radio-group" />
 										<label for="Todo">Todo</label>
 									</div>
 								</div>
 							</div>
-							
 							<div className="mb-4 text-end">
 								<a href="#" className="btn-red">Enviar</a>
 							</div>
