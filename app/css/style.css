@@ -428,7 +428,7 @@ p{
 }
 .service-box p{
 	margin:10px 0 0 0;
-	font-size:12px;
+	font-size:10px;
 	color:#fff;
 }
 .service-slider .owl-nav .owl-prev,
@@ -986,7 +986,7 @@ p{
 
 /** My Account Inner **/
 .main-content-area {
-	width: 100%;
+	width: 80%;
 	padding-left: 190px;
 	overflow-x: hidden;
 }
