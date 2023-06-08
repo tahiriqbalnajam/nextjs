@@ -1,4 +1,4 @@
-import LeftNav from '../../../components/LeftNav'
+import LeftNav from '@/components/LeftNav'
 import Link from 'next/link';
 
 
