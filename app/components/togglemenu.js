@@ -15,9 +15,6 @@ const togglemenu = () => {
 				<polyline points="6 9 12 15 18 9"></polyline>
 										</svg>
         </button>
-
-
-
       {isOpen && (
         <ul className="py-1 bg-white rounded-md shadow-xs absolute -left-0">
           <li>
