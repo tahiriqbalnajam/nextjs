@@ -138,4 +138,4 @@ const Serviceslider = ({images}) => {
   );
 };
 
-export default QoutesImageSlider;
+export default Serviceslider;
