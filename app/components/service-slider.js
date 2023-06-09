@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
-
 const Serviceslider = ({images}) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const nextImage = () => {
