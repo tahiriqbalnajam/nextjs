@@ -3,61 +3,159 @@ import Image from 'next/image'
 import Button from '../../components/Button'
 import QoutesImageSlider from '../../components/qoutes-slider'
 import Serviceslider from '../../components/service-slider'
+import Whattheysay_slider from '../../components/Whattheysayslider'
 
 
-  const servicesimages = [
-    '/images/services1.jpg',
-    '/images/services2.jpg',
-    '/images/services3.jpg',
-    '/images/services4.jpg',
-    "/images/services1.jpg",
-    "/images/services2.jpg",
-    "/images/services3.jpg",
-    "/images/services4.jpg",
-  ];
-
-
-const idealserviceimages = [
-    "/images/services1-1.jpg",
-    "/images/services2-2.jpg",
-    "/images/services3-3.jpg",
-    "/images/services4-4.jpg",
-    "/images/services1-1.jpg",
-    "/images/services2-2.jpg" ,
-    "/images/services3-3.jpg",
-   "/images/services4-4.jpg"
-  ];
-
-
-  const locationimages = [
-    "/images/location1.jpg",
-    "/images/location2.jpg",
-    "/images/location3.jpg",
-    "/images/location4.jpg",
-    "/images/location1.jpg",
-    "/images/location2.jpg"
-  ];
-
-  const locationimages_p = [
+const Servicesfeatured = [
     {
-        heading: 'Propiedades',
-        paragraph: '75 Listados',
+      url: '/images/services1.jpg',
+      heading: 'Propiedades',
+      paragraph: '75 Listados',
     },
     {
-        heading: 'Barcos',
-        paragraph: '56 Listados',
+      url: '/images/services2.jpg',
+      heading: 'Barcos',
+      paragraph: '56 Listados',
+    },
+{
+      url: '/images/services3.jpg',
+      heading: 'Jardines',
+      paragraph: '22 Listados',
+    },
+{
+      url: '/images/services4.jpg',
+      heading: 'Salones de Fiestas',
+      paragraph: '33 Listados',
+    },
+{
+      url: '/images/services1.jpg',
+      heading: 'Propiedades',
+      paragraph: '75 Listados',
+    },
+{
+      url: '/images/services2.jpg',
+      heading: 'Barcos',
+      paragraph: '56 Listados',
+    },
+{
+      url: '/images/services3.jpg',
+      heading: 'Jardines',
+      paragraph: '22 Listados',
+    },
+{
+      url: '/images/services4.jpg',
+      heading: 'Salones de Fiestas',
+      paragraph: '33 Listados',
+    },
+  ];
+
+const Theidealservice = [
+    {
+      url: '/images/services1-1.jpg',
+      heading: 'Propiedades',
+      paragraph: '75 Listados',
     },
     {
-        heading: 'Propiedades',
-        paragraph: '75 Listados',
+      url: '/images/services2-2.jpg',
+      heading: 'Barcos',
+      paragraph: '56 Listados',
     },
+{
+      url: '/images/services3-3.jpg',
+      heading: 'Jardines',
+      paragraph: '22 Listados',
+    },
+{
+      url: '/images/services4-4.jpg',
+      heading: 'Salones de Fiestas',
+      paragraph: '33 Listados',
+    },
+{
+      url: '/images/services1-1.jpg',
+      heading: 'Propiedades',
+      paragraph: '75 Listados',
+    },
+{
+      url: '/images/services2-2.jpg',
+      heading: 'Barcos',
+      paragraph: '56 Listados',
+    },
+{
+      url: '/images/services3-3.jpg',
+      heading: 'Jardines',
+      paragraph: '22 Listados',
+    },{
+      url: '/images/services4-4.jpg',
+      heading: 'Salones de Fiestas',
+      paragraph: '33 Listados',
+    }
+  ];	
 
+
+  const locations = [
+    {
+      url: '/images/location1.jpg',
+      heading: 'Bares',
+      paragraph: '26 Listados',
+    },
+    {
+      url: '/images/location2.jpg',
+      heading: 'Terrazas',
+      paragraph: '22 Listados',
+    },
+ {
+      url: '/images/location3.jpg',
+      heading: 'Restaurantes',
+      paragraph: '9 Listados',
+    },
+ {
+      url: '/images/location4.jpg',
+      heading: 'Transporte',
+      paragraph: '33 Listados',
+    },
+ {
+      url: '/images/location1.jpg',
+      heading: 'Terrazas',
+      paragraph: '22 Listados',
+    },
+ {
+      url: '/images/location2.jpg',
+      heading: 'Terrazas',
+      paragraph: '22 Listados',
+    },
+ {
+      url: '/images/location3.jpg',
+      heading: 'Restaurantes',
+      paragraph: '9 Listados',
+    },
+ {
+      url: '/images/location4.jpg',
+      heading: 'Transporte',
+      paragraph: '33 Listados',
+    },
   ];
- 
+
+  const Whattheysay_sliders = [
+    {
+        url: '/images/testimonial1.png',
+        heading: 'Propiedades1',
+        paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam',
+      },
+    {
+        url: '/images/testimonial1.png',
+        heading: 'Propiedades2',
+        paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam',
+      },
+    {
+        url: '/images/testimonial1.png',
+        heading: 'Propiedades3',
+        paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam',
+      }
+  ];
 
 export default function Home() {
   return (
-    <div>
+    <div className='bg-white'>
         <section id="main-banner">
             <div className="container mx-auto sm:px-4">
                 <div className="banner-content">
@@ -159,12 +257,13 @@ export default function Home() {
                     <hr />
                 </div>
             </div>
+            <div className="mydivclass bg-white"></div>
             <div className="features-services bg-white">
                 <div className="container mx-auto sm:px-4">
                     <div className="default-heading">
                         <h2><span>Servicios</span>  destacados</h2>
                     </div>
-                    <Serviceslider images={servicesimages} />
+                    <Serviceslider images={Servicesfeatured} />
                 </div>
             </div>
         </section>
@@ -199,7 +298,7 @@ export default function Home() {
                                 type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">FAVORITOS</button>
                         </li>
                     </ul>
-                    <Serviceslider images={idealserviceimages} />
+                    <Serviceslider images={Theidealservice} />
                 </div>
             </div>
         </section>
@@ -237,7 +336,7 @@ export default function Home() {
                     </ul>
                     <div className="tab-content" id="locationTabscont">
                     
-                    <Serviceslider images={locationimages} locationimages_para={locationimages_p} />
+                    <Serviceslider images={locations}  />
                     </div>
                 </div>
             </div>
@@ -285,66 +384,9 @@ export default function Home() {
 
 
         
-        <section class="our-testimonials mt-5 bg-white">
-            <div class="container">
-                <div class="default-heading">
-                    <h2><span>Lo que dicen</span> de nosotros</h2>
-                    <div class="owl-buttons">
-                        <button class="prev-btn"><i class="fa-solid fa-angle-left"></i></button>
-                        <button class="next-btn"><i class="fa-solid fa-angle-right"></i></button>
-                    </div>
-                </div>
-                
-                <div class="owl-testimonial owl-carousel">
-                    <div class="item">
-                        <div class="tesimonial-card">
-                            <div class="card-inner">
-                                <Image height='50' width='50'  class="testimonial-thumb" alt="" src="/images/testimonial1.png" />
-                                <span class="testimonial-quote">
-                                    <i class="fa-solid fa-quote-right"></i>
-                                </span>
-                                <h4>Bernardo González</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                    Ut enim ad minim veniam
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="tesimonial-card">
-                            <div class="card-inner">
-                                <Image height='50' width='50'  class="testimonial-thumb" alt="" src="/images/testimonial1.png" />
-                                <span class="testimonial-quote">
-                                    <i class="fa-solid fa-quote-right"></i>
-                                </span>
-                                <h4>Bernardo González</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                    Ut enim ad minim veniam
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="tesimonial-card">
-                            <div class="card-inner">
-                                <Image height='50' width='50'  class="testimonial-thumb" alt="" src="/images/testimonial1.png" />
-                                <span class="testimonial-quote">
-                                    <i class="fa-solid fa-quote-right"></i>
-                                </span>
-                                <h4>Bernardo González</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                    Ut enim ad minim veniam
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <section class="our-testimonials mt-5">
+            <div class="container2 pl-[10%] pr-[10%] " >
+                <Whattheysay_slider images={Whattheysay_sliders} />
             </div>
         </section>
 

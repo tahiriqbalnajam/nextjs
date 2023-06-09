@@ -2134,3 +2134,19 @@ p{
 label.text-left.absolute {
     visibility: hidden;
 }
+
+.features-services.bg-white {
+    padding: 1px;
+}
+.services-section {
+    /* padding-top: 100px; */
+    padding-bottom: 1px;
+}
+section.locations-section.bg-white {
+    padding-bottom: 1px;
+}
+.mydivclass.bg-white {
+    padding-top: -15px;
+    background-color: white;
+    padding: 80px;
+}
