@@ -2119,15 +2119,14 @@ p{
     line-height: 46px;
 }
 
-i.fa-solid.fa-chevron-left.text-red-600 {
+.myclass i.fa-solid.fa-chevron-left.text-red-600 {
     position: absolute;
     left: -5px;
     bottom: 147px;
     font-size: 34px;
 }
-i.fa-solid.fa-chevron-right.text-red-600.pl-3 {
+.myclass i.fa-solid.fa-chevron-right.text-red-600.pl-3 {
     position: absolute;
-    /* top: 305px; */
     bottom: 154px;
     font-size: 34px;
     right: 5px;

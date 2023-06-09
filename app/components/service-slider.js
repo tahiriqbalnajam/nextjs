@@ -2,9 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
-
-
-const Serviceslider = ({images}) => {
+const Serviceslider = ({images, locationimages_para}) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const nextImage = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -24,117 +22,70 @@ const Serviceslider = ({images}) => {
   }, []);
 
   return (
-    <div className="mb-10 mt-10">
-      <div className='myclass'>
+    <div className="mb-10 mt-10 flex">
+      <div className='myclass '>
         <label className='text-left absolute' for="">Presupuesto</label>
-        <div className='text-right'>
-          <i className="fa-solid fa-chevron-left text-red-600" onClick={previousImage}></i>
-          <i class="fa-solid fa-chevron-right text-red-600 pl-3" onClick={nextImage}></i>
         </div>
-      </div>
-      <div className="banner-slider-wrapp mt-3">
-        <div className="owl-carousel owl-theme service-slider">
-          <div className="flex items-center justify-center">
-            <div className="relative flex-grow max-w-[16%] flex-1 pr-4">
-              <div className="service-box px-5 py-5">
+        <div>
+          <i className="fa-solid relative top-[163px] right-[37px] text-[40px] fa-chevron-left text-red-600" onClick={previousImage}></i>    
+        </div>
+              <div className="w-full h-full pr-4">
                 <Image
                   className="max-w-full h-auto"
                   src={images[currentImageIndex]}
                   alt={`Image ${currentImageIndex + 1}`}
-                  width={40}
-                  height={40}
+                  width={280}
+                  height={390}
                 />
-                <p className='text-[14px]'>Propiedades</p>
+                <h4 className='text-[20px] mt-[20px] mb-[7px]'>{locationimages_para[currentImageIndex].heading}</h4>
+                <p className='text-[14px] text-[#777777]'>75 Listados</p>
               </div>
-            </div>
+      
             {images.length > 2 && (
-              <div className="relative flex-grow max-w-[16%] flex-1 pr-4">
-                <div className="service-box px-5 py-5">
+             <div className="w-full h-full pl-4 pr-4">
                   <Image
                     className="max-w-full h-auto"
                     src={images[(currentImageIndex + 1) % images.length]}
                     alt={`Image ${currentImageIndex + 2}`}
-                    width={40}
-                    height={40}
+                    width={290}
+                    height={390}
                   />
-                  <p className='text-[14px]'>Barcos</p>
+                  <h4 className='text-[20px] mt-[20px] mb-[7px]'>Barcos</h4>
+                <p className='text-[14px] text-[#777777]'>56 Listados</p>
                 </div>
-              </div>
             )}
+
             {images.length > 3 && (
-              <div className="relative flex-grow max-w-[16%] flex-1 pr-4">
-                <div className="service-box px-5 py-5">
+            <div className="w-full h-full pl-4 pr-4">
                   <Image
                     className="max-w-full h-auto"
                     src={images[(currentImageIndex + 2) % images.length]}
                     alt={`Image ${currentImageIndex + 3}`}
-                    width={40}
-                    height={40}
+                    width={290}
+                    height={390}
                   />
-                  <p className='text-[14px]'>Barcos</p>
+                  <h4 className='text-[20px] mt-[20px] mb-[7px]'>Jardines</h4>
+                <p className='text-[14px] text-[#777777]'>22 Listados</p>
                 </div>
-              </div>
             )}
+
             {images.length > 4 && (
-              <div className="relative flex-grow max-w-[16%] flex-1 pr-4">
-                <div className="service-box px-5 py-5">
-                  <Image
-                    className="max-w-full h-auto"
-                    src={images[(currentImageIndex + 3) % images.length]}
-                    alt={`Image ${currentImageIndex + 4}`}
-                    width={40}
-                    height={40}
-                  />
-                  <p className='text-[14px]'>Barcos</p>
-                </div>
+              <div className="w-full h-full pl-4">
+                <Image
+                  className="max-w-full h-auto"
+                  src={images[(currentImageIndex + 3) % images.length]}
+                  alt={`Image ${currentImageIndex + 4}`}
+                  width={290}
+                  height={390}
+                />
+                <h4 className='text-[20px] mt-[20px] mb-[7px]'></h4>
+                <p className='text-[14px] text-[#777777]'>56 Listados</p>
               </div>
-            )}
-            {images.length > 5 && (
-              <div className="relative flex-grow max-w-[16%] flex-1 pr-4">
-                <div className="service-box px-5 py-5">
-                  <Image
-                    className="max-w-full h-auto"
-                    src={images[(currentImageIndex + 4) % images.length]}
-                    alt={`Image ${currentImageIndex + 5}`}
-                    width={40}
-                    height={40}
-                  />
-                  <p className='text-[14px]'>Barcos</p>
-                </div>
-              </div>
-            )}
-            {images.length > 6 && (
-              <div className="relative flex-grow max-w-[16%] flex-1 pr-4">
-                <div className="service-box px-5 py-5">
-                  <Image
-                    className="max-w-full h-auto"
-                    src={images[(currentImageIndex + 5) % images.length]}
-                    alt={`Image ${currentImageIndex + 6}`}
-                    width={40}
-                    height={40}
-                  />
-                  <p className='text-[14px]'>Barcos</p>
-                </div>
-              </div>
-            )}
-            {images.length > 7 && (
-              <div className="relative flex-grow max-w-[16%] flex-1 pr-4">
-                <div className="service-box px-5 py-5">
-                  <Image
-                    className="max-w-full h-auto"
-                    src={images[(currentImageIndex + 6) % images.length]}
-                    alt={`Image ${currentImageIndex + 7}`}
-                    width={40}
-                    height={40}
-                  />
-                  <p className='text-[14px]'>Barcos</p>
-                </div>
-              </div>
-            )}
-          </div>
+            )} 
+             <div>
+          <i class="fa-solid relative top-[163px] left-[37px] fa-chevron-right text-[40px] text-red-600 pl-3" onClick={nextImage}></i>
         </div>
-      </div>
-    </div>
+        </div>
   );
 };
 
