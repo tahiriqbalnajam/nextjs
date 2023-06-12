@@ -3,7 +3,7 @@ import Input from '@/components/TextInput'
 import QoutesImageSlider from '@/components/qoutes-slider'
 import LeftNav from '@/components/LeftNav'
 import TextArea from '@/components/TextArea'
-
+import Link from 'next/link';
 
 
 export default function Home() {
@@ -32,7 +32,7 @@ export default function Home() {
 										<h2>En breve nos comunicaremos contigo.</h2>
 									</div>
 									<div class="mb-4 text-center mt-5 pt-5">
-										<a href="/myaccount/quote" class="btn-red capitalize">Regresar</a>
+										<Link href="/myaccount/quote" class="btn-red capitalize">Regresar</Link>
 									</div>
 								</div>
 							</div>

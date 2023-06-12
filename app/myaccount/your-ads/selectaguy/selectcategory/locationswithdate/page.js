@@ -217,7 +217,7 @@ export default function Home() {
                                                     <label>Tus Redes Sociales <i class="fa-solid fa-lock"></i> <small class="color-default">Solo con Premium & Pro</small></label>
                                                     <p>Coloca el link de tus redes sociales</p>
                                                 </div>
-                                                <div class="flex flex-wrap mt-4 mb-4">
+                                                <div class="flex flex-wrap mt-4 mb-4 w-full">
                                                     <div class="md:w-1/2 pr-4 sm:w-full">
                                                         <div class="mb-4">
                                                             <div class="field-icon">
@@ -236,7 +236,7 @@ export default function Home() {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="mb-6 mylove flex flex-wrap">
+                                                <div class="mb-6 mylove flex flex-wrap w-full">
                                                     <div class="mb-2 mt-4">
                                                         <label>Tu Sitio Web <i class="fa-solid fa-lock"></i> <small class="color-default">Solo con PRO</small></label>
                                                         <p>Coloca el link de tus redes sociales</p>
@@ -244,8 +244,8 @@ export default function Home() {
                                                     <Input type="text" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" placeholder="Pega tu link aquí" />
                                                 </div>
                                                 <div class="mb-4 w-full flex justify-center">
-                                                    <a href="/myaccount/your-ads/selectaguy/selectcategory/locations" class="btn-red-outline me-0 mt-2 lg:me-2">Atrás</a>
-                                                    <a href="/myaccount/your-ads/selectaguy/selectcategory/locationswithdate" class="btn-red mt-2 ms-0 lg:ms-2">Siguiente</a>
+                                                    <Link href="/myaccount/your-ads/selectaguy/selectcategory" class="btn-red-outline me-0 mt-2 lg:me-2">Atrás</Link>
+                                                    <Link href="/myaccount/your-ads/selectaguy/selectcategory/locationswithdate" class="btn-red mt-2 ms-0 lg:ms-2">Siguiente</Link>
                                                 </div>
 
                                             </div>

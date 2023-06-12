@@ -34,22 +34,33 @@ export default function Home() {
                         <form action="">
                             <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-24">
                                 <div  className="mb-12">
-                                    <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Name</label>
+                                    <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Usuario</label>
                                     <Input placeholder="Bernie"/>
                                     
                                 </div>
                                 <div  className="mb-12">
-                                    <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Name</label>
-                                    <Input placeholder="Bernie"/>
+                                    <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Apellido</label>
+                                    <Input placeholder="Gonzalez"/>
                                 </div>
                                 <div  className="mb-12">
-                                    <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Name</label>
-                                    <Input placeholder="Bernie"/>
+                                    <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Celular</label>
+                                    <Input placeholder="55 12345678"/>
                                 </div>
                                 <div  className="mb-12">
-                                    <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Name</label>
-                                    <Input placeholder="Bernie"/>
+                                    <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Nombre(s)</label>
+                                    <Input placeholder="Bernardo"/>
                                 </div>
+                                <div  className="mb-12">
+                                    <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Correo Electrónico</label>
+                                    <Input placeholder="Bernardo@twotapmedia.com"/>
+                                </div>
+                                <div  className="mb-12">
+                                    <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Ubicación</label>
+                                    <Input type='email' placeholder="CDMX"/>
+                                </div>
+                            </div>
+                            <div class="mb-4 text-center">
+                                <Link href="/myaccount/info" class="btn-red" data-bs-toggle="modal" data-bs-target="#profileditModal">Guardar Cambios</Link>
                             </div>
                         </form>
                     </div>

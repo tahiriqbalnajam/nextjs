@@ -26,7 +26,7 @@ export default function Home() {
                                 <div class="services-quote mt-5 pt-5 w-full">
                                 <div class="default-heading flex justify-between w-full">
                                     <h2>Mis <span>Anuncios</span> </h2>
-                                    <a href="/myaccount/your-ads/selectaguy" class="btn-red text-capitalize">Crear Anuncio</a>
+                                    <Link href="/myaccount/your-ads/selectaguy" class="btn-red text-capitalize">Crear Anuncio</Link>
                                 </div>
                                 <div class="services-quote-box">
                                     <div class="list-quotes-header">

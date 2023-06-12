@@ -3,6 +3,7 @@ import Input from '@/components/TextInput'
 import QoutesImageSlider from '@/components/qoutes-slider'
 import LeftNav from '@/components/LeftNav'
 import TextArea from '@/components/TextArea'
+import Link from 'next/link';
 
 
 
@@ -79,7 +80,7 @@ export default function Home() {
 								</div>
 							</div>
 							<div className="mb-4 text-end">
-								<a href="/myaccount/quote/quotestellus/servicetotoquote" className="btn-red">Enviar</a>
+								<Link href="/myaccount/quote/quotestellus/servicetotoquote" className="btn-red">Enviar</Link>
 							</div>
 						</form>
 					</div>

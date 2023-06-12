@@ -156,8 +156,8 @@ export default function Home() {
                                                     <Input type="text" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" placeholder="Pega tu link aquí" />
                                                 </div>
                                                 <div class="mb-4 w-full flex justify-center">
-                                                    <a href="/myaccount/your-ads/selectaguy/selectcategory" class="btn-red-outline me-0 mt-2 lg:me-2">Atrás</a>
-                                                    <a href="/myaccount/your-ads/selectaguy/selectcategory/locationswithdate" class="btn-red mt-2 ms-0 lg:ms-2">Siguiente</a>
+                                                    <Link href="/myaccount/your-ads/selectaguy/selectcategory" class="btn-red-outline me-0 mt-2 lg:me-2">Atrás</Link>
+                                                    <Link href="/myaccount/your-ads/selectaguy/selectcategory/locationswithdate" class="btn-red mt-2 ms-0 lg:ms-2">Siguiente</Link>
                                                 </div>
 
                                             </div>
