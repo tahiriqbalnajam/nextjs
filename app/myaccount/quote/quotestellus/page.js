@@ -1,10 +1,7 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import Input from '@/components/TextInput'
-import Button from '@/components/Button'
 import QoutesImageSlider from '@/components/qoutes-slider'
 import LeftNav from '@/components/LeftNav'
-import '@/css/style.css';
 import TextArea from '@/components/TextArea'
 
 
@@ -82,7 +79,7 @@ export default function Home() {
 								</div>
 							</div>
 							<div className="mb-4 text-end">
-								<a href="#" className="btn-red">Enviar</a>
+								<a href="/myaccount/quote/quotestellus/servicetotoquote" className="btn-red">Enviar</a>
 							</div>
 						</form>
 					</div>

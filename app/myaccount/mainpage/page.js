@@ -155,7 +155,7 @@ const Theidealservice = [
 
 export default function Home() {
   return (
-    <div className='bg-white'>
+    <div className='bg-white mainfrontpage'>
         <section id="main-banner">
             <div className="container mx-auto sm:px-4">
                 <div className="banner-content">

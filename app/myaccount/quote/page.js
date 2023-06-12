@@ -19,7 +19,7 @@ export default function Home() {
 									<h2><span>Servicios</span> para cotizar</h2>
 								</div>
 								<div class="services-quote-box">
-									<a href="#" class="btn-red w-full">Cotizar nuevo servicio</a>
+									<a href="/myaccount/quote/quotestellus" class="btn-red w-full">Cotizar nuevo servicio</a>
 									<h4 class="heading-sm">Listado de cotizaciones</h4>
 									<div class="list-quotes-header">
 										<Link href="/myaccount/quote" class="active">Abiertos <span>1</span></Link>
