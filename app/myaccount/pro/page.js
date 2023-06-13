@@ -1,6 +1,7 @@
 import Input from '../../components/TextInput'
 import LeftNav from '../../components/LeftNav'
 import Button from '../../components/Button'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
                             <div className="pro-section mt-5">
                                 <div className="default-heading flex justify-between items-center">
                                     <h2><span>Misma Plataforma</span> muchos beneficios más.</h2>
-                                    <a href="#" className="btn-red capitalize">PROMO VARIOS ANUNCIOS</a>
+                                    <Link href="/myaccount/pro/packages" className="btn-red capitalize">PROMO VARIOS ANUNCIOS</Link>
                                 </div>
                                 <div className="pro-packages-list">
                                     <form className="default-form">

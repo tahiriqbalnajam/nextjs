@@ -33,13 +33,13 @@ export default function Home() {
                                                 <p>Puedes arrastrar y soltarla desde tu ordenador</p>
                                                 <div className="flex flex-wrap ">
                                                     <div className="md:w-1/2 pr-2 pl-2 sm:w-1/2">
-                                                        <div className="add-image-upload active">
+                                                        <div className="add-image-upload active flex justify-center">
                                                             <Image src="/images/img-upload.png" alt="" height='35' width='35' />
                                                             <p>Agrega o arrastra fotos aquí</p>
                                                         </div>
                                                     </div>
                                                     <div className="md:w-1/2 pr-2 pl-2 sm:w-1/2">
-                                                        <div className="add-image-upload active img-added">
+                                                        <div className="add-image-upload active  img-added">
                                                             <Image src="/images/img5.jpg" alt="" height='50' width='180' />
                                                             <div className="image-upload-overlay">
                                                                 <span>Actual</span>
@@ -53,7 +53,7 @@ export default function Home() {
                                                 <p>Tu logo aparecerá sobre la imagen principal</p>
                                                 <div className="flex flex-wrap ">
                                                     <div className="md:w-1/2 sm:w-1/2 pr-2 pl-2">
-                                                        <div className="add-image-upload active">
+                                                        <div className="add-image-upload active flex justify-center">
                                                             <Image src="/images/img-upload.png" alt="" height='35' width='35' />
                                                             <p>Agrega o arrastra fotos aquí</p>
                                                         </div>

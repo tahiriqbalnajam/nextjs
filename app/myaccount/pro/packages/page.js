@@ -2,6 +2,7 @@ import Input from '@/components/TextInput'
 import LeftNav from '@/components/LeftNav'
 import Button from '@/components/Button'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -20,24 +21,24 @@ export default function Home() {
                             <div class="default-heading">
                                 <h2><span>Misma Plataforma</span> muchos<br />beneficios más.</h2>
                             </div>
-                            <div class="pro-packages">
+                            <div class="pro-packages pro-packages2">
                                 <div class="flex flex-wrap ">
-                                    <div class="md:w-1/3 pr-4 pl-4 sm:w-full">
+                                    <div class="md:w-[50%]  pr-4 pl-4 sm:w-full">
                                         <div class="ads-price-box">
                                             <h3>Plus</h3>
-                                            <Image height='40' width='40' src="/images/line.png" alt="" />
-                                            <a href="#">Ver paquetes</a>
+                                            <Image height='80' width='80' src="/images/line.png" alt="" />
+                                            <Link href="/myaccount/pro/packages/seepackage">Ver paquetes</Link>
                                         </div>
                                     </div>
-                                    <div class="md:w-1/3 pr-4 pl-4 sm:w-full">
+                                    <div class="md:w-[50%]  pr-4 pl-4 sm:w-full">
                                         <div class="ads-price-box">
                                             <h3>Pro</h3>
-                                            <Image height='40' width='40' src="/images/line.png" alt="" />
-                                            <a href="#">Ver paquetes</a>
+                                            <Image height='80' width='80' src="/images/line.png" alt="" />
+                                            <Link href="/myaccount/pro/packages/seepackage">Ver paquetes</Link>
                                         </div>
                                     </div>
-                                    <div class="md:w-2/3 pr-4 pl-4 sm:w-full text-center mt-5">
-                                        <p class="fw-semibold">Conoce los paquetes tenemos para cuando<br />tienes más de un anuncio premium.</p>
+                                    <div class="md:w-[100%] mt-10 pr-4 pl-4 sm:w-full text-center">
+                                        <p class="fw-semibold text-[21px] font-bold">Conoce los paquetes tenemos para cuando<br />tienes más de un anuncio premium.</p>
                                     </div>
                                 </div>
                             </div>

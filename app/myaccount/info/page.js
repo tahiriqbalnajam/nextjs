@@ -14,9 +14,7 @@ export default function Home() {
                         <div  className="border-r-2">
                            <LeftNav />
                         </div>
-                    </aside>
-
-                    
+                    </aside>                    
                     <div  className="w-4/5 pl-28">
                         <div  className="flex items-center justify-between mb-16">
                             <div  className="flex items-center">
@@ -36,7 +34,6 @@ export default function Home() {
                                 <div  className="mb-12">
                                     <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Usuario</label>
                                     <Input placeholder="Bernie"/>
-                                    
                                 </div>
                                 <div  className="mb-12">
                                     <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Apellido</label>

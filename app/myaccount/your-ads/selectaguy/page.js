@@ -35,9 +35,11 @@ export default function Home() {
                                         <div class="md:w-1/2 pr-4 pl-4 sm:w-full">
                                             <div class="your-ads-box">
                                                 <h4>Servicio</h4>
+                                                <Link href='myaccount/your-ads/selectaguy/selectcategory'>
                                                 <div className='flex justify-center'>
                                                     <Image height='50' width='50' src="/images/hotels.png" alt="" />
                                                 </div>
+                                                </Link>
                                                 <p>Es ideal cuando amenizas un evento. Ej, músico, decoración, alimentos, etc</p>
                                             </div>
                                         </div>

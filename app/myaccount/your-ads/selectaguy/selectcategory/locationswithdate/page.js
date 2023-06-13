@@ -245,7 +245,7 @@ export default function Home() {
                                                 </div>
                                                 <div class="mb-4 w-full flex justify-center">
                                                     <Link href="/myaccount/your-ads/selectaguy/selectcategory" class="btn-red-outline me-0 mt-2 lg:me-2">Atrás</Link>
-                                                    <Link href="/myaccount/your-ads/selectaguy/selectcategory/locationswithdate" class="btn-red mt-2 ms-0 lg:ms-2">Siguiente</Link>
+                                                    <Link href="/myaccount/your-ads/selectaguy/selectcategory/locationswithdate/packages" class="btn-red mt-2 ms-0 lg:ms-2">Siguiente</Link>
                                                 </div>
 
                                             </div>
