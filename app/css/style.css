@@ -1912,7 +1912,7 @@ p{
 	font-weight: 400;
 }
 .terrece-col .custom-video {
-	height: 400px;
+	height: 293px;
 	margin-top: 50px;
 }
 
@@ -2178,4 +2178,69 @@ section.locations-section.bg-white {
 
 .readypackage .btn-red, .readypackage .btn-red-outline {
     text-transform: none;
+}
+
+
+.visitprofile .section-terrece .terrece-col p {
+    font-size: 22px;
+    line-height: normal;
+}
+
+
+.visitprofile .leftright {
+    position: relative;
+    left: 61px;
+    bottom: -40px;
+}
+
+.visitprofile .rightleft {
+	position: relative;
+    left: -1110px;
+    margin-top: 40px;
+}
+
+.visitprofile .leftright i {
+    font-size: 27px;
+}
+
+.visitprofile .rightleft i {
+    font-size: 27px;
+}
+
+.visitprofile .terrece-col .highlighted-price {
+    color: #FF5A60;
+    font-size: 55px;
+}
+
+
+.visitprofile .location-meta li {
+    display: flex;
+    align-items: flex-start;
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+.visitprofile .our-testimonials {
+    position: relative;
+    background: #F4F4F4;
+    padding: 130px 55px 190px 60px;
+}
+
+.visitprofile .terrece-col .custom-video {
+    height: 339px;
+    margin-top: 50px;
+}
+
+.visitprofile .section-terrece .terrece-col {
+    padding-top: 35px;
+}
+
+a button.pl-0.pr-0 {
+    width: 224px;
+}
+
+.openservicetomail .default-heading h2 {
+    font-size: 34px;
+    color: #000000;
+    font-weight: 400;
 }
