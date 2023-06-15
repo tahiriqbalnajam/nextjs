@@ -15,31 +15,31 @@ export default function Home() {
                         </div>
                     </aside>
                     <div  className="w-4/5">
-						<div className="main-content-area closedservicetomail">
-							<div className="services-quote mt-5 pt-5">
-								<div className="default-heading">
+						<div class="main-content-area closedservicetomail">
+							<div class="services-quote mt-5 pt-5">
+								<div class="default-heading">
 									<h2>Mi <span>Servicio</span> a cotizar</h2>
 								</div>
-								<div className="services-quote-box mb-5">
-									<div className="list-quotes-table">
-										<table className="w-full max-w-full mb-4 bg-transparent default-table">
+								<div class="services-quote-box mb-5">
+									<div class="list-quotes-table">
+										<table class="w-full max-w-full mb-4 bg-transparent default-table">
 											<thead>
 												<tr className='text-left'>
 													<th>
 														Tipo de Evento
-														<p className="gray-color">Boda</p>
+														<p class="gray-color">Evento<br />Corporativo</p>
 													</th>
 													<th>
 														Asistentes
-														<p className="gray-color">300</p>
+														<p class="gray-color">87</p>
 													</th>
 													<th>
 														Presupuesto
-														<p className="gray-color">$900,000MXN</p>
+														<p class="gray-color">$132,000MXN</p>
 													</th>
 													<th>
 														Estado
-														<p className="gray-color">Propuesta Entregada</p>
+														<p class="gray-color">Cancelado</p>
 													</th>
 												</tr>
 											</thead>
@@ -47,31 +47,26 @@ export default function Home() {
 												<tr>
 													<td>
 														<h4>Servicios</h4>
-														Propiedades, terrazas & jardines
+														Propiedades,<br />terrazas & jardines
 													</td>
 													<td>
 														<h4>Contacto</h4>
 														Llamada
 													</td>
-													<td>
+													<td colspan="3">
 														<h4>Última Llamada</h4>
 														02/03/2023
-													</td>
-													<td>
-														<h4>Próxima Llamada</h4>
-														<span className="color-default">10/03/2023</span>
 													</td>
 												</tr>
 											</tbody>
 										</table>
 									</div>
 								</div>
-								<div className="default-heading text-center mt-5 pt-5">
-									<h2><span className="color-default">¡Gracias!</span></h2>
-									<h3 className="mt-3">Lo tomaremos en cuenta para nuestro<br />próximo contacto</h3>
+								<div class="default-heading text-center mt-5 pt-5 pl-2 pr-2">
+									<h2>Lamentamos que tu <span className='pb-3'>evento</span> no se haya concretado.</h2>
 								</div>
-								<div className="mb-4 text-center mt-5 pt-5">
-									<Link href="/myaccount/quote" className="btn-red">Regresar</Link>
+								<div class="mb-4 text-center mt-5 pt-5">
+									<Link href="/myaccount/quote/quotestellus" class="btn-red capitalize">Cotizar nuevo evento</Link>
 								</div>
 							</div>
 						</div>
