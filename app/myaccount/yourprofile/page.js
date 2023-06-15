@@ -14,15 +14,13 @@ export default function Home() {
                         <div  className="border-r-2">
                            <LeftNav />
                         </div>
-                    </aside>
-
-                    
+                    </aside>  
                     <div className="w-4/5">
                         <div className="main-content-area">
                             <div className="your-ads">
                                 <div className="default-heading flex justify-between items-center">
                                     <h2>Tu <span>Perfil</span></h2>
-                                    <a href="#" className="btn-red capitalize">Visitar Perfil</a>
+                                    <Link href="/myaccount/yourprofile/visitprofile" className="btn-red capitalize">Visitar Perfil</Link>
                                 </div>
                                 <div className="add-ads-images">
                                     <form className="default-form field-icon-red">

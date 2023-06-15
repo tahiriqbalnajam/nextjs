@@ -38,7 +38,7 @@ export default function Home() {
 												<tr>
 													<td>Cumpleaños</td>
 													<td>Pendiente de pago</td>
-													<td class="text-end"><a href="#" class="view-btn"><i class="fa-solid fa-eye"></i></a></td>
+													<td class="text-end"><Link href="/myaccount/quote/openservicetomail" class="view-btn"><i class="fa-solid fa-eye"></i></Link></td>
 												</tr>
 											</tbody>
 										</table>

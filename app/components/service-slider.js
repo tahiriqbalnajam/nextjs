@@ -26,7 +26,7 @@ const Serviceslider = ({images}) => {
       <div className="myclass">
         <label className="text-left absolute" htmlFor="">Presupuesto</label>
       </div>
-      <div>
+      <div className='leftright'>
         <i className="fa-solid relative top-[163px] right-[37px] text-[40px] fa-chevron-left text-red-600" onClick={previousImage}></i>    
       </div>
       <div className="w-full h-full pr-4">
@@ -82,7 +82,7 @@ const Serviceslider = ({images}) => {
           <p className="text-[14px] text-[#777777]">{images[(currentImageIndex + 1) % images.length].paragraph}</p>
         </div>
       )}
-      <div>
+      <div className='rightleft'>
         <i className="fa-solid relative top-[163px] left-[37px] fa-chevron-right text-[40px] text-red-600 pl-3" onClick={nextImage}></i>
       </div>
     </div>

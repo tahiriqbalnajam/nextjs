@@ -18,7 +18,7 @@ export default function Home() {
                         <div className="main-content-area ">
                             <div className="pro-section mt-5">
                                 <div className="default-heading flex justify-between items-center">
-                                    <h2><span className='pb-3'>Misma Plataforma</span> muchos beneficios más.</h2>
+                                    <h2><span>Misma Plataforma</span> muchos beneficios más.</h2>
                                     <Link href="/myaccount/pro/packages" className="btn-red capitalize">PROMO VARIOS ANUNCIOS</Link>
                                 </div>
                                 <div className="pro-packages-list">
@@ -40,9 +40,29 @@ export default function Home() {
                                             </div>
                                             <div className="input-btn">
                                                 <Input placeholder="Ver detalles"/> 
-                                                <Link href='/myaccount/pro/whatsincludedplus'>
-                                                    <Button className="pl-0 pr-0" type='button' text='Lo que Incluye' />
+                                                <Link href='/myaccount/pro/packages/seepackage/packagedetails'>
+                                                    <Button className="pl-0 pr-0" type='button' text='Comprar Ahora' />
                                                 </Link>
+                                            </div>
+                                        </div>
+                                        <div className="mb-4">
+                                            <div className="flex flex-wrap ">
+                                                <div className="md:w-1/4 pr-4 sm:w-full pl-4">
+                                                    <ul className="card-form-list">
+                                                        <li><a href="#">Lorem Ipsum</a></li>
+                                                        <li><a href="#">Lorem Ipsum</a></li>
+                                                        <li><a href="#">Lorem Ipsum</a></li>
+                                                        <li><a href="#">Lorem Ipsum</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div className="md:w-1/4 pr-4 sm:w-full pl-4">
+                                                    <ul className="card-form-list">
+                                                        <li><a href="#">Lorem Ipsum</a></li>
+                                                        <li><a href="#">Lorem Ipsum</a></li>
+                                                        <li><a href="#">Lorem Ipsum</a></li>
+                                                        <li><a href="#">Lorem Ipsum</a></li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
                                         <div className="mb-4">
@@ -50,10 +70,8 @@ export default function Home() {
                                                 <label for="">Gratis</label>
                                             </div>
                                             <div className="input-btn">
-                                                <Input placeholder="Ver detalles"/>
-                                                <Link href='/myaccount/pro/whatsincluded'>
-                                                    <Button className="pl-0 pr-0" type='button' text='Tu Plan Actual' />
-                                                </Link>
+                                                <Input placeholder="Ver detalles"/> 
+                                                <Button className="pl-0 pr-0" type='button' text='Tu Plan Actual' />
                                             </div>
                                         </div>
                                     </form>

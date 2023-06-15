@@ -16,8 +16,6 @@ export default function Home() {
                            <LeftNav />
                         </div>
                     </aside>
-
-                    
                     <div  className="w-4/5 pl-28">
                         <div  className="flex items-center justify-between mb-16">
                             <div  className="flex items-center">
@@ -36,7 +34,6 @@ export default function Home() {
                                 <div  className="mb-12">
                                     <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Tu contraseña actual</label>
                                     <Input placeholder="**********" type="password"/>
-                                    
                                 </div>
                                 <div  className="mb-12">
                                     <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Nueva Contraseña</label>
@@ -47,7 +44,9 @@ export default function Home() {
                                     <Input placeholder="**********" type="password"/>
                                 </div>
                                 <div  className="mb-12 container mx-0 min-w-full flex flex-col items-center">
-                                    <Button type="submit" button="primary" text="Actualizar"/>
+                                    <Link href='/myaccount/info'>
+                                        <Button type="submit" button="primary" text="Actualizar"/>
+                                    </Link>
                                 </div>
                             </div>
                         </form>

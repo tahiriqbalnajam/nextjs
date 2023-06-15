@@ -1,7 +1,6 @@
 import LeftNav from '@/components/LeftNav'
 import Link from 'next/link';
 
-
 export default function Home() {
   return (
         <section  className="lg:py-20 py-5 bg-white">
@@ -20,7 +19,7 @@ export default function Home() {
 								<h2><span>Servicios</span> para cotizar</h2>
 							</div>
 							<div class="services-quote-box">
-								<a href="#" class="btn-red w-full">Cotizar nuevo servicio</a>
+								<Link href="/myaccount/quote/quotestellus" class="btn-red w-full">Cotizar nuevo servicio</Link>
 								<h4 class="heading-sm">Listado de cotizaciones</h4>
 								<div class="list-quotes-header">
 										<Link href="/myaccount/quote">Abiertos <span>1</span></Link>
@@ -39,28 +38,27 @@ export default function Home() {
 											<tr>
 												<td>Boda</td>
 												<td>Propuesta entregada</td>
-												<td class="text-end"><a href="#" class="view-btn"><i class="fa-solid fa-eye"></i></a></td>
+												<td class="text-end"><Link href="/myaccount/quote/qoutesclosed/closedservicetomail" class="view-btn"><i class="fa-solid fa-eye"></i></Link></td>
 											</tr>
 											<tr>
 												<td>Evento corporativo</td>
 												<td>Cancelada</td>
-												<td class="text-end"><a href="#" class="view-btn"><i class="fa-solid fa-eye"></i></a></td>
+												<td class="text-end"><Link href="/myaccount/quote/qoutesclosed/quotenewevent" class="view-btn"><i class="fa-solid fa-eye"></i></Link></td>
 											</tr>
 											<tr>
 												<td>Fiesta privado</td>
 												<td>Concretado</td>
-												<td class="text-end"><a href="#" class="view-btn"><i class="fa-solid fa-eye"></i></a></td>
+												<td class="text-end"><Link href="/myaccount/quote/qoutesclosed" class="view-btn"><i class="fa-solid fa-eye"></i></Link></td>
 											</tr>
 											<tr>
 												<td>Cumpleaños </td>
 												<td>Preparando Propuesta</td>
-												<td class="text-end"><a href="#" class="view-btn"><i class="fa-solid fa-eye"></i></a></td>
+												<td class="text-end"><Link href="/myaccount/quote/qoutesclosed" class="view-btn"><i class="fa-solid fa-eye"></i></Link></td>
 											</tr>
 										</tbody>
 									</table>
 								</div>
 							</div>
-
 						</div>
 				</div>
                     </div>

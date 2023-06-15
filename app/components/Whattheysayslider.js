@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 
-const Whattheysay_slider = ({images}) => {
+const Whattheysay_slider = ({images, heading, heading2 }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const nextImage = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -25,7 +25,8 @@ const Whattheysay_slider = ({images}) => {
   return (
     <div>
     <div class="default-heading">
-                    <h2><span>Lo que dicen</span> de nosotros</h2>
+                   
+                    <h2><span>{heading}</span>{heading2}</h2>
                     <div class="owl-buttons">
                         <button class="prev-btn"><i class="fa-solid fa-angle-left" onClick={previousImage}></i></button>
                         <button class="next-btn"><i class="fa-solid fa-angle-right" onClick={nextImage}></i></button>
