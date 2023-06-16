@@ -46,7 +46,7 @@ export default function Home() {
                                                     <tr>
                                                         <td>Terraza</td>
                                                         <td>Publicado</td>
-                                                        <td class="text-end"><a href="#" class="view-btn"><i class="fa-solid fa-eye"></i></a></td>
+                                                        <td class="text-end"><Link href="myaccount/your-ads/publishedadds" class="view-btn"><i class="fa-solid fa-eye"></i></Link></td>
                                                     </tr>
                                                 </tbody>
                                             </table>

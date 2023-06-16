@@ -106,7 +106,7 @@ export default function Home() {
             <section className="section-terrece">
                 <div className="container min-w-lg mx-auto sm:px-4">
                     <div className="large-heading">
-                        <h2> <a href="/" className="backlink"><i className="fa-solid fa-angle-left"></i></a> Terraza</h2>
+                        <h2> <Link href="/myaccount/yourprofile" className="backlink"><i className="fa-solid fa-angle-left"></i></Link> Terraza</h2>
                     </div>
                     <Serviceslider images={Servicesfeatured} />
                     <div className="flex flex-wrap ">

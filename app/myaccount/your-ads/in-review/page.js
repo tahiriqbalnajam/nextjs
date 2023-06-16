@@ -47,7 +47,7 @@ export default function Home() {
                                             <tr>
                                                 <td>Hotel</td>
                                                 <td>En revisión</td>
-                                                <td class="text-end"><a href="#" class="view-btn"><i class="fa-solid fa-eye"></i></a></td>
+                                                <td class="text-end"><Link href="/myaccount/your-ads/in-review/comingsoon" class="view-btn"><i class="fa-solid fa-eye"></i></Link></td>
                                             </tr>
                                         </tbody>
                                     </table>
