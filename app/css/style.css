@@ -2301,3 +2301,14 @@ a button.pl-0.pr-0 {
 .publishedadds .section-terrece .terrece-col {
     padding-top: 35px;
 }
+
+.text-center.myclassloader {
+    position: absolute;
+    top: 167px;
+	left: 46%;
+}
+
+.myclassloader span.sr-onlys {
+    color: #e90b10 !important;
+	background: rgb(0 0 0 / 0%);
+}
