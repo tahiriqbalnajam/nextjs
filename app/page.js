@@ -5,12 +5,13 @@ import ExploraDropdownMenu from '@/components/exploratogglemenu.js';
 import Settingtogglemenu from '@/components/settingtogglemenu.js';
 import MyaccountFooter from './components/MyaccountFooter';
 import Page from './myaccount/mainpage/page.js'
+import PopupForm from './components/popupform.js';
 
 
 export default function Home() {
   return (
     <main>
-      <header className="py-4 px-4 shadow bg-colorBlack">
+      <header className="main-header py-4 px-4 shadow bg-colorBlack">
             <nav>
               <div className="container mx-auto">
                 <div className="flex items-center justify-between h-16">
@@ -36,8 +37,8 @@ export default function Home() {
                   </div>
                   <div className="hidden lg:block">
                     <div className="flex items-center ml-4 md:ml-6">
-                      <div className="header-btn text-[#ffffff] font-bold px-4 py-2 bg-[#FF5A5E] hover:bg-[#d71e1e]">
-                        <Link href="/myaccount/info" data-bs-toggle="modal" data-bs-target="#RegisterModal">CREAR CUENTA</Link>
+                      <div className="header-btn text-[#ffffff] ">
+                      <PopupForm />
                       </div>
                     </div>
                   </div>
@@ -45,6 +46,7 @@ export default function Home() {
               </div>
             </nav>
       </header>
+      
       <Page />
       <MyaccountFooter />
       

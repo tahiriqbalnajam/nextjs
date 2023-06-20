@@ -16,9 +16,9 @@ export default function Nav() {
 						<div className="flex items-center justify-between flex-grow">
 							<div className="flex-shrink-0">
 								<h1 className="text-lg font-semibold tracking-widest text-white uppercase">
-									<a href="#">
+									<Link href="/">
 										<Image src="/images/logo.png" alt="" height='28' width='205'  />
-									</a>
+									</Link>
 								</h1>
 							</div>
 							<div className="hidden lg:block">
