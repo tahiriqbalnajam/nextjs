@@ -12,9 +12,8 @@ const Progress = () => {
       NProgress.start();
     };
 
-    const progress = (url, { loaded, total }) => {
-      const progressPercent = (loaded / total) * 100;
-      setProgress(progressPercent);
+    const progress = (url) => {
+      setProgress(50);
     };
 
     const end = () => {

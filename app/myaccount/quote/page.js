@@ -2,6 +2,7 @@ import LeftNav from '@/components/LeftNav'
 import Link from 'next/link';
 import MyLink from '@/components/mylink';
 
+
 export default function Home() {
   return (
         <section  className="lg:py-20 py-5 bg-white">
@@ -20,6 +21,7 @@ export default function Home() {
 									<h2><span>Servicios</span> para cotizar</h2>
 								</div>
 								<div class="services-quote-box">
+						
 									<MyLink href="/myaccount/quote/quotestellus" className='btn-red w-full'>Cotizar nuevo servicio</MyLink>
 									<h4 class="heading-sm">Listado de cotizaciones</h4>
 									<div class="list-quotes-header">
