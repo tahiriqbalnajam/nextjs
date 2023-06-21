@@ -5,8 +5,8 @@ import Loader from './loader.js';
 
 const MyLink = ({ href, className, children, ...rest }) => {
 
-  const [isLoading, setIsLoading] = useState(true);
-  const [showHeader, setShowHeader] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
+  const [showHeader, setShowHeader] = useState(false);
 
   const handleClick = () => {
     setIsLoading(true);
