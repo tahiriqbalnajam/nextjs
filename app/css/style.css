@@ -423,7 +423,7 @@ p{
 	background:rgba(255, 72, 89, 1);
 }
 .service-box img {
-	max-width: 62px;
+	max-width: 72px;
 	margin: 0 auto;
 }
 .service-box p{
@@ -648,8 +648,8 @@ p{
 	height: 80%;
 	display: inline-block;
 	position: absolute;
-	right: -10px;
-	top: -10px;
+	right: -18px;
+	top: -18px;
 	z-index: -1;
 }
 .cta-wrapper .cta-box {
@@ -2331,4 +2331,98 @@ a button.pl-0.pr-0 {
     height: 48px;
 	position: relative;
     top: 9px;
+}
+
+.main-header svg{
+    padding-top: -22px;
+    color: red;
+    margin-top: 0;
+}
+
+.main-header .text-base {
+    font-size: 15px !important;
+    line-height: 1.5rem;
+    font-weight: 900 !important;
+}
+
+.main-header svg {
+    padding-bottom: 3px;
+}
+
+.main-header .mx-2 {
+   
+    margin-right: 0 !important;
+}
+
+
+.main-header2 .container {
+    max-width: 100%;
+}
+
+
+.main-header2  .text-gray-300{
+	color: white !important;
+}
+
+ul.py-1.bg-white.rounded-md.shadow-xs.absolute.-left-0 {
+    width: max-content;
+}
+
+ul.py-1.bg-white.rounded-md.shadow-xs.absolute.-left-0 {
+    position: absolute;
+    left: 32px;
+}
+
+#main-banner ul li a:hover {
+    background-color: red;
+    color: white;
+}
+
+#main-banner ul li a:hover,
+#main-banner li a:focus,
+#main-banner ul li a.active{
+	background:#FF5A5E !important;
+	color:#fff !important;
+}
+
+#main-banner .py-1 {
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+
+input.bg-white.h-12.p-3.w-full.border-none.focus\:outline-none.focus\:shadow-outline {
+    padding-left: 0;
+}
+
+.field-icon span {
+    padding-right: 12px;
+}
+select.block.appearance-none.w-full.py-1.px-2.mb-1.text-base.leading-normal.bg-white.text-gray-800.border.border-gray-200.rounded {
+    border: navajowhite;
+}
+select.block.appearance-none.w-full.py-1.px-2.mb-1.text-base.leading-normal.bg-white.text-gray-800.border.border-gray-200.rounded {
+    padding-left: 0;
+}
+.md\:w-1\/4.pr-4.sm\:w-full.pl-4.pt-4 {
+    border-left: 1px solid #ccc;
+}
+
+.field-icon {
+    margin-top: 9px;
+}
+
+
+@font-face {
+	font-family: 'MyFont';
+	src: url('/fonts/font.woff2') format('woff2'),
+		 url('/fonts/font.woff') format('woff');
+  }
+  
+  body {
+	font-family: 'Ubuntu', sans-serif !important ;
+  }
+  
+  #main-banner .container {
+    max-width: 1312px !important;
 }

@@ -1,9 +1,9 @@
-import Input from '../../components/TextInput'
+import Input from '@/components/TextInput'
 import Image from 'next/image'
-import Button from '../../components/Button'
-import QoutesImageSlider from '../../components/qoutes-slider'
-import Serviceslider from '../../components/service-slider'
-import Whattheysay_slider from '../../components/Whattheysayslider'
+import Button from '@/components/Button'
+import QoutesImageSlider from '@/components/qoutes-slider'
+import Serviceslider from '@/components/service-slider'
+import Whattheysay_slider from '@/components/Whattheysayslider'
 
 
 const Servicesfeatured = [
@@ -198,7 +198,7 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <Button text='Buscar' className= 'ml-8 text-[25px] text-white bg-salmon hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium px-10 py-5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none  dark:focus:ring-blue-800' />
+                        <Button text='Buscar' className= 'ml-8 text-[25px] text-white bg-salmon hover:bg-[#f82c2f] focus:ring-4 focus:bg-[#f82c2f] font-medium px-10 py-5 dark:bg-[#f82c2f] dark:hover:bg-[#f82c2f] focus:outline-none  dark:focus:bg-[#f82c2f]' />
                     </div>
                     <div className='mainslider'>
                         <QoutesImageSlider />
@@ -350,7 +350,7 @@ export default function Home() {
                 <div class="cta-wrapper">
                     <div class="cta-thumb">
                         <div class="thumb-inner">
-                            <Image class="img-cta w-full" alt="" src="/images/cta.jpg" height='50' width='50' />
+                            <Image className="img-cta w-full" alt="" src="/images/ctaa.jpg" height='592' width='344' />
                         </div>
                     </div>
                     <div class="cta-box">

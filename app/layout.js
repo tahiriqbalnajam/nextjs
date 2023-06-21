@@ -6,10 +6,7 @@ import './css/style.css';
 //import './css/owl.carousel.min.css';
 //import './css/style.css';
 //import './css/responsive.css';
-
 import './css/styles.css';
-
-
 
 const inter = Inter({ subsets: ['latin'] })
 

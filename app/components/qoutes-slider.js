@@ -50,8 +50,8 @@ const QoutesImageSlider = () => {
                   className="max-w-full h-auto"
                   src={images[currentImageIndex]}
                   alt={`Image ${currentImageIndex + 1}`}
-                  width={40}
-                  height={40}
+                  width={110}
+                  height={110}
                 />
                 <p className='text-[14px]'>Propiedades</p>
               </div>
@@ -63,8 +63,8 @@ const QoutesImageSlider = () => {
                     className="max-w-full h-auto"
                     src={images[(currentImageIndex + 1) % images.length]}
                     alt={`Image ${currentImageIndex + 2}`}
-                    width={40}
-                    height={40}
+                    width={110}
+                    height={110}
                   />
                   <p className='text-[14px]'>Barcos</p>
                 </div>
@@ -77,8 +77,8 @@ const QoutesImageSlider = () => {
                     className="max-w-full h-auto"
                     src={images[(currentImageIndex + 2) % images.length]}
                     alt={`Image ${currentImageIndex + 3}`}
-                    width={40}
-                    height={40}
+                    width={110}
+                    height={110}
                   />
                   <p className='text-[14px]'>Barcos</p>
                 </div>
@@ -91,8 +91,8 @@ const QoutesImageSlider = () => {
                     className="max-w-full h-auto"
                     src={images[(currentImageIndex + 3) % images.length]}
                     alt={`Image ${currentImageIndex + 4}`}
-                    width={40}
-                    height={40}
+                    width={110}
+                    height={110}
                   />
                   <p className='text-[14px]'>Barcos</p>
                 </div>
@@ -105,8 +105,8 @@ const QoutesImageSlider = () => {
                     className="max-w-full h-auto"
                     src={images[(currentImageIndex + 4) % images.length]}
                     alt={`Image ${currentImageIndex + 5}`}
-                    width={40}
-                    height={40}
+                    width={110}
+                    height={110}
                   />
                   <p className='text-[14px]'>Barcos</p>
                 </div>
@@ -119,8 +119,8 @@ const QoutesImageSlider = () => {
                     className="max-w-full h-auto"
                     src={images[(currentImageIndex + 5) % images.length]}
                     alt={`Image ${currentImageIndex + 6}`}
-                    width={40}
-                    height={40}
+                    width={110}
+                    height={110}
                   />
                   <p className='text-[14px]'>Barcos</p>
                 </div>
@@ -133,8 +133,8 @@ const QoutesImageSlider = () => {
                     className="max-w-full h-auto"
                     src={images[(currentImageIndex + 6) % images.length]}
                     alt={`Image ${currentImageIndex + 7}`}
-                    width={40}
-                    height={40}
+                    width={110}
+                    height={110}
                   />
                   <p className='text-[14px]'>Barcos</p>
                 </div>

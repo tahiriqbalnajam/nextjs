@@ -1,44 +1,31 @@
-import { useEffect, useState } from 'react';
-import Router from 'next/router';
-import NProgress from 'nprogress';
-import 'nprogress/nprogress.css';
+"use client";
+import { useState, useEffect } from 'react';
 
-const Progress = () => {
+export default function Home() {
   const [progress, setProgress] = useState(0);
+  const total = 100;
+  const increment = 2;
 
   useEffect(() => {
-    const start = () => {
-      setProgress(0);
-      NProgress.start();
+    const updateProgressBar = () => {
+      setProgress((prevProgress) => prevProgress + increment);
+
+      if (progress < total) {
+        setTimeout(updateProgressBar, 100); // Adjust the timeout value for the desired animation speed
+      }
     };
 
-    const progress = (url) => {
-      setProgress(50);
-    };
-
-    const end = () => {
-      setProgress(100);
-      NProgress.done();
-    };
-
-    Router.events.on('routeChangeStart', start);
-    Router.events.on('routeChangeComplete', end);
-    Router.events.on('routeChangeError', end);
-    Router.events.on('routeChangeProgress', progress);
-
-    return () => {
-      Router.events.off('routeChangeStart', start);
-      Router.events.off('routeChangeComplete', end);
-      Router.events.off('routeChangeError', end);
-      Router.events.off('routeChangeProgress', progress);
-    };
+    updateProgressBar();
   }, []);
 
-  useEffect(() => {
-    NProgress.set(progress / 100);
-  }, [progress]);
-
-  return null;
-};
-
-export default Progress;
+  return (
+    <div className="fixed top-0 left-0 w-full h-0 bg-gray-200 rounded-full dark:bg-gray-700">
+    <div className="w-full h-1 bg-gray-200 rounded">
+      <div
+        className="h-full bg-[#FF5A5E] rounded"
+        style={{ width: `${progress}%` }}
+      ></div>
+    </div>
+    </div>
+  );
+}

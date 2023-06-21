@@ -11,7 +11,7 @@ const togglemenu = () => {
     <div className="relative">
        <button onClick={toggleMenu} className="flex flex-row items-center px-3 py-2 ml-4 text-base font-medium text-white bold rounded-md hover:text-colorRed focus:outline-none">
         <span className="mx-2">EXPLORA</span>
-        <svg onClick={toggleMenu} xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 mt-1 transform rotate-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg onClick={toggleMenu} xmlns="http://www.w3.org/2000/svg" className="w-6 h-5 mt-1 transform rotate-0" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 				<polyline points="6 9 12 15 18 9"></polyline>
 										</svg>
         </button>
