@@ -2378,14 +2378,14 @@ ul.py-1.bg-white.rounded-md.shadow-xs.absolute.-left-0 {
     color: white;
 }
 
-#main-banner ul li a:hover,
-#main-banner li a:focus,
-#main-banner ul li a.active{
+.main-header ul li a:hover,
+.main-header li a:focus,
+.main-header ul li a.active{
 	background:#FF5A5E !important;
 	color:#fff !important;
 }
 
-#main-banner .py-1 {
+.main-header  .py-1 {
     padding-top: 0;
     padding-bottom: 0;
 
@@ -2426,3 +2426,7 @@ select.block.appearance-none.w-full.py-1.px-2.mb-1.text-base.leading-normal.bg-w
   #main-banner .container {
     max-width: 1312px !important;
 }
+
+.visited { 
+	pointer-events: none
+  }
