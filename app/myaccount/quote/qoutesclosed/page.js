@@ -1,5 +1,6 @@
 import LeftNav from '@/components/LeftNav'
 import Link from 'next/link';
+import MyLink from '@/components/mylink';
 
 export default function Home() {
   return (
@@ -19,12 +20,12 @@ export default function Home() {
 								<h2><span>Servicios</span> para cotizar</h2>
 							</div>
 							<div class="services-quote-box">
-								<Link href="/myaccount/quote/quotestellus" class="btn-red w-full">Cotizar nuevo servicio</Link>
+								<MyLink href="/myaccount/quote/quotestellus" class="btn-red w-full">Cotizar nuevo servicio</MyLink>
 								<h4 class="heading-sm">Listado de cotizaciones</h4>
 								<div class="list-quotes-header">
-										<Link href="/myaccount/quote">Abiertos <span>1</span></Link>
-										<Link href="/myaccount/quote/qoutesclosed" class="active">Cerrados <span>4</span></Link>
-										<Link href="/myaccount/quote/qoutesall">Todos <span>5</span></Link>
+										<MyLink href="/myaccount/quote">Abiertos <span>1</span></MyLink>
+										<MyLink href="/myaccount/quote/qoutesclosed" class="active">Cerrados <span>4</span></MyLink>
+										<MyLink href="/myaccount/quote/qoutesall">Todos <span>5</span></MyLink>
 								</div>
 								<div class="list-quotes-table">
 									<table class="w-full max-w-full mb-4 bg-transparent default-table">
@@ -38,22 +39,22 @@ export default function Home() {
 											<tr>
 												<td>Boda</td>
 												<td>Propuesta entregada</td>
-												<td class="text-end"><Link href="/myaccount/quote/qoutesclosed/closedservicetomail" class="view-btn"><i class="fa-solid fa-eye"></i></Link></td>
+												<td class="text-end"><MyLink href="/myaccount/quote/qoutesclosed/closedservicetomail" class="view-btn"><i class="fa-solid fa-eye"></i></MyLink></td>
 											</tr>
 											<tr>
 												<td>Evento corporativo</td>
 												<td>Cancelada</td>
-												<td class="text-end"><Link href="/myaccount/quote/qoutesclosed/quotenewevent" class="view-btn"><i class="fa-solid fa-eye"></i></Link></td>
+												<td class="text-end"><MyLink href="/myaccount/quote/qoutesclosed/quotenewevent" class="view-btn"><i class="fa-solid fa-eye"></i></MyLink></td>
 											</tr>
 											<tr>
 												<td>Fiesta privado</td>
 												<td>Concretado</td>
-												<td class="text-end"><Link href="/myaccount/quote/qoutesclosed" class="view-btn"><i class="fa-solid fa-eye"></i></Link></td>
+												<td class="text-end"><MyLink href="/myaccount/quote/qoutesclosed" class="view-btn"><i class="fa-solid fa-eye"></i></MyLink></td>
 											</tr>
 											<tr>
 												<td>Cumpleaños </td>
 												<td>Preparando Propuesta</td>
-												<td class="text-end"><Link href="/myaccount/quote/qoutesclosed" class="view-btn"><i class="fa-solid fa-eye"></i></Link></td>
+												<td class="text-end"><MyLink href="/myaccount/quote/qoutesclosed" class="view-btn"><i class="fa-solid fa-eye"></i></MyLink></td>
 											</tr>
 										</tbody>
 									</table>

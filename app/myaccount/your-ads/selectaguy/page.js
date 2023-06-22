@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import LeftNav from '@/components/LeftNav'
+import MyLink from '@/components/mylink';
 
 export default function Home() {
   return (
@@ -24,22 +25,22 @@ export default function Home() {
                                         <div class="md:w-1/2 pr-4 pl-4 sm:w-full">
                                             <div class="your-ads-box ">
                                                 <h4>Locación</h4>
-                                                <Link href='myaccount/your-ads/selectaguy/selectcategory'>
+                                                <MyLink href='myaccount/your-ads/selectaguy/selectcategory'>
                                                     <div className='flex justify-center'>
                                                         <Image height='50' width='50' src="/images/terrazas.png" alt="" />
                                                     </div>
-                                                </Link>
+                                                </MyLink>
                                                 <p>Es ideal si tienes un lugar para rentar. Ej. Casa, salón de fiestas, terraza, etc</p>
                                             </div>
                                         </div>
                                         <div class="md:w-1/2 pr-4 pl-4 sm:w-full">
                                             <div class="your-ads-box">
                                                 <h4>Servicio</h4>
-                                                <Link href='myaccount/your-ads/selectaguy/selectcategory'>
+                                                <MyLink href='myaccount/your-ads/selectaguy/selectcategory'>
                                                 <div className='flex justify-center'>
                                                     <Image height='50' width='50' src="/images/hotels.png" alt="" />
                                                 </div>
-                                                </Link>
+                                                </MyLink>
                                                 <p>Es ideal cuando amenizas un evento. Ej, músico, decoración, alimentos, etc</p>
                                             </div>
                                         </div>

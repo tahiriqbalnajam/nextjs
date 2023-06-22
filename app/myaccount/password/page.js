@@ -4,6 +4,7 @@ import Input from '@/components/TextInput'
 import Button from '@/components/Button'
 import InputMail from '@/components/MailInput.js';
 import LeftNav from '@/components/LeftNav';
+import MyLink from '@/components/mylink';
 
 export default function Home() {
   return (
@@ -44,9 +45,9 @@ export default function Home() {
                                     <Input placeholder="**********" type="password"/>
                                 </div>
                                 <div  className="mb-12 container mx-0 min-w-full flex flex-col items-center">
-                                    <Link href='/myaccount/info'>
+                                    <MyLink href='/myaccount/info'>
                                         <Button type="submit" button="primary" text="Actualizar"/>
-                                    </Link>
+                                    </MyLink>
                                 </div>
                             </div>
                         </form>

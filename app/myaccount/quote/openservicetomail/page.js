@@ -1,5 +1,6 @@
 import LeftNav from '@/components/LeftNav'
 import Link from 'next/link';
+import MyLink from '@/components/mylink';
 
 export default function Home() {
   return (
@@ -56,7 +57,7 @@ export default function Home() {
 									<h2><span className='pb-3'>Estamos preparando tu propuesta.</span><br />En breve nos comunicaremos contigo.</h2>
 								</div>
 								<div class="mb-4 text-center">
-									<Link href="/myaccount/quote" class="btn-red">Regresar</Link>
+									<MyLink href="/myaccount/quote" class="btn-red">Regresar</MyLink>
 								</div>
 							</div>
 						</div>

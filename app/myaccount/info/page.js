@@ -3,6 +3,7 @@ import Image from 'next/image'
 import InputMail from '@/components/MailInput'
 import LeftNav from '@/components/LeftNav'
 import Link from 'next/link';
+import MyLink from '@/components/mylink';
 
 export default function Home() {
   return (
@@ -27,7 +28,7 @@ export default function Home() {
                                     <h3  className="text-xl font-bold">CDMX</h3>
                                 </div>
                             </div>
-                            <Link href="/myaccount/password"  className="text-xl text-colorRed inline-block">Contraseña</Link>
+                            <MyLink href="/myaccount/password"  className="text-xl text-colorRed inline-block">Contraseña</MyLink>
                         </div>
                         <form action="">
                             <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-24">
@@ -57,7 +58,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <div class="mb-4 text-center">
-                                <Link href="/myaccount/info" class="btn-red" data-bs-toggle="modal" data-bs-target="#profileditModal">Guardar Cambios</Link>
+                                <MyLink href="/myaccount/info" class="btn-red" data-bs-toggle="modal" data-bs-target="#profileditModal">Guardar Cambios</MyLink>
                             </div>
                         </form>
                     </div>

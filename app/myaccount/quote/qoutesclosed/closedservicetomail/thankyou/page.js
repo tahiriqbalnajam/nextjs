@@ -1,6 +1,7 @@
 import LeftNav from '@/components/LeftNav'
 import Link from 'next/link';
 import TextArea from '@/components/TextArea'
+import MyLink from '@/components/mylink';
 
 
 export default function Home() {
@@ -71,7 +72,7 @@ export default function Home() {
 									<h3 className="mt-3">Lo tomaremos en cuenta para nuestro<br />próximo contacto</h3>
 								</div>
 								<div className="mb-4 text-center mt-5 pt-5">
-									<Link href="/myaccount/quote" className="btn-red">Regresar</Link>
+									<MyLink href="/myaccount/quote" className="btn-red">Regresar</MyLink>
 								</div>
 							</div>
 						</div>

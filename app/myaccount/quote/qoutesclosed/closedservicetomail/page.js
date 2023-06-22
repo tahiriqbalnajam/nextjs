@@ -1,6 +1,7 @@
 import LeftNav from '@/components/LeftNav'
 import Link from 'next/link';
 import TextArea from '@/components/TextArea'
+import MyLink from '@/components/mylink';
 
 
 export default function Home() {
@@ -76,7 +77,7 @@ export default function Home() {
 										<TextArea rows='8' cols='5' placeholder="Cualquier detalle nos será de utilidad"></TextArea>
 									</div>
 									<div class="mb-4 text-end">
-										<Link href="/myaccount/quote/qoutesclosed/closedservicetomail/thankyou" class="btn-red">Enviar</Link>
+										<MyLink href="/myaccount/quote/qoutesclosed/closedservicetomail/thankyou" class="btn-red">Enviar</MyLink>
 									</div>
 								</form>
 							</div>

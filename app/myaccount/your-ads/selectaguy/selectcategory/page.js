@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import LeftNav from '@/components/LeftNav'
+import MyLink from '@/components/mylink';
 
 export default function Home() {
   return (
@@ -21,13 +22,13 @@ export default function Home() {
                                         <h2>Selecciona una <span>Categoría</span></h2>
                                     </div>
                                     <div class="category-list">
-                                    <Link href="/myaccount/your-ads/selectaguy/selectcategory/locations" className='active'><span><Image height='50' width='50' src="/images/propiedades.png" alt="" /></span> Propiedades </Link>
-                                       <Link href="/myaccount/your-ads/selectaguy/selectcategory/locations"><span><Image height='50' width='50' src="/images/barcos.png" alt="" /></span> Barcos <i class="fa-solid fa-check"></i></Link>
-                                       <Link href="/myaccount/your-ads/selectaguy/selectcategory/locations"><span><Image height='50' width='50' src="/images/jardines.png" alt="" /></span> Jardines <i class="fa-solid fa-check"></i></Link>
-                                       <Link href="/myaccount/your-ads/selectaguy/selectcategory/locations"><span><Image height='50' width='50' src="/images/salones.png" alt=""/></span> Salones de fiestas <i class="fa-solid fa-check"></i></Link>
-                                       <Link href="/myaccount/your-ads/selectaguy/selectcategory/locations"><span><Image height='50' width='50' src="/images/hotels.png" alt=""/></span> Hoteles <i class="fa-solid fa-check"></i></Link>
-                                       <Link href="/myaccount/your-ads/selectaguy/selectcategory/locations"><span><Image height='50' width='50' src="/images/tickets.png" alt=""/></span> Boletos <i class="fa-solid fa-check"></i></Link>
-                                        <Link href="/myaccount/your-ads/selectaguy/selectcategory/locations"><span><Image height='50' width='50' src="/images/terrazas.png" alt=""/></span> Terrazas <i class="fa-solid fa-check"></i></Link>
+                                    <MyLink href="/myaccount/your-ads/selectaguy/selectcategory/locations" className='active'><span><Image height='50' width='50' src="/images/propiedades.png" alt="" /></span> Propiedades </MyLink>
+                                       <MyLink href="/myaccount/your-ads/selectaguy/selectcategory/locations"><span><Image height='50' width='50' src="/images/barcos.png" alt="" /></span> Barcos <i class="fa-solid fa-check"></i></MyLink>
+                                       <MyLink href="/myaccount/your-ads/selectaguy/selectcategory/locations"><span><Image height='50' width='50' src="/images/jardines.png" alt="" /></span> Jardines <i class="fa-solid fa-check"></i></MyLink>
+                                       <MyLink href="/myaccount/your-ads/selectaguy/selectcategory/locations"><span><Image height='50' width='50' src="/images/salones.png" alt=""/></span> Salones de fiestas <i class="fa-solid fa-check"></i></MyLink>
+                                       <MyLink href="/myaccount/your-ads/selectaguy/selectcategory/locations"><span><Image height='50' width='50' src="/images/hotels.png" alt=""/></span> Hoteles <i class="fa-solid fa-check"></i></MyLink>
+                                       <MyLink href="/myaccount/your-ads/selectaguy/selectcategory/locations"><span><Image height='50' width='50' src="/images/tickets.png" alt=""/></span> Boletos <i class="fa-solid fa-check"></i></MyLink>
+                                        <MyLink href="/myaccount/your-ads/selectaguy/selectcategory/locations"><span><Image height='50' width='50' src="/images/terrazas.png" alt=""/></span> Terrazas <i class="fa-solid fa-check"></i></MyLink>
                                     </div>
                                 </div>
                             </div>

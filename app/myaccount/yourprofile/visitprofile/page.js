@@ -5,6 +5,7 @@ import LeftNav from '@/components/LeftNav'
 import Link from 'next/link';
 import Serviceslider from '@/components/service-slider'
 import Whattheysay_slider from '@/components/Whattheysayslider'
+import MyLink from '@/components/mylink';
 
 const Servicesfeatured = [
     {
@@ -106,7 +107,7 @@ export default function Home() {
             <section className="section-terrece">
                 <div className="container min-w-lg mx-auto sm:px-4">
                     <div className="large-heading">
-                        <h2> <Link href="/myaccount/yourprofile" className="backlink"><i className="fa-solid fa-angle-left"></i></Link> Terraza</h2>
+                        <h2> <MyLink href="/myaccount/yourprofile" className="backlink"><i className="fa-solid fa-angle-left"></i></MyLink> Terraza</h2>
                     </div>
                     <Serviceslider images={Servicesfeatured} />
                     <div className="flex flex-wrap ">

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import LeftNav from '@/components/LeftNav'
 import Input from '@/components/TextInput'
 import TextArea from '@/components/TextArea'
-
+import MyLink from '@/components/mylink';
 
 
 export default function Home() {
@@ -32,7 +32,7 @@ export default function Home() {
                                                     <h3>Gratis</h3>
                                                     <p>Tu plan Actual</p>
                                                     <Image height='60' width='60' src="/images/line2.png" alt="" /> 
-                                                    <Link href="/myaccount/your-ads/selectaguy/selectcategory/locationswithdate/packages/readypackage">Continuar Así</Link>
+                                                    <MyLink href="/myaccount/your-ads/selectaguy/selectcategory/locationswithdate/packages/readypackage">Continuar Así</MyLink>
                                                 </div>
                                             </div>
                                             <div class="md:w-1/3 pr-2 pl-2 sm:w-full ">
@@ -40,7 +40,7 @@ export default function Home() {
                                                     <h3>Gratis</h3>
                                                     <h4>$19.99<span>/mes</span></h4>
                                                     <Image height='60' width='60' src="/images/line.png" alt="" />
-                                                    <Link href="/myaccount/your-ads/selectaguy/selectcategory/locationswithdate/packages/readypackage">Empezar ahora</Link>
+                                                    <MyLink href="/myaccount/your-ads/selectaguy/selectcategory/locationswithdate/packages/readypackage">Empezar ahora</MyLink>
                                                 </div>
                                             </div>
                                             <div class="md:w-1/3 pl-4 sm:w-full ">
@@ -48,7 +48,7 @@ export default function Home() {
                                                     <h3>Pro</h3>
                                                     <h4>$29.99<span>/mes</span></h4>
                                                     <Image height='60' width='60' src="/images/line.png" alt="" />
-                                                    <Link href="/myaccount/your-ads/selectaguy/selectcategory/locationswithdate/packages/readypackage">Empezar ahora</Link>
+                                                    <MyLink href="/myaccount/your-ads/selectaguy/selectcategory/locationswithdate/packages/readypackage">Empezar ahora</MyLink>
                                                 </div>
                                             </div>
                                         </div>

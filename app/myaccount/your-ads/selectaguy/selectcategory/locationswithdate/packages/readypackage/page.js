@@ -3,7 +3,7 @@ import Link from 'next/link';
 import LeftNav from '@/components/LeftNav'
 import Input from '@/components/TextInput'
 import TextArea from '@/components/TextArea'
-
+import MyLink from '@/components/mylink';
 
 
 export default function Home() {
@@ -31,7 +31,7 @@ export default function Home() {
                                         <h2><span className='mb-2'>Estamos revisando tu anuncio.</span> En breve lo podrás ver publicado.</h2>
                                     </div>
                                     <div className="mb-4 text-center mt-14 pt-5">
-                                        <Link href="/myaccount/your-ads" className="btn-red">Regresar</Link>
+                                        <MyLink href="/myaccount/your-ads" className="btn-red">Regresar</MyLink>
                                     </div>
                                 </div>
                             </div>

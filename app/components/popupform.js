@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image'
 import Input from '@/components/TextInput'
 import React, { useState } from 'react';
+import MyLink from '@/components/mylink';
 
 const PopupForm = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,7 @@ const PopupForm = () => {
 
   return (
     <div>
-        <Link onClick={togglePopup} href="#" >CREAR CUENTA</Link>
+        <MyLink onClick={togglePopup} href="#" >CREAR CUENTA</MyLink>
       {isOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-10">
           <div className="absolute  bg-gray-900 opacity-50"></div>
@@ -45,7 +46,7 @@ const PopupForm = () => {
                                         <Input class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" type="password" placeholder="Tu contraseña" />
                                     </div>
                                     <div class="mb-4 border-0 p-0 text-center">
-                                        <Link href='/myaccount/info' className='popclass'>Entrar</Link>
+                                        <MyLink href='/myaccount/info' className='popclass'>Entrar</MyLink>
                                     </div>
                                     <p class="forget-pass2"><a href="#">¿Olvidaste tu contraseña?</a></p>
                                 </div>

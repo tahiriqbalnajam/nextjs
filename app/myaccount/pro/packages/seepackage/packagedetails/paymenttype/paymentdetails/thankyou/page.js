@@ -3,6 +3,7 @@ import LeftNav from '@/components/LeftNav'
 import Button from '@/components/Button'
 import Image from 'next/image'
 import Link from 'next/link'
+import MyLink from '@/components/mylink';
  
 
 export default function Home() {
@@ -30,7 +31,7 @@ export default function Home() {
                                 <p className="mt-6 text-[20px]"><b>Ahora podrás utilizar todas las funciones que tenemos<br />para que llegues más lejos con nuestros anuncios.</b></p>
                             </div>
                             <div className="mb-4 text-center mt-5 pt-5">
-                                <Link href="/myaccount/yourprofile" className="btn-red text-[8px]">Usar en mis Anuncios</Link>
+                                <MyLink href="/myaccount/yourprofile" className="btn-red text-[8px]">Usar en mis Anuncios</MyLink>
                             </div>
                             </div>
                         </div>

@@ -3,6 +3,7 @@ import LeftNav from '@/components/LeftNav'
 import Button from '@/components/Button'
 import Image from 'next/image'
 import Link from 'next/link'
+import MyLink from '@/components/mylink';
 
 export default function Home() {
   return (
@@ -67,7 +68,7 @@ export default function Home() {
                                             </div>
                                         </div>
                                         <div class="mb-4 text-center">
-                                            <Link href="myaccount/pro/packages/seepackage/packagedetails/paymenttype" class="btn-red">Siguiente</Link>
+                                            <MyLink href="myaccount/pro/packages/seepackage/packagedetails/paymenttype" class="btn-red">Siguiente</MyLink>
                                         </div>
                                     </form>
                                 </div>

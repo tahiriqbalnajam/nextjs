@@ -3,6 +3,7 @@ import LeftNav from '@/components/LeftNav'
 import Button from '@/components/Button'
 import Image from 'next/image'
 import Link from 'next/link'
+import MyLink from '@/components/mylink';
 
 export default function Home() {
   return (
@@ -30,7 +31,7 @@ export default function Home() {
                                             </div>
                                             <div className="input-btn">
                                                 <Input type="text" placeholder="Ver detalles" />
-                                                <Link href='myaccount/pro/packages/seepackage/packagedetails'><button>Comprar Ahora</button></Link>
+                                                <MyLink href='myaccount/pro/packages/seepackage/packagedetails'><button>Comprar Ahora</button></MyLink>
                                             </div>
                                         </div>
                                         <div className="mb-4">
@@ -40,7 +41,7 @@ export default function Home() {
                                             </div>
                                             <div className="input-btn">
                                                 <Input type="text" placeholder="Ver detalles" />
-                                                <Link href='myaccount/pro/packages/seepackage/packagedetails'><button>Comprar Ahora</button></Link>
+                                                <MyLink href='myaccount/pro/packages/seepackage/packagedetails'><button>Comprar Ahora</button></MyLink>
                                             </div>
                                         </div>
                                         <div className="mb-4">
@@ -50,7 +51,7 @@ export default function Home() {
                                             </div>
                                             <div className="input-btn">
                                                 <Input type="text" placeholder="Ver detalles" />
-                                                <Link href='myaccount/pro/packages/seepackage/packagedetails'><button>Comprar Ahora</button></Link>
+                                                <MyLink href='myaccount/pro/packages/seepackage/packagedetails'><button>Comprar Ahora</button></MyLink>
                                             </div>
                                         </div>
                                     </form>

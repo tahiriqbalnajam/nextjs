@@ -7,6 +7,7 @@ import SubmitButton from '@/components/SubmitButton.js'
 import Button from '@/components/Button'
 import ButtonLink from '@/components/ButtonLink'
 import H2 from '@/components/H2'
+import MyLink from '@/components/mylink';
 
 
 export default function Home() {
@@ -33,7 +34,7 @@ export default function Home() {
                                     <h2><span className='pb-3'>Estamos revisando tu anuncio.</span> En breve lo podrás ver publicado.</h2>
                                 </div>
                                 <div class="mb-4 text-center mt-5 pt-5">
-                                    <Link href="/myaccount/your-ads/in-review" class="btn-red capitalize">Regresar</Link>
+                                    <MyLink href="/myaccount/your-ads/in-review" class="btn-red capitalize">Regresar</MyLink>
                                 </div>
                             </div>
                         </div>

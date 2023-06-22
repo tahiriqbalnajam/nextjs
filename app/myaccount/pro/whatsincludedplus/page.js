@@ -2,6 +2,7 @@ import Input from '@/components/TextInput'
 import LeftNav from '@/components/LeftNav'
 import Button from '@/components/Button'
 import Link from 'next/link'
+import MyLink from '@/components/mylink';
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
                             <div className="pro-section mt-5">
                                 <div className="default-heading flex justify-between items-center">
                                     <h2><span>Misma Plataforma</span> muchos beneficios más.</h2>
-                                    <Link href="/myaccount/pro/packages" className="btn-red capitalize">PROMO VARIOS ANUNCIOS</Link>
+                                    <MyLink href="/myaccount/pro/packages" className="btn-red capitalize">PROMO VARIOS ANUNCIOS</MyLink>
                                 </div>
                                 <div className="pro-packages-list">
                                     <form className="default-form">
@@ -29,9 +30,9 @@ export default function Home() {
                                             </div>
                                             <div className="input-btn">
                                                 <Input placeholder="Ver detalles"/>
-                                                <Link href='/myaccount/pro/whatsincluded'>
+                                                <MyLink href='/myaccount/pro/whatsincluded'>
                                                     <Button className="pl-0 pr-0" type='button' text='Lo que Incluye' />
-                                                </Link>
+                                                </MyLink>
                                             </div>
                                         </div>
                                         <div className="mb-4">
@@ -40,9 +41,9 @@ export default function Home() {
                                             </div>
                                             <div className="input-btn">
                                                 <Input placeholder="Ver detalles"/> 
-                                                <Link href='/myaccount/pro/packages/seepackage/packagedetails'>
+                                                <MyLink href='/myaccount/pro/packages/seepackage/packagedetails'>
                                                     <Button className="pl-0 pr-0" type='button' text='Comprar Ahora' />
-                                                </Link>
+                                                </MyLink>
                                             </div>
                                         </div>
                                         <div className="mb-4">

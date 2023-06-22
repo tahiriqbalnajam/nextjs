@@ -3,6 +3,7 @@ import Image from 'next/image'
 import TextArea from '../../components/TextArea'
 import LeftNav from '../../components/LeftNav'
 import Link from 'next/link';
+import MyLink from '@/components/mylink';
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
                             <div className="your-ads">
                                 <div className="default-heading flex justify-between items-center">
                                     <h2>Tu <span>Perfil</span></h2>
-                                    <Link href="/myaccount/yourprofile/visitprofile" className="btn-red capitalize">Visitar Perfil</Link>
+                                    <MyLink href="/myaccount/yourprofile/visitprofile" className="btn-red capitalize">Visitar Perfil</MyLink>
                                 </div>
                                 <div className="add-ads-images">
                                     <form className="default-form field-icon-red">

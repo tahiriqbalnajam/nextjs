@@ -4,6 +4,7 @@ import Input from '@/components/TextInput'
 import Serviceslider from '@/components/service-slider'
 import Whattheysay_slider from '@/components/Whattheysayslider'
 import TextArea from '@/components/TextArea'
+import MyLink from '@/components/mylink';
 
 const Servicesfeatured = [
     {
@@ -80,7 +81,7 @@ export default function Home() {
             <section class="section-terrece">
                 <div class="container min-w-lg mx-auto sm:px-4">
                     <div class="large-heading">
-                        <h2> <Link href="/myaccount/your-ads" class="backlink"><i class="fa-solid fa-angle-left"></i></Link> Terraza</h2>
+                        <h2> <MyLink href="/myaccount/your-ads" class="backlink"><i class="fa-solid fa-angle-left"></i></MyLink> Terraza</h2>
                     </div>
                     <Serviceslider images={Servicesfeatured} />
                     <div class="flex flex-wrap ">

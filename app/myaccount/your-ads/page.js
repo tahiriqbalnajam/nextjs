@@ -7,6 +7,7 @@ import SubmitButton from '@/components/SubmitButton.js'
 import Button from '@/components/Button'
 import ButtonLink from '@/components/ButtonLink'
 import H2 from '@/components/H2'
+import MyLink from '@/components/mylink';
 
 
 export default function Home() {
@@ -26,12 +27,12 @@ export default function Home() {
                                 <div class="services-quote mt-5 pt-5 w-full">
                                     <div class="default-heading flex justify-between w-full">
                                         <h2>Mis <span>Anuncios</span> </h2>
-                                        <Link href="/myaccount/your-ads/selectaguy" class="btn-red text-capitalize">Crear Anuncio</Link>
+                                        <MyLink href="/myaccount/your-ads/selectaguy" class="btn-red text-capitalize">Crear Anuncio</MyLink>
                                     </div>
                                     <div class="services-quote-box">
                                         <div class="list-quotes-header">
-                                            <Link href="/myaccount/your-ads" className='active'>Publicados <span>1</span></Link>
-                                            <Link href="/myaccount/your-ads/in-review">En revisión <span>1</span></Link>
+                                            <MyLink href="/myaccount/your-ads" className='active'>Publicados <span>1</span></MyLink>
+                                            <MyLink href="/myaccount/your-ads/in-review">En revisión <span>1</span></MyLink>
                                         </div>
                                     </div>
                                     <div class="list-quotes-table">
@@ -46,7 +47,7 @@ export default function Home() {
                                                     <tr>
                                                         <td>Terraza</td>
                                                         <td>Publicado</td>
-                                                        <td class="text-end"><Link href="myaccount/your-ads/publishedadds" class="view-btn"><i class="fa-solid fa-eye"></i></Link></td>
+                                                        <td class="text-end"><MyLink href="myaccount/your-ads/publishedadds" class="view-btn"><i class="fa-solid fa-eye"></i></MyLink></td>
                                                     </tr>
                                                 </tbody>
                                             </table>

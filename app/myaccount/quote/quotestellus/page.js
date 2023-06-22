@@ -4,6 +4,7 @@ import QoutesImageSlider from '@/components/qoutes-slider'
 import LeftNav from '@/components/LeftNav'
 import TextArea from '@/components/TextArea'
 import Link from 'next/link';
+import MyLink from '@/components/mylink';
 
 
 
@@ -80,7 +81,7 @@ export default function Home() {
 								</div>
 							</div>
 							<div className="mb-4 text-end">
-								<Link href="/myaccount/quote/quotestellus/servicetotoquote" className="btn-red">Enviar</Link>
+								<MyLink href="/myaccount/quote/quotestellus/servicetotoquote" className="btn-red">Enviar</MyLink>
 							</div>
 						</form>
 					</div>

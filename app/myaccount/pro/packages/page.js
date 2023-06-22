@@ -3,6 +3,7 @@ import LeftNav from '@/components/LeftNav'
 import Button from '@/components/Button'
 import Image from 'next/image'
 import Link from 'next/link'
+import MyLink from '@/components/mylink';
 
 export default function Home() {
   return (
@@ -27,14 +28,14 @@ export default function Home() {
                                         <div class="ads-price-box">
                                             <h3>Plus</h3>
                                             <Image height='80' width='80' src="/images/line.png" alt="" />
-                                            <Link href="/myaccount/pro/packages/seepackage">Ver paquetes</Link>
+                                            <MyLink href="/myaccount/pro/packages/seepackage">Ver paquetes</MyLink>
                                         </div>
                                     </div>
                                     <div class="md:w-[50%]  pr-4 pl-4 sm:w-full">
                                         <div class="ads-price-box">
                                             <h3>Pro</h3>
                                             <Image height='80' width='80' src="/images/line.png" alt="" />
-                                            <Link href="/myaccount/pro/packages/seepackage">Ver paquetes</Link>
+                                            <MyLink href="/myaccount/pro/packages/seepackage">Ver paquetes</MyLink>
                                         </div>
                                     </div>
                                     <div class="md:w-[100%] mt-10 pr-4 pl-4 sm:w-full text-center">

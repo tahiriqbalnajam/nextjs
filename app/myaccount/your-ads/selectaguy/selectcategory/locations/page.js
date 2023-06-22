@@ -3,6 +3,7 @@ import Link from 'next/link';
 import LeftNav from '@/components/LeftNav'
 import Input from '@/components/TextInput'
 import TextArea from '@/components/TextArea'
+import MyLink from '@/components/mylink';
 
 import '../../../../../css/style.css'
 
@@ -156,8 +157,8 @@ export default function Home() {
                                                     <Input type="text" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" placeholder="Pega tu link aquí" />
                                                 </div>
                                                 <div class="mb-4 w-full flex justify-center">
-                                                    <Link href="/myaccount/your-ads/selectaguy/selectcategory" class="btn-red-outline me-0 mt-2 lg:me-2">Atrás</Link>
-                                                    <Link href="/myaccount/your-ads/selectaguy/selectcategory/locationswithdate" class="btn-red mt-2 ms-0 lg:ms-2">Siguiente</Link>
+                                                    <MyLink href="/myaccount/your-ads/selectaguy/selectcategory" class="btn-red-outline me-0 mt-2 lg:me-2">Atrás</MyLink>
+                                                    <MyLink href="/myaccount/your-ads/selectaguy/selectcategory/locationswithdate" class="btn-red mt-2 ms-0 lg:ms-2">Siguiente</MyLink>
                                                 </div>
 
                                             </div>

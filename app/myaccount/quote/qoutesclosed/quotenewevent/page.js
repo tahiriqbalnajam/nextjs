@@ -1,6 +1,7 @@
 import LeftNav from '@/components/LeftNav'
 import Link from 'next/link';
 import TextArea from '@/components/TextArea'
+import MyLink from '@/components/mylink';
 
 
 export default function Home() {
@@ -66,7 +67,7 @@ export default function Home() {
 									<h2>Lamentamos que tu <span className='pb-3'>evento</span> no se haya concretado.</h2>
 								</div>
 								<div class="mb-4 text-center mt-5 pt-5">
-									<Link href="/myaccount/quote/quotestellus" class="btn-red capitalize">Cotizar nuevo evento</Link>
+									<MyLink href="/myaccount/quote/quotestellus" class="btn-red capitalize">Cotizar nuevo evento</MyLink>
 								</div>
 							</div>
 						</div>
