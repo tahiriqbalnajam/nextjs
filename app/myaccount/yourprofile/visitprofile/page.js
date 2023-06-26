@@ -104,6 +104,7 @@ export default function Home() {
                     <hr className="m-0" />
                 </div>
             </section>
+            <section className="mycustomsection"></section>
             <section className="section-terrece">
                 <div className="container min-w-lg mx-auto sm:px-4">
                     <div className="large-heading">

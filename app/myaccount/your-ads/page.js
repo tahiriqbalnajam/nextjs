@@ -9,7 +9,6 @@ import ButtonLink from '@/components/ButtonLink'
 import H2 from '@/components/H2'
 import MyLink from '@/components/mylink';
 
-
 export default function Home() {
   return (
         <section  className="lg:py-20 py-5 bg-white">
@@ -21,7 +20,7 @@ export default function Home() {
                            <LeftNav />
                         </div>
                     </aside>
-                    <div  className="w-4/5 pl-28">
+                    <div  className="w-4/5">
                         <div  className="flex items-center justify-between mb-16">
                             <div class="main-content-area w-full">
                                 <div class="services-quote mt-5 pt-5 w-full">
@@ -52,7 +51,6 @@ export default function Home() {
                                                 </tbody>
                                             </table>
                                         </div>
-                                   
                                 </div>
                             </div>
                         </div>

@@ -6,8 +6,6 @@ import TextArea from '@/components/TextArea'
 import Link from 'next/link';
 import MyLink from '@/components/mylink';
 
-
-
 export default function Home() {
   return (
         <section  className="lg:py-20 py-5 bg-white font-[Ubuntu, sans-serif]">
@@ -27,15 +25,15 @@ export default function Home() {
 						<form className="default-form border-fields">
 							<div className="mb-4">
 								<label for="">Tipo de evento</label>
-								<Input type="password" className="block appearance-none mt-1 h-14 w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-[#797979] rounded" placeholder="Boda, cumpleaños, empresarial, etc" />
+								<Input type="password" className="block appearance-none mt-1 h-14 w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-[#797979] " placeholder="Boda, cumpleaños, empresarial, etc" />
 							</div>
 							<div className="mb-4">
 								<label for="">No Aproximado de Asistentes</label>
-								<Input type="password" className="block appearance-none mt-1 h-14 w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-[#797979] rounded" placeholder="" />
+								<Input type="password" className="block appearance-none mt-1 h-14 w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-[#797979] " placeholder="" />
 							</div>
 							<div className="mb-4">
 								<label for="">Presupuesto</label>
-								<Input type="password" className="block appearance-none mt-1 h-14 w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-[#797979] rounded" placeholder="$0.00" />
+								<Input type="password" className="block appearance-none mt-1 h-14 w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-[#797979] " placeholder="$0.00" />
 							</div>
 							<QoutesImageSlider />
 							<div className="mb-4">

@@ -23,7 +23,7 @@ export default function Home() {
 							<div class="main-content-area w-full">
 								<div class="services-quote mt-5 pt-5">
 									<div class="default-heading h-lg text-center mt-5 pt-5">
-										<h2><span class="color-default">¡Gracias!</span></h2>
+										<h2><span class="color-default">¡GRACIAS!</span></h2>
 									</div>
 									<div class="flex justify-center mb-5 mt-5">
 										<Image src="/images/line2.png" alt="" height='50' width='50' />

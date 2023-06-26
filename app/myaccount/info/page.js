@@ -58,7 +58,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <div class="mb-4 text-center">
-                                <MyLink href="/myaccount/info" class="btn-red" data-bs-toggle="modal" data-bs-target="#profileditModal">Guardar Cambios</MyLink>
+                                <a href='#' class="btn-red" data-bs-toggle="modal" data-bs-target="#profileditModal">Guardar Cambios</a>
                             </div>
                         </form>
                     </div>

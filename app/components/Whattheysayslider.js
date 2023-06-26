@@ -45,7 +45,7 @@ const Whattheysay_slider = ({images, heading, heading2 }) => {
                 height={390}
               />
             <span class="testimonial-quote">
-              <i class="fa-solid fa-quote-right"></i>
+            <Image width='50' height='50' src='/images/quote-right.png' />
             </span>
             <h4>{images[currentImageIndex].heading}</h4>
             <p>{images[currentImageIndex].paragraph}</p>
@@ -65,7 +65,7 @@ const Whattheysay_slider = ({images, heading, heading2 }) => {
             height={390}
           />
           <span class="testimonial-quote">
-              <i class="fa-solid fa-quote-right"></i>
+              <Image width='50' height='50' src='/images/quote-right.png' />
             </span>
             <h4>{images[(currentImageIndex + 1) % images.length].heading}</h4>
             <p>{images[(currentImageIndex + 1) % images.length].paragraph}</p>

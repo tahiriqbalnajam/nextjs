@@ -386,7 +386,7 @@ export default function Home() {
         
         <section class="our-testimonials mt-5">
             <div class="container2 pl-[10%] pr-[10%] " >
-                <Whattheysay_slider images={Whattheysay_sliders} />
+                <Whattheysay_slider images={Whattheysay_sliders} heading={'Lo que dicen'} heading2={'de nosotros'} />
             </div>
         </section>
 
