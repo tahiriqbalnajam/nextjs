@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const Button = ({ type, text, onChange, placeholder, className }) => {
   return (
     <button 

@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Input from './TextInput.js'
 import InputMail from './MailInput.js'
 
-
 export default function MyaccountFooter() {
 	
     return (

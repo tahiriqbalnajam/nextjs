@@ -1,6 +1,4 @@
 import Image from 'next/image';
-import Input from '../../components/TextInput'
-import Button from '../../components/Button'
 import LeftNav from '../../components/LeftNav'
 import '../../css/style.css';
 

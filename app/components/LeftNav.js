@@ -8,11 +8,10 @@ import '../css/style.css';
 
 export default function Nav() {
     const currentPath = usePathname();
-    console.log(currentPath);
     return (
         <ul className="py-20 left-menu">
                 <li>
-                    <MyLink href="/myaccount/info" className={classNames('flex text-2xl', {'border-r-[5px] border-[#FF5A60] bordernav visited':(currentPath === '/myaccount/info') ? true : false})}>
+                    <MyLink href="/myaccount/info" className={classNames('flex text-2xl', {'border-r-[5px] border-[#FF5A60] bordernav visited':currentPath.includes('myaccount/info')})}>
                         <span className="w-10 mr-2 inline-block">
                             <Image src="/images/info.png" width='50' height='50' alt="" className="text-center" />
                         </span>
@@ -21,7 +20,7 @@ export default function Nav() {
                 </li>
          
                 <li>
-                    <MyLink href="/myaccount/favourites"  className={classNames('flex text-2xl', {'border-r-[5px] border-[#FF5A60] bordernav visited':(currentPath === '/myaccount/favourites') ? true : false})}>
+                    <MyLink href="/myaccount/favourites" className={classNames('flex text-2xl', {'border-r-[5px] border-[#FF5A60] bordernav visited':currentPath.includes('myaccount/favourites')})}>
                         <span className="w-10 mr-2 inline-block">
                             <Image src="/images/favo.png" width='50' height='50' alt="" className="text-center" />
                         </span>
@@ -30,7 +29,7 @@ export default function Nav() {
                 </li>
 
                 <li>
-                    <MyLink href="/myaccount/quote" className={classNames('flex text-2xl', {'border-r-[5px] border-[#FF5A60] bordernav visited':(currentPath === '/myaccount/quote') ? true : false})}>
+                    <MyLink href="/myaccount/quote" className={classNames('flex text-2xl', {'border-r-[5px] border-[#FF5A60] bordernav visited':currentPath.includes('myaccount/quote')})}>
                         <span className="w-10 mr-2 inline-block">
                             <Image src="/images/quotes.png" width='50' height='50' alt="" className="text-center" />
                         </span>
@@ -39,7 +38,7 @@ export default function Nav() {
                 </li>
 
                 <li>
-                    <MyLink href="/myaccount/your-ads" className={classNames('flex text-2xl', {'border-r-[5px] border-[#FF5A60] bordernav visited':(currentPath === '/myaccount/your-ads') ? true : false})}>
+                    <MyLink href="/myaccount/your-ads" className={classNames('flex text-2xl', {'border-r-[5px] border-[#FF5A60] bordernav visited':currentPath.includes('myaccount/your-ads')})}>
                         <span className="w-10 mr-2 inline-block">
                             <Image src="/images/your-ads.png" alt="" className="text-center" width='50' height='50' />
                         </span>
@@ -48,7 +47,7 @@ export default function Nav() {
                 </li>
 
                 <li>
-                    <MyLink href="/myaccount/pro" className={classNames('flex text-2xl', {'border-r-[5px] border-[#FF5A60] bordernav visited':(currentPath === '/myaccount/pro') ? true : false})}>
+                    <MyLink href="/myaccount/pro" className={classNames('flex text-2xl', {'border-r-[5px] border-[#FF5A60] bordernav visited':currentPath.includes('myaccount/pro')})}>
                         <span className="w-10 mr-2 inline-block">
                             <Image src="/images/pro.png" alt="" className="text-center" width='50' height='50' />
                         </span>
@@ -57,7 +56,7 @@ export default function Nav() {
                 </li>
 
                 <li>
-                    <MyLink href="/myaccount/yourprofile" className={classNames('flex text-2xl', {'border-r-[5px] border-[#FF5A60] bordernav visited':(currentPath === '/myaccount/yourprofile') ? true : false})}>
+                    <MyLink href="/myaccount/yourprofile" className={classNames('flex text-2xl', {'border-r-[5px] border-[#FF5A60] bordernav visited':currentPath.includes('myaccount/yourprofile')})}>
                         <span className="w-10 mr-2 inline-block">
                             <Image src="/images/your-profile.png" alt="" className="text-center" width='50' height='50' />
                         </span>

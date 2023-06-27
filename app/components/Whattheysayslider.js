@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
-
 const Whattheysay_slider = ({images, heading, heading2 }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const nextImage = () => {
@@ -16,7 +15,6 @@ const Whattheysay_slider = ({images, heading, heading2 }) => {
     const interval = setInterval(() => {
       nextImage();
     }, 3000); // Set the desired interval time (e.g., 3000ms = 3 seconds)
-
     return () => {
       clearInterval(interval); // Clear the interval when the component unmounts
     };

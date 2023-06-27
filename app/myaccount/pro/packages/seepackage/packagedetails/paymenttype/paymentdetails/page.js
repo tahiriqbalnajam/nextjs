@@ -1,11 +1,6 @@
 import Input from '@/components/TextInput'
 import LeftNav from '@/components/LeftNav'
-import Button from '@/components/Button'
-import Image from 'next/image'
-import Link from 'next/link'
 import MyLink from '@/components/mylink';
-
-
 
 export default function Home() {
   return (

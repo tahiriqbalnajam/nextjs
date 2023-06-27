@@ -1,8 +1,6 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import Input from '@/components/TextInput'
 import Button from '@/components/Button'
-import InputMail from '@/components/MailInput.js';
 import LeftNav from '@/components/LeftNav';
 import MyLink from '@/components/mylink';
 

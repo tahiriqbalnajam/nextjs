@@ -1,8 +1,6 @@
 import Input from '@/components/TextInput'
 import Image from 'next/image'
-import InputMail from '@/components/MailInput'
 import LeftNav from '@/components/LeftNav'
-import Link from 'next/link';
 import MyLink from '@/components/mylink';
 
 export default function Home() {

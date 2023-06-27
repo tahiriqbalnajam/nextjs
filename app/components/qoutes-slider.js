@@ -44,7 +44,7 @@ const QoutesImageSlider = () => {
       <div className="banner-slider-wrapp mt-3">
         <div className="owl-carousel owl-theme service-slider">
           <div className="flex items-center justify-center">
-            <div className="relative flex-grow max-w-[16%] flex-1 pr-4">
+            <div className="relative flex-grow max-w-[14%] flex-1 pr-4 pl-4">
               <div className="service-box px-5 py-5">
                 <Image
                   className="max-w-full h-auto"
@@ -57,7 +57,7 @@ const QoutesImageSlider = () => {
               </div>
             </div>
             {images.length > 2 && (
-              <div className="relative flex-grow max-w-[16%] flex-1 pr-4">
+              <div className="relative flex-grow max-w-[14%] flex-1 pr-4 pl-4">
                 <div className="service-box px-5 py-5">
                   <Image
                     className="max-w-full h-auto"
@@ -71,7 +71,7 @@ const QoutesImageSlider = () => {
               </div>
             )}
             {images.length > 3 && (
-              <div className="relative flex-grow max-w-[16%] flex-1 pr-4">
+              <div className="relative flex-grow max-w-[14%] flex-1 pr-4 pl-4">
                 <div className="service-box px-5 py-5">
                   <Image
                     className="max-w-full h-auto"
@@ -85,7 +85,7 @@ const QoutesImageSlider = () => {
               </div>
             )}
             {images.length > 4 && (
-              <div className="relative flex-grow max-w-[16%] flex-1 pr-4">
+              <div className="relative flex-grow max-w-[14%] flex-1 pr-4 pl-4">
                 <div className="service-box px-5 py-5">
                   <Image
                     className="max-w-full h-auto"
@@ -99,7 +99,7 @@ const QoutesImageSlider = () => {
               </div>
             )}
             {images.length > 5 && (
-              <div className="relative flex-grow max-w-[16%] flex-1 pr-4">
+              <div className="relative flex-grow max-w-[14%] flex-1 pr-4 pl-4">
                 <div className="service-box px-5 py-5">
                   <Image
                     className="max-w-full h-auto"
@@ -113,7 +113,7 @@ const QoutesImageSlider = () => {
               </div>
             )}
             {images.length > 6 && (
-              <div className="relative flex-grow max-w-[16%] flex-1 pr-4">
+              <div className="relative flex-grow max-w-[14%] flex-1 pr-4 pl-4">
                 <div className="service-box px-5 py-5">
                   <Image
                     className="max-w-full h-auto"
@@ -127,7 +127,7 @@ const QoutesImageSlider = () => {
               </div>
             )}
             {images.length > 7 && (
-              <div className="relative flex-grow max-w-[16%] flex-1 pr-4">
+              <div className="relative flex-grow max-w-[14%] flex-1 pr-4 pl-4">
                 <div className="service-box px-5 py-5">
                   <Image
                     className="max-w-full h-auto"

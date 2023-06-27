@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const TextArea = ({ id, name, onChange, rows, cols, placeholder, className }) => {
   return (
     <textarea 

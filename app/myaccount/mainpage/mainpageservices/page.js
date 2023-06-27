@@ -4,7 +4,6 @@ import Button from '@/components/Button'
 import QoutesImageSlider from '@/components/qoutes-slider'
 import Serviceslider from '@/components/service-slider'
 import Whattheysay_slider from '@/components/Whattheysayslider'
-import Link from 'next/link'
 import MyLink from '@/components/mylink';
 
 const Servicesfeatured = [
@@ -221,7 +220,7 @@ export default function Home() {
                         <div className="md:w-1/3 pr-4 pl-4 sm:w-full">
                             <div className="how-does-work-inner">
                                 <div className="how-does-work-inner-left">
-                                    <Image height='50' width='50' src="/images/target.png" alt="" />
+                                    <Image height='268' width='361' src="/images/target.png" alt="" />
                                     <h4>1</h4>
                                 </div>
                                 <div className="how-does-work-inner-right">
@@ -233,7 +232,7 @@ export default function Home() {
                         <div className="md:w-1/3 pr-4 pl-4 sm:w-full">
                             <div className="how-does-work-inner">
                                 <div className="how-does-work-inner-left">
-                                    <Image height='50' width='50' src="/images/target.png" alt="" />
+                                    <Image height='268' width='361' src="/images/target.png" alt="" />
                                     <h4>2</h4>
                                 </div>
                                 <div className="how-does-work-inner-right">
@@ -245,7 +244,7 @@ export default function Home() {
                         <div className="md:w-1/3 pr-4 pl-4 sm:w-ful">
                             <div className="how-does-work-inner">
                                 <div className="how-does-work-inner-left">
-                                    <Image height='50' width='50' src="/images/target.png" alt="" />
+                                    <Image height='268' width='361' src="/images/target.png" alt="" />
                                     <h4>3</h4>
                                 </div>
                                 <div className="how-does-work-inner-right">
@@ -299,13 +298,127 @@ export default function Home() {
                                 type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">FAVORITOS</button>
                         </li>
                     </ul>
-                    <Serviceslider images={Theidealservice} />
+                    <div className="tab-content mt-8" id="myTabContent">
+                        <div className="tab-pane block active" id="TODO-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                            <div className="flex flex-wrap  site-gallery">
+                                <div className="xl:w-1/4 pr-4 pl-4 md:w-1/2">
+                                    <div className="features-box">
+                                        <div className="img-box">
+                                            <Image height='268' width='361' src="/images/services1-1.jpg" alt="" />
+                                            <a href="#" className="img-tag">Destacado</a>
+                                        </div>
+                                        <h4>DJ</h4>
+                                        <p>147 Listados</p>
+                                    </div>
+                                </div>
+                                <div className="xl:w-1/4 pr-4 pl-4 md:w-1/2">
+                                    <div className="features-box">
+                                        <div className="img-box"><Image height='268' width='361' src="/images/services2-2.jpg" alt="" /></div>
+                                        <h4>Decoración</h4>
+                                        <p>26 Listados</p>
+                                    </div>
+                                </div>
+                                <div className="xl:w-1/4 pr-4 pl-4 md:w-1/2 ">
+                                    <div className="features-box">
+                                        <div className="img-box">
+                                            <Image height='268' width='361' src="/images/services3-3.jpg" alt="" />
+                                            <a href="#" className="img-tag">Más visto</a>
+                                        </div>
+                                        <h4>Audio e Iluminación</h4>
+                                        <p>234 Listados</p>
+                                    </div>
+                                </div>
+                                <div className="xl:w-1/4 pr-4 pl-4 md:w-1/2 ">
+                                    <div className="features-box">
+                                        <div className="img-box"><Image height='268' width='361' src="/images/services4-4.jpg" alt="" /></div>
+                                        <h4>Catering</h4>
+                                        <p>14 Listados</p>
+                                    </div>
+                                </div><div className="xl:w-1/4 pr-4 pl-4 md:w-1/2">
+                                    <div className="features-box">
+                                        <div className="img-box"><Image height='268' width='361' src="/images/services4.jpg" alt="" /></div>
+                                        <h4>Mobiliario</h4>
+                                        <p>147 Listados</p>
+                                    </div>
+                                </div>
+                                <div className="xl:w-1/4 pr-4 pl-4 md:w-1/2">
+                                    <div className="features-box">
+                                        <div className="img-box">
+                                            <Image height='268' width='361' src="/images/service5.jpg" alt="" />
+                                            <a href="#" className="img-tag">Destacado</a>
+                                        </div>
+                                        <h4>Imagen</h4>
+                                        <p>26 Listados</p>
+                                    </div>
+                                </div>
+                                <div className="xl:w-1/4 pr-4 pl-4 md:w-1/2">
+                                    <div className="features-box">
+                                        <div className="img-box">
+                                            <Image height='268' width='361' src="/images/service6.jpg" alt="" />
+                                            <a href="#" className="img-tag">Más visto</a>
+                                        </div>
+                                        <h4>Entretenimiento</h4>
+                                        <p>234 Listados</p>
+                                    </div>
+                                </div>
+                                <div className="xl:w-1/4 pr-4 pl-4 md:w-1/2 ">
+                                    <div className="features-box">
+                                        <div className="img-box"><Image height='268' width='361' src="/images/service7.jpg" alt="" /></div>
+                                        <h4>Fotografía</h4>
+                                        <p>14 Listados</p>
+                                    </div>
+                                </div>
+                                <div className="xl:w-1/4 pr-4 pl-4 md:w-1/2">
+                                    <div className="features-box">
+                                        <div className="img-box">
+                                            <Image height='268' width='361' src="/images/services2.jpg" alt="" />
+                                            <a href="#" className="img-tag">Destacado</a>
+                                        </div>
+                                        <h4>Músicos</h4>
+                                        <p>147 Listados</p>
+                                    </div>
+                                </div>
+                                <div className="xl:w-1/4 pr-4 pl-4 md:w-1/2">
+                                    <div className="features-box">
+                                        <div className="img-box">
+                                            <Image height='268' width='361' src="/images/service10.jpg" alt="" />
+                                            <a href="#" className="img-tag">Más visto</a>
+                                        </div>
+                                        <h4>Staff</h4>
+                                        <p>26 Listados</p>
+                                    </div>
+                                </div>
+                                <div className="xl:w-1/4 pr-4 pl-4 md:w-1/2">
+                                    <div className="features-box">
+                                        <div className="img-box">
+                                            <Image height='268' width='361' src="/images/service9.jpg" alt="" />
+                                        </div>
+                                        <h4>Video</h4>
+                                        <p>234 Listados</p>
+                                    </div>
+                                </div>
+                                <div className="xl:w-1/4 pr-4 pl-4 md:w-1/2 ">
+                                    <div className="features-box">
+                                        <div className="img-box">
+                                            <Image height='268' width='361' src="/images/service8.jpg" alt="" />
+                                        </div>
+                                        <h4>Bebidas</h4>
+                                        <p>14 Listados</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="text-center">
+                                <MyLink className="btn-red-outline lg:mt-6 md:mt-6 sm:mt-0" href="/">
+                                    VER MENOS
+                                </MyLink>
+                            </div>
+                        </div>
+                        <div className="tab-pane opacity-0" id="DESTACADOS-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">2</div>
+                        <div className="tab-pane opacity-0" id="VISTOS-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">3</div>
+                        <div className="tab-pane opacity-0" id="POPULARES-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">4</div>
+                        <div className="tab-pane opacity-0" id="FAVORITOS-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">5</div>
+				</div>  
                 </div>
-                <div class="text-center">
-							<MyLink class="btn-red btn-locations" href="/myaccount/mainpage/mainpageservices">
-								VER TODO
-							</MyLink>
-						</div>
             </div>
         </section>
 
@@ -347,37 +460,37 @@ export default function Home() {
             </div>
         </section>
 
-        <section class="section-cta bg-white">
-            <div class="container mx-auto sm:px-4">
-                <div class="large-heading text-center">
-                    <h2 class="uppercase">ANÚNCIATE</h2>
+        <section className="section-cta bg-white">
+            <div className="container mx-auto sm:px-4">
+                <div className="large-heading text-center">
+                    <h2 className="uppercase">ANÚNCIATE</h2>
                 </div>
-                <div class="cta-wrapper">
-                    <div class="cta-thumb">
-                        <div class="thumb-inner">
+                <div className="cta-wrapper">
+                    <div className="cta-thumb">
+                        <div className="thumb-inner">
                             <Image className="img-cta w-full" alt="" src="/images/ctaa.jpg" height='592' width='344' />
                         </div>
                     </div>
-                    <div class="cta-box">
-                        <div class="inner-content">
-                            <div class="default-heading mb-4 text-center">
+                    <div className="cta-box">
+                        <div className="inner-content">
+                            <div className="default-heading mb-4 text-center">
                                 <h2><span>Ofrece</span> tus servicios</h2>
                             </div>
-                            <p class="text-center">
+                            <p className="text-center">
                                 Miles de usuarios cotizando justo lo que tú ofreces.
                             </p>
-                            <span class="dividers">/</span>
+                            <span className="dividers">/</span>
                             <p>
                                 Ya sea que tengas una locación que se puede usar para eventos, 
                                 algún servicio o simplemente algún talento que quieras mostrar, 
                                 One Night Guest es el lugar indicado para ti. 
                             </p>
-                            <p class="mt-4">
+                            <p className="mt-4">
                                 Sólo tienes que registrarte y mostrarte al mundo, 
                                 crea tu anuncio perfecto ¡ES GRATIS!
                             </p>
-                            <div class="text-center">
-                                <a class="btn-cta btn-red" href="/">
+                            <div className="text-center">
+                                <a className="btn-cta btn-red" href="/">
                                     CONOCER PLANES
                                 </a>
                             </div>
@@ -389,8 +502,8 @@ export default function Home() {
 
 
         
-        <section class="our-testimonials mt-5">
-            <div class="container2 pl-[21.5%] pr-[22%] " >
+        <section className="our-testimonials mt-5">
+            <div className="container2 pl-[21.5%] pr-[22%] " >
                 <Whattheysay_slider images={Whattheysay_sliders} heading={'Lo que dicen'} heading2={'de nosotros'} />
             </div>
         </section>

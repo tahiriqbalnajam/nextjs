@@ -12,7 +12,6 @@ const MyLink = ({ href, className, children, ...rest }) => {
     setIsLoading(true);
     setShowHeader(true);
     setShowSection(false);
-
   };
 
   return (

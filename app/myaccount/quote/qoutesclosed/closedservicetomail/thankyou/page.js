@@ -1,6 +1,4 @@
 import LeftNav from '@/components/LeftNav'
-import Link from 'next/link';
-import TextArea from '@/components/TextArea'
 import MyLink from '@/components/mylink';
 
 

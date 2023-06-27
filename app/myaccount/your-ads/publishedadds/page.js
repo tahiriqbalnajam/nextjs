@@ -1,5 +1,3 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import Input from '@/components/TextInput'
 import Serviceslider from '@/components/service-slider'
 import Whattheysay_slider from '@/components/Whattheysayslider'

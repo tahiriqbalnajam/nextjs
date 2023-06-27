@@ -1,12 +1,8 @@
 import Image from 'next/image'
-import Nav from './components/Nav';
-import Link from 'next/link'
 import ExploraDropdownMenu from '@/components/exploratogglemenu.js';
-import Settingtogglemenu from '@/components/settingtogglemenu.js';
 import MyaccountFooter from './components/MyaccountFooter';
 import Page from './myaccount/mainpage/page.js'
 import PopupForm from './components/popupform.js';
-
 
 export default function Home() {
   return (
@@ -46,10 +42,8 @@ export default function Home() {
           </div>
         </nav>
       </header>
-
       <Page />
       <MyaccountFooter />
-
     </main>
   )
 }

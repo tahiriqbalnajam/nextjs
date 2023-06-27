@@ -1,11 +1,6 @@
 import Image from 'next/image';
-import Input from '@/components/TextInput'
-import QoutesImageSlider from '@/components/qoutes-slider'
 import LeftNav from '@/components/LeftNav'
-import TextArea from '@/components/TextArea'
-import Link from 'next/link';
 import MyLink from '@/components/mylink';
-
 
 export default function Home() {
   return (

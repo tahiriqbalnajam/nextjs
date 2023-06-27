@@ -1,10 +1,8 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import LeftNav from '@/components/LeftNav'
 import Input from '@/components/TextInput'
 import TextArea from '@/components/TextArea'
 import MyLink from '@/components/mylink';
-
 import '../../../../../css/style.css'
 
 export default function Home() {

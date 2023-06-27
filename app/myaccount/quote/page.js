@@ -1,6 +1,4 @@
 import LeftNav from '@/components/LeftNav'
-import Link from 'next/link';
-import PageLoader from '@/components/loader';
 import MyLink from '@/components/mylink';
 
 export default function Home() {
