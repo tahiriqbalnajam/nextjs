@@ -2449,11 +2449,7 @@ select.block.appearance-none.w-full.py-1.px-2.mb-1.text-base.leading-normal.bg-w
 .qoutetellus .lastimage{
 	padding-right: 0;
 }
-.qoutetellus .fimage p{
-	font-weight: 400 !important;
-	font-size: 11px;
-	margin-top: 5px !important;
-}
+
 
 .qoutetellus .fimage img {
     max-width: 35px;
@@ -2463,9 +2459,43 @@ select.block.appearance-none.w-full.py-1.px-2.mb-1.text-base.leading-normal.bg-w
 	max-width: 35px;
 }
 
-.qoutetellus .your-event .service-box p{
-	font-weight: 400 !important;
-	font-size: 11px;
-	margin-top: 5px !important;
+
+
+.slidersarrows-left {
+    position: absolute;
+    left: -34px;
+    top: 57px;
+    font-size: 32px;
+    font-weight: 600;
 }
 
+.slidersarrowsright{
+	position: absolute;
+    right: -34px;
+    top: 57px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+
+.qoutetellus .slidersarrows-left {
+    position: absolute;
+    right: -91%;
+    top: -41px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.qoutetellus .slidersarrowsright{
+	position: absolute;
+    right: 0px;
+    top: -41px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+.sliderdiv p{
+	font-size: 9px !important;
+	font-weight: 600 !important;
+}

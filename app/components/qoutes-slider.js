@@ -25,21 +25,14 @@ const Responsive = {
       margin:20
     }
 };
-const images = [
-  '/images/propiedades.png',
-  '/images/barcos.png',
-  '/images/salones.png',
-  '/images/terrazas.png',
-  "/images/tickets.png",
-  "/images/jardines.png",
-  "/images/hotels.png",
-  "/images/tickets.png",
-];
 
 const QoutesImageSlider = () => {
   return (
-    <div className="mb-10 mt-10">
-      <OwlCarousel responsive={Responsive} className='owl-theme' autoplay={false} loop margin={10} nav={true} dots={false} navText={['<i class="fa-solid fa-chevron-left"></i>','<i class="fa-solid fa-chevron-right"></i>']}> 
+    <div className="mb-10 mt-10 sliderdiv">
+      <div className='mb-4'>
+        <label for="">Presupuesto</label>
+      </div>
+      <OwlCarousel responsive={Responsive} className='owl-theme' autoplay={false} loop margin={10} nav={true} dots={false} navText={['<div className="slidersarrows"><i class="slidersarrows-left fa-solid fa-chevron-left text-red-600"></i>','<i class="slidersarrowsright fa-solid fa-chevron-right text-red-600 pl-3"></i> </div>']}> 
         <div class="item">
           <div class="service-box">
             <Image src="/images/propiedades.png" alt=""  height="50" width="50" />
