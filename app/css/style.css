@@ -2351,15 +2351,12 @@ a button.pl-0.pr-0 {
 }
 
 .main-header .mx-2 {
-   
     margin-right: 0 !important;
 }
-
 
 .main-header2 .container {
     max-width: 100%;
 }
-
 
 .main-header2  .text-gray-300{
 	color: white !important;
@@ -2389,7 +2386,6 @@ ul.py-1.bg-white.rounded-md.shadow-xs.absolute.-left-0 {
 .main-header  .py-1 {
     padding-top: 0;
     padding-bottom: 0;
-
 }
 
 input.bg-white.h-12.p-3.w-full.border-none.focus\:outline-none.focus\:shadow-outline {
@@ -2411,7 +2407,6 @@ select.block.appearance-none.w-full.py-1.px-2.mb-1.text-base.leading-normal.bg-w
     margin-top: 9px;
 }
 
-
 @font-face {
 	font-family: 'MyFont';
 	src: url('/fonts/font.woff2') format('woff2'),
@@ -2430,13 +2425,9 @@ select.block.appearance-none.w-full.py-1.px-2.mb-1.text-base.leading-normal.bg-w
 	pointer-events: none;
   }
   
-  .bordernav {
-    right: -2.8px;
-}
 .main-content-area2 label.text-left.absolute {
     visibility: visible;
 }
-
 
 .add-image-upload.active.img-added {
     border: none;
@@ -2449,3 +2440,32 @@ select.block.appearance-none.w-full.py-1.px-2.mb-1.text-base.leading-normal.bg-w
     border: none;
 	padding-left: 0 !important;
 }
+
+.qoutetellus .fimage{
+	padding-left: 0;
+	max-width: 15%;
+}
+
+.qoutetellus .lastimage{
+	padding-right: 0;
+}
+.qoutetellus .fimage p{
+	font-weight: 400 !important;
+	font-size: 11px;
+	margin-top: 5px !important;
+}
+
+.qoutetellus .fimage img {
+    max-width: 35px;
+}
+
+.qoutetellus .your-event .service-box img{
+	max-width: 35px;
+}
+
+.qoutetellus .your-event .service-box p{
+	font-weight: 400 !important;
+	font-size: 11px;
+	margin-top: 5px !important;
+}
+

@@ -7,7 +7,7 @@ import MyLink from '@/components/mylink';
 
 export default function Home() {
   return (
-        <section  className="lg:py-20 py-5 bg-white font-[Ubuntu, sans-serif]">
+        <section  className="lg:py-20 py-5 bg-white font-[Ubuntu, sans-serif] qoutetellus">
             <div  className="container mx-auto px-4 max-w-[92%]">
                 <h3  className="text-4xl mb-16">Mi <span  className="font-bold">Cuenta</span></h3>
                 <div  className="flex flex-wrap">
@@ -37,14 +37,14 @@ export default function Home() {
 							<QoutesImageSlider />
 							<div className="mb-4">
 								<label for="">Creemos que estos también te podrían interesar</label>
-								<div className="flex flex-wrap  mt-3 custom-col20">
-									<div className="relative flex-grow max-w-[16%] flex-1 px-4">
+								<div className="flex flex-wrap mt-3 custom-col20">
+									<div className="relative flex-grow max-w-[95px] flex-1 pl-[12px]">
 										<div className="service-box">
 											<Image src="/images/propiedades.png" alt="" height='40' width='40' />
 											<p>Propiedades</p>
 										</div>
 									</div>
-									<div className="relative flex-grow max-w-[16%] flex-1 px-4">
+									<div className="relative flex-grow max-w-[95px] flex-1 pl-4">
 										<div className="service-box">
 											<Image src="/images/propiedades.png" alt="" height='40' width='40' />
 											<p>Propiedades</p>
