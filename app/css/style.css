@@ -2495,7 +2495,19 @@ select.block.appearance-none.w-full.py-1.px-2.mb-1.text-base.leading-normal.bg-w
 }
 
 
-.sliderdiv p{
+.qoutetellus .sliderdiv p{
 	font-size: 9px !important;
 	font-weight: 600 !important;
+}
+
+.qoutetellus .service-box2 p {
+	font-size: 11px !important;
+}
+
+
+
+.whattheysaymain .owl-nav {
+    position: absolute;
+    top: -70px;
+    right: 52px;
 }

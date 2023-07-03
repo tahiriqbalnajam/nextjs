@@ -2,8 +2,10 @@ import Input from '@/components/TextInput'
 import Image from 'next/image'
 import Button from '@/components/Button'
 import QoutesImageSlider from '@/components/qoutes-slider'
-import Serviceslider from '@/components/service-slider'
-import Whattheysay_slider from '@/components/Whattheysayslider'
+import Serviceslider from '@/app/components/ServiceSlider'
+import ElservicioSlider from '@/app/components/ElservicioSlider'
+import LocationsServiceSlider from '@/app/components/LocationsServiceSlider'
+import Whattheysay_slider from '@/components/TestimonialsElservicioSlider'
 import MyLink from '@/components/mylink';
 
 const Servicesfeatured = [
@@ -454,7 +456,7 @@ export default function Home() {
                         </li>
                     </ul>
                     <div className="tab-content" id="locationTabscont">
-                    <Serviceslider images={locations}  />
+                    <LocationsServiceSlider  />
                     </div>
                 </div>
             </div>
@@ -504,6 +506,9 @@ export default function Home() {
         
         <section className="our-testimonials mt-5">
             <div className="container2 pl-[21.5%] pr-[22%] " >
+                <div class="default-heading">
+                    <h2><span>Lo que dicen</span> de nosotros</h2>
+                </div>
                 <Whattheysay_slider images={Whattheysay_sliders} heading={'Lo que dicen'} heading2={'de nosotros'} />
             </div>
         </section>

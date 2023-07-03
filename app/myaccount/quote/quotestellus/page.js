@@ -3,7 +3,7 @@ import Input from '@/components/TextInput'
 import QoutesImageSlider from '@/components/qoutes-slider'
 import LeftNav from '@/components/LeftNav'
 import TextArea from '@/components/TextArea'
-import MyLink from '@/components/mylink';
+import MyLink from '@/components/mylink'
 
 export default function Home() {
   return (
@@ -39,13 +39,13 @@ export default function Home() {
 								<label for="">Creemos que estos también te podrían interesar</label>
 								<div className="flex flex-wrap mt-3 custom-col20">
 									<div className="relative flex-grow max-w-[95px] flex-1 pl-[12px]">
-										<div className="service-box">
+										<div className="service-box service-box2">
 											<Image src="/images/propiedades.png" alt="" height='40' width='40' />
 											<p>Propiedades</p>
 										</div>
 									</div>
 									<div className="relative flex-grow max-w-[95px] flex-1 pl-4">
-										<div className="service-box">
+										<div className="service-box service-box2">
 											<Image src="/images/propiedades.png" alt="" height='40' width='40' />
 											<p>Propiedades</p>
 										</div>

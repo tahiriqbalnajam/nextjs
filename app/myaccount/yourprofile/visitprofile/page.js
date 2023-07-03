@@ -1,6 +1,6 @@
 import Input from '@/components/TextInput'
 import TextArea from '@/components/TextArea'
-import Serviceslider from '@/components/service-slider'
+import Serviceslider from '@/components/ServiceSlider'
 import Whattheysay_slider from '@/components/Whattheysayslider'
 import MyLink from '@/components/mylink';
 

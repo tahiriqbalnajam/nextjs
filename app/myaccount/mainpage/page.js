@@ -2,8 +2,10 @@ import Input from '@/components/TextInput'
 import Image from 'next/image'
 import Button from '@/components/Button'
 import QoutesImageSlider from '@/components/qoutes-slider'
-import Serviceslider from '@/components/service-slider'
-import Whattheysay_slider from '@/components/Whattheysayslider'
+import Serviceslider from '@/app/components/ServiceSlider'
+import ElservicioSlider from '@/app/components/ElservicioSlider'
+import LocationsServiceSlider from '@/app/components/LocationsServiceSlider'
+import Whattheysay_slider from '@/components/TestimonialsElservicioSlider'
 import Link from 'next/link'
 import MyLink from '@/components/mylink';
 
@@ -299,7 +301,7 @@ export default function Home() {
                                 type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">FAVORITOS</button>
                         </li>
                     </ul>
-                    <Serviceslider images={Theidealservice} />
+                    <ElservicioSlider/>
                 </div>
                 <div class="text-center">
 							<MyLink class="btn-red btn-locations" href="/myaccount/mainpage/mainpageservices">
@@ -341,7 +343,7 @@ export default function Home() {
                         </li>
                     </ul>
                     <div className="tab-content" id="locationTabscont">
-                    <Serviceslider images={locations}  />
+                    <LocationsServiceSlider />
                     </div>
                 </div>
             </div>
@@ -386,12 +388,12 @@ export default function Home() {
                 </div>
             </div>
         </section>
-
-
-        
         <section class="our-testimonials mt-5">
             <div class="container2 pl-[21.5%] pr-[22%] " >
-                <Whattheysay_slider images={Whattheysay_sliders} heading={'Lo que dicen'} heading2={'de nosotros'} />
+            <div class="default-heading">
+				<h2><span>Lo que dicen</span> de nosotros</h2>
+			</div>
+                <Whattheysay_slider />
             </div>
         </section>
 
