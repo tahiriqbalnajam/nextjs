@@ -535,15 +535,15 @@ p{
 .features-slider .owl-nav .owl-prev,
 .features-slider .owl-nav .owl-next {
 	position: absolute;
-	top: 35%;
+	top: 25%;
 	color:rgba(235, 90, 94, 1) !important;
 	font-size: 30px !important;
 }
 .features-slider .owl-nav .owl-prev{
-	left:-50px;
+	left:-9px;
 }
 .features-slider .owl-nav .owl-next{
-	right:-50px;
+	right:-5px;
 }
 .site-gallery .features-box {
 	margin-bottom: 50px;
@@ -2505,14 +2505,25 @@ select.block.appearance-none.w-full.py-1.px-2.mb-1.text-base.leading-normal.bg-w
 	font-size: 11px !important;
 }
 
-
-
 .whattheysaymain .owl-nav {
     position: absolute;
     top: -70px;
     right: 52px;
 }
 
-.container  .w-4\/5 {
+.container .w-4\/5 {
     margin-top: 56px;
+}
+
+button.owl-prev:hover {
+    background-color: unset !important;
+}
+
+button.owl-next:hover{
+	background-color: unset !important;
+}
+
+
+.whattheysaymain .features-slider .owl-nav .owl-next{
+	right:-50px;
 }

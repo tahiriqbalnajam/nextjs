@@ -32,7 +32,7 @@ const QoutesImageSlider = () => {
       <div className='mb-4'>
         <label for="">Presupuesto</label>
       </div>
-      <OwlCarousel responsive={Responsive} className='owl-theme' autoplay={false} loop margin={10} nav={true} dots={false} navText={['<div className="slidersarrows"><i class="slidersarrows-left fa-solid fa-chevron-left text-red-600"></i>','<i class="slidersarrowsright fa-solid fa-chevron-right text-red-600 pl-3"></i> </div>']}> 
+      <OwlCarousel responsive={Responsive} className='owl-theme' autoplay={false} loop margin={10} nav={true} dots={false} navText={['<div className="slidersarrows"><i class="slidersarrows-left fa-solid fa-chevron-left text-[#ff5a5e]"></i>','<i class="slidersarrowsright fa-solid fa-chevron-right text-[#ff5a5e] pl-3"></i> </div>']}> 
         <div class="item">
           <div class="service-box">
             <Image src="/images/propiedades.png" alt=""  height="50" width="50" />

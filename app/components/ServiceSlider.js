@@ -1,92 +1,99 @@
 "use client"; 
 import React, { useState, useEffect } from 'react';
+var $ = require('jquery');
+if (typeof window !== 'undefined') {
+   window.$ = window.jQuery = require('jquery');
+}
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
+import dynamic from 'next/dynamic';
+const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
+  ssr: false,
+});
 import Image from 'next/image';
+const Responsive = {
+    0: {
+      items:4,
+      margin:5
+    },
+    786: {
+      items:4,
+      margin:10
+    },
+    1024: {
+      items:4,
+      margin:20
+    }
+};
 
-const Serviceslider = ({images}) => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const nextImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
-  const previousImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-  };
-  // Auto slide effect
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextImage();
-    }, 3000); // Set the desired interval time (e.g., 3000ms = 3 seconds)
 
-    return () => {
-      clearInterval(interval); // Clear the interval when the component unmounts
-    };
-  }, []);
+const image_text = [
+    {
+      url: '/images/services1.jpg',
+      heading: 'Propiedades',
+      paragraph: '75 Listados',
+    },
+    {
+      url: '/images/services2.jpg',
+      heading: 'Barcos',
+      paragraph: '56 Listados',
+    },
+{
+      url: '/images/services3.jpg',
+      heading: 'Jardines',
+      paragraph: '22 Listados',
+    },
+{
+      url: '/images/services4.jpg',
+      heading: 'Salones de Fiestas',
+      paragraph: '33 Listados',
+    },
+{
+      url: '/images/services1.jpg',
+      heading: 'Propiedades',
+      paragraph: '75 Listados',
+    },
+{
+      url: '/images/services2.jpg',
+      heading: 'Barcos',
+      paragraph: '56 Listados',
+    },
+{
+      url: '/images/services3.jpg',
+      heading: 'Jardines',
+      paragraph: '22 Listados',
+    },
+{
+      url: '/images/services4.jpg',
+      heading: 'Salones de Fiestas',
+      paragraph: '33 Listados',
+    },
+  ];
 
+const list = []
+
+  
+for (const [i, item] of image_text.entries()) {
+	list.push(
+	  <div className="item">
+		<div className="features-box">
+		  <Image width={331} height={246} src={item.url} alt="" />
+		  <h4>{item.heading}</h4>
+		  <p>{item.paragraph}</p>
+		</div>
+	  </div>
+	);
+  }
+
+const ServiceSlider = () => {
   return (
-    <div className="mb-10 mt-10 flex">
-      <div className="myclass">
-        <label className="text-left absolute" htmlFor="">Presupuesto</label>
-      </div>
-      <div className='leftright'>
-        <i className="fa-solid relative top-[163px] right-[37px] text-[40px] fa-chevron-left text-red-600" onClick={previousImage}></i>    
-      </div>
-      <div className="w-full h-full pr-4">
-        <Image
-          className="max-w-full h-auto"
-          src={images[currentImageIndex].url}
-          alt={`Image ${currentImageIndex + 1}`}
-          width={280}
-          height={390}
-        />
-        <h4 className="text-[20px] mt-[20px] mb-[7px]">{images[currentImageIndex].heading}</h4>
-        <p className="text-[14px] text-[#777777]">{images[currentImageIndex].paragraph}</p>
-      </div>
-
-      {images.length > 1 && (
-        <div className="w-full h-full pl-4 pr-4">
-          <Image
-            className="max-w-full h-auto"
-            src={images[(currentImageIndex + 1) % images.length].url}
-            alt={`Image ${currentImageIndex + 2}`}
-            width={290}
-            height={390}
-          />
-          <h4 className="text-[20px] mt-[20px] mb-[7px]">{images[(currentImageIndex + 1) % images.length].heading}</h4>
-          <p className="text-[14px] text-[#777777]">{images[(currentImageIndex + 1) % images.length].paragraph}</p>
-        </div>
-      )}
-
-      {images.length > 2 && (
-        <div className="w-full h-full pl-4 pr-4">
-          <Image
-            className="max-w-full h-auto"
-            src={images[(currentImageIndex + 2) % images.length].url}
-            alt={`Image ${currentImageIndex + 3}`}
-            width={290}
-            height={390}
-          />
-          <h4 className="text-[20px] mt-[20px] mb-[7px]">{images[(currentImageIndex + 1) % images.length].heading}</h4>
-          <p className="text-[14px] text-[#777777]">{images[(currentImageIndex + 1) % images.length].paragraph}</p>
-        </div>
-      )}
-
-      {images.length > 3 && (
-        <div className="w-full h-full pl-4">
-          <Image
-            className="max-w-full h-auto"
-            src={images[(currentImageIndex + 3) % images.length].url}
-            alt={`Image ${currentImageIndex + 4}`}
-            width={290}
-            height={390}
-          />
-          <h4 className="text-[20px] mt-[20px] mb-[7px]">{images[(currentImageIndex + 1) % images.length].heading}</h4>
-          <p className="text-[14px] text-[#777777]">{images[(currentImageIndex + 1) % images.length].paragraph}</p>
-        </div>
-      )}
-      <div className='rightleft'>
-        <i className="fa-solid relative top-[163px] left-[37px] fa-chevron-right text-[40px] text-red-600 pl-3" onClick={nextImage}></i>
-      </div>
+    <div className="mt-10 serviceslider">
+		
+      <OwlCarousel responsive={Responsive} className='owl-theme features-slider' autoplay={false} loop margin={10} nav={true} dots={false} navText={['<div className="slidersarrows"><i class="slidersarrows-left fa-solid fa-chevron-left text-[#ff5a5e]"></i>','<i class="slidersarrowsright fa-solid fa-chevron-right text-[#ff5a5e] pl-3"></i> </div>']}> 
+	  {list}
+      </OwlCarousel>
     </div>
   );
 };
 
-export default Serviceslider;
+export default ServiceSlider;
