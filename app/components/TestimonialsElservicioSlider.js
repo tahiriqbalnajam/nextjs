@@ -26,59 +26,49 @@ const Responsive = {
     }
 };
 
+const image_text = [
+    {
+      url: '/images/testimonial1.png',
+      heading: 'Propiedades',
+      paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
+    },
+    {
+      url: '/images/testimonial1.png',
+      heading: 'Bernardo González',
+      paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
+    },
+{
+      url: '/images/testimonial1.png',
+      heading: 'Bernardo González',
+      paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
+    }
+  ];
+
+  const list = []
+
+  
+for (const [i, item] of image_text.entries()) {
+	list.push(
+	  <div className="item">
+		<div class="tesimonial-card">
+			<div class="card-inner">
+			<Image width={331} height={246} src={item.url} alt="" class="testimonial-thumb" />
+				<span class="testimonial-quote mb-8">
+					<Image width={50} height={50} src='/images/newqoute.png' alt=""/>
+				</span>
+			<h4>{item.heading}</h4>
+			<p>{item.paragraph}</p>
+			</div>
+		</div>
+	  </div>
+	);
+  }
 
 const ElservicioServiceslider = () => {
   return (
     <div className="mt-10 whattheysaymain">
       <OwlCarousel responsive={Responsive} className='owl-theme features-slider' autoplay={false} loop margin={10} nav={true} dots={false} navText={['<div className="slidersarrows"><i class=" fa-solid fa-chevron-left text-[#ff5a5e]"></i>','<i class="fa-solid fa-chevron-right text-[#ff5a5e] pl-3"></i> </div>']}> 
-		<div class="item">
-			<div class="tesimonial-card">
-				<div class="card-inner">
-					<Image height='50' width='50' class="testimonial-thumb" alt="" src="/images/testimonial1.png" />
-					<span class="testimonial-quote">
-						<i class="fa-solid fa-quote-right"></i>
-					</span>
-					<h4>Bernardo González</h4>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-						Ut enim ad minim veniam
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="item">
-			<div class="tesimonial-card">
-				<div class="card-inner">
-					<Image height='50' width='50' class="testimonial-thumb" alt="" src="/images/testimonial1.png" />
-					<span class="testimonial-quote">
-						<i class="fa-solid fa-quote-right"></i>
-					</span>
-					<h4>Bernardo González</h4>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-						Ut enim ad minim veniam
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="item">
-			<div class="tesimonial-card">
-				<div class="card-inner">
-					<Image height='50' width='50' class="testimonial-thumb" alt="" src="/images/testimonial1.png" />
-					<span class="testimonial-quote">
-						<i class="fa-solid fa-quote-right"></i>
-					</span>
-					<h4>Bernardo González</h4>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-						Ut enim ad minim veniam
-					</p>
-				</div>
-			</div>
-		</div>
+		{list}
       </OwlCarousel>
     </div>
   );

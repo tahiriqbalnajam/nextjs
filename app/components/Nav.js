@@ -3,8 +3,8 @@ import Link from 'next/link';
 import Input from './TextInput.js'
 import InputMail from './MailInput.js'
 import SubmitButton from './SubmitButton.js'
-import DropdownMenu from './togglemenu.js';
-import Settingtogglemenu from './settingtogglemenu.js';
+import DropdownMenu from './ToggleMenu.js';
+import Settingtogglemenu from './SettingToggleMenu.js';
 import MyLink from '@/app/components/MyLink.js';
 
 export default function Nav() {
@@ -29,7 +29,6 @@ export default function Nav() {
 										<span className="ml-2">Posts</span>
 									</a>
 									<div className="relative">
-										
 										<DropdownMenu />
 									</div>
 								</div>

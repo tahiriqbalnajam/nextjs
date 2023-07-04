@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import MyLink from '@/app/components/MyLink';
+import LeftNav from '@/components/LeftNav'
 
 
 export default function Home() {

@@ -810,7 +810,7 @@ p{
 	color: #FF5A60;
 	font-size: 50px;
 	margin-left: auto;
-	margin-top: -50px;
+	margin-top: -75px;
 }
 .owl-buttons {
 	position: relative;
@@ -2379,12 +2379,16 @@ ul.py-1.bg-white.rounded-md.shadow-xs.absolute.-left-0 {
 
 .main-header ul li a:hover,
 .main-header li a:focus,
-.main-header ul li a.active{
+.main-header ul li a.active,
+.togglesubpages ul li a:hover,
+.togglesubpages li a:focus,
+.togglesubpages ul li a.active{
 	background:#FF5A5E !important;
 	color:#fff !important;
+	border-radius: 0.25rem;
 }
 
-.main-header  .py-1 {
+.main-header .py-1,.togglesubpages .py-1{
     padding-top: 0;
     padding-bottom: 0;
 }

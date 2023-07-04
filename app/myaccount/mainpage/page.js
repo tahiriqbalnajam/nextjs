@@ -212,6 +212,7 @@ export default function Home() {
             </div>
             <span className="banner-overlay"></span>
         </section>
+        
         <section className="how-does-work">
             <div className="container min-w-lg mx-auto sm:px-4">
                 <div className="how-does-work-box">
@@ -367,7 +368,9 @@ export default function Home() {
                             <p className="text-center">
                                 Miles de usuarios cotizando justo lo que tú ofreces.
                             </p>
-                            <span className="dividers">/</span>
+                            <div className="flex justify-center mb-10 mt-10">
+                                <Image src="/images/line2.png" alt="" height='50' width='50' />
+                            </div>
                             <p>
                                 Ya sea que tengas una locación que se puede usar para eventos, 
                                 algún servicio o simplemente algún talento que quieras mostrar, 

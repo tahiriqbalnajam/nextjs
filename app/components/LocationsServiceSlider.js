@@ -26,55 +26,80 @@ const Responsive = {
     }
 };
 
+const image_text = [
+    {
+      url: '/images/location1.jpg',
+      heading: 'Bares',
+      paragraph: '26 Listados',
+	  link:'Destacado'
+    },
+    {
+      url: '/images/location2.jpg',
+      heading: 'Terrazas',
+      paragraph: '22 Listados',
+	  link:''
+    },
+ {
+      url: '/images/location3.jpg',
+      heading: 'Restaurantes',
+      paragraph: '9 Listados',
+	  link:''
+    },
+ {
+      url: '/images/location4.jpg',
+      heading: 'Transporte',
+      paragraph: '33 Listados',
+	  link:''
+    },
+ {
+      url: '/images/location1.jpg',
+      heading: 'Terrazas',
+      paragraph: '22 Listados',
+	  link:''
+    },
+ {
+      url: '/images/location2.jpg',
+      heading: 'Terrazas',
+      paragraph: '22 Listados',
+	  link:''
+    },
+ {
+      url: '/images/location3.jpg',
+      heading: 'Restaurantes',
+      paragraph: '9 Listados',
+	  link:''
+    },
+ {
+      url: '/images/location4.jpg',
+      heading: 'Transporte',
+      paragraph: '33 Listados',
+	  link:''
+    },
+  ];
+
+const list = []
+
+  
+for (const [i, item] of image_text.entries()) {
+	list.push(
+	  <div className="item">
+		<div className="features-box">
+			<div class="img-box">
+		  		<Image width={331} height={246} src={item.url} alt="" />
+				  <a href="#" class="img-tag">{item.link}</a>
+				  </div>
+		  <h4>{item.heading}</h4>
+		  <p>{item.paragraph}</p>
+		</div>
+	  </div>
+	);
+  }
 
 const LocationsservicioServiceslider = () => {
   return (
     <div className="mt-10 serviceslider">
       <OwlCarousel responsive={Responsive} className='owl-theme features-slider' autoplay={false} loop margin={10} nav={true} dots={false} navText={['<div className="slidersarrows"><i class="slidersarrows-left fa-solid fa-chevron-left text-[#ff5a5e]"></i>','<i class="slidersarrowsright fa-solid fa-chevron-right text-[#ff5a5e] pl-3"></i> </div>']}> 
-	  <div class="item">
-								<div class="features-box">
-									<div class="img-box">
-										<Image height='264' width='362' src="/images/location1.jpg" alt="" />
-										<a href="#" class="img-tag">Destacado</a>
-									</div>
-									<h4>Bares</h4>
-									<p>26 Listados</p>
-								</div>
-							</div>
-							<div class="item">
-								<div class="features-box">
-									<div class="img-box"><Image height='264' width='362' src="/images/location2.jpg" alt="" /></div>
-									<h4>Terrazas</h4>
-									<p>22 Listados</p>
-								</div>
-							</div>
-							<div class="item">
-								<div class="features-box">
-									<div class="img-box"><Image height='264' width='362' src="/images/location3.jpg" alt="" /> <a href="#" class="img-tag">Más visto</a></div>
-									<h4>Restaurantes</h4>
-									<p>9 Listados</p>
-								</div>
-							</div>
-							<div class="item">
-								<div class="features-box">
-									<div class="img-box"><Image height='264' width='362' src="/images/location4.jpg" alt="" /></div>
-									<h4>Transporte</h4>
-									<p>33 Listados</p>
-								</div>
-							</div><div class="item">
-								<div class="features-box">
-									<div class="img-box"><Image height='264' width='362' src="/images/location1.jpg" alt="" /></div>
-									<h4>Terrazas</h4>
-									<p>22 Listados</p>
-								</div>
-							</div>
-							<div class="item">
-								<div class="features-box">
-									<div class="img-box"><Image height='264' width='362' src="/images/location2.jpg" alt="" /></div>
-									<h4>Barcos</h4>
-									<p>Transporte</p>
-								</div>
-							</div>
+		{list}
       </OwlCarousel>
     </div>
   );

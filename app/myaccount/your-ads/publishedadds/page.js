@@ -1,6 +1,6 @@
 import Input from '@/components/TextInput'
 import Serviceslider from '@/components/ServiceSlider'
-import Whattheysay_slider from '@/app/components/WhattheySaySlider'
+import Whattheysay_slider from '@/app/components/TestimonialsElservicioSlider'
 import TextArea from '@/components/TextArea'
 import MyLink from '@/app/components/MyLink';
 
@@ -148,7 +148,12 @@ export default function Home() {
 
             <section className="container min-w-lg mx-auto sm:px-4 mb-5">
                 <div className="our-testimonials p-12 border">
-                <Whattheysay_slider images={Whattheysay_sliders} heading={Whattheysay_sliders_heading} />
+                <div class="default-heading">
+                    <h2>
+                        <span>Reseñas</span>
+                    </h2>
+                </div>
+                <Whattheysay_slider />
                 </div>
             </section>
             </div>
