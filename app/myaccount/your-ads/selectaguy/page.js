@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import LeftNav from '@/components/LeftNav'
-import MyLink from '@/components/mylink';
+import MyLink from '@/app/components/MyLink';
 
 export default function Home() {
   return (
@@ -15,14 +15,14 @@ export default function Home() {
                     </aside>
                     <div  className="w-4/5">
                         <div  className="flex items-center justify-between mb-16">
-                            <div class="main-content-area w-full">
-                                <div class="your-ads mt-5 pt-5">
-                                    <div class="default-heading">
+                            <div className="main-content-area w-full">
+                                <div className="your-ads mt-5 pt-5">
+                                    <div className="default-heading">
                                         <h2>Selecciona un <span> Tipo</span> </h2>
                                     </div>
-                                    <div class="flex flex-wrap ">
-                                        <div class="md:w-1/2 pr-4 pl-4 sm:w-full">
-                                            <div class="your-ads-box ">
+                                    <div className="flex flex-wrap ">
+                                        <div className="md:w-1/2 pr-4 pl-4 sm:w-full">
+                                            <div className="your-ads-box ">
                                                 <h4>Locación</h4>
                                                 <MyLink href='myaccount/your-ads/selectaguy/selectcategory'>
                                                     <div className='flex justify-center'>
@@ -32,8 +32,8 @@ export default function Home() {
                                                 <p>Es ideal si tienes un lugar para rentar. Ej. Casa, salón de fiestas, terraza, etc</p>
                                             </div>
                                         </div>
-                                        <div class="md:w-1/2 pr-4 pl-4 sm:w-full">
-                                            <div class="your-ads-box">
+                                        <div className="md:w-1/2 pr-4 pl-4 sm:w-full">
+                                            <div className="your-ads-box">
                                                 <h4>Servicio</h4>
                                                 <MyLink href='myaccount/your-ads/selectaguy/selectcategory'>
                                                 <div className='flex justify-center'>

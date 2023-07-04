@@ -1,6 +1,6 @@
 import LeftNav from '@/components/LeftNav'
 import TextArea from '@/components/TextArea'
-import MyLink from '@/components/mylink';
+import MyLink from '@/app/components/MyLink';
 
 
 export default function Home() {
@@ -15,31 +15,31 @@ export default function Home() {
                         </div>
                     </aside>
                     <div  className="w-4/5">
-						<div class="main-content-area closedservicetomail">
-							<div class="services-quote mt-5 pt-5">
-								<div class="default-heading">
+						<div className="main-content-area closedservicetomail">
+							<div className="services-quote mt-5 pt-5">
+								<div className="default-heading">
 									<h2>Mi <span>Servicio</span> a cotizar</h2>
 								</div>
-								<div class="services-quote-box mb-5">
-									<div class="list-quotes-table">
-										<table class="w-full max-w-full mb-4 bg-transparent default-table">
+								<div className="services-quote-box mb-5">
+									<div className="list-quotes-table">
+										<table className="w-full max-w-full mb-4 bg-transparent default-table">
 											<thead>
 												<tr className='text-left'>
 													<th>
 														Tipo de Evento
-														<p class="gray-color">Boda</p>
+														<p className="gray-color">Boda</p>
 													</th>
 													<th>
 														Asistentes
-														<p class="gray-color">300</p>
+														<p className="gray-color">300</p>
 													</th>
 													<th>
 														Presupuesto
-														<p class="gray-color">$900,000MXN</p>
+														<p className="gray-color">$900,000MXN</p>
 													</th>
 													<th>
 														Estado
-														<p class="gray-color">Propuesta Entregada</p>
+														<p className="gray-color">Propuesta Entregada</p>
 													</th>
 												</tr>
 											</thead>
@@ -59,24 +59,24 @@ export default function Home() {
 													</td>
 													<td>
 														<h4>Próxima Llamada</h4>
-														<span class="color-default">10/03/2023</span>
+														<span className="color-default">10/03/2023</span>
 													</td>
 												</tr>
 											</tbody>
 										</table>
 									</div>
 								</div>
-								<div class="default-heading">
+								<div className="default-heading">
 									<h2>¿Deseas <span> compartirnos</span>  más detalles?</h2>
 								</div>
 								
-								<form class="default-form border-fields">
-									<div class="mb-4">
+								<form className="default-form border-fields">
+									<div className="mb-4">
 										<label for="">Mensaje</label>
 										<TextArea rows='8' cols='5' placeholder="Cualquier detalle nos será de utilidad"></TextArea>
 									</div>
-									<div class="mb-4 text-end">
-										<MyLink href="/myaccount/quote/qoutesclosed/closedservicetomail/thankyou" class="btn-red">Enviar</MyLink>
+									<div className="mb-4 text-end">
+										<MyLink href="/myaccount/quote/qoutesclosed/closedservicetomail/thankyou" className="btn-red">Enviar</MyLink>
 									</div>
 								</form>
 							</div>

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import MyLink from '@/components/mylink';
+import MyLink from '@/app/components/MyLink';
 
 
 export default function Home() {
@@ -14,19 +14,19 @@ export default function Home() {
                         </div>
                     </aside>
                     <div  className="w-4/5">
-                        <div class="main-content-area">
-                            <div class="services-quote mt-5 pt-5">
-                                <div class="default-heading h-lg text-center mt-5 pt-5">
-                                    <h2><span class="color-default">¡Muy pronto!</span></h2>
+                        <div className="main-content-area">
+                            <div className="services-quote mt-5 pt-5">
+                                <div className="default-heading h-lg text-center mt-5 pt-5">
+                                    <h2><span className="color-default">¡Muy pronto!</span></h2>
                                 </div>
-                                <div class="text-center mb-5 mt-5 flex justify-center">
+                                <div className="text-center mb-5 mt-5 flex justify-center">
                                     <Image src="/images/line2.png" height='50' width='50' alt="" />
                                 </div>
-                                <div class="default-heading text-center">
+                                <div className="default-heading text-center">
                                     <h2><span className='pb-3'>Estamos revisando tu anuncio.</span> En breve lo podrás ver publicado.</h2>
                                 </div>
-                                <div class="mb-4 text-center mt-5 pt-5">
-                                    <MyLink href="/myaccount/your-ads/in-review" class="btn-red capitalize">Regresar</MyLink>
+                                <div className="mb-4 text-center mt-5 pt-5">
+                                    <MyLink href="/myaccount/your-ads/in-review" className="btn-red capitalize">Regresar</MyLink>
                                 </div>
                             </div>
                         </div>

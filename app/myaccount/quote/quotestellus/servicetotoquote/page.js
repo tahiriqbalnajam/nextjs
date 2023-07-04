@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import LeftNav from '@/components/LeftNav'
-import MyLink from '@/components/mylink';
+import MyLink from '@/app/components/MyLink';
 
 export default function Home() {
   return (
@@ -15,20 +15,20 @@ export default function Home() {
                     </aside>
 					<div  className="w-4/5 mt-10">
                         <div  className="flex items-center justify-between mb-16">
-							<div class="main-content-area w-full">
-								<div class="services-quote mt-5 pt-5">
-									<div class="default-heading h-lg text-center mt-5 pt-5">
-										<h2><span class="color-default">¡GRACIAS!</span></h2>
+							<div className="main-content-area w-full">
+								<div className="services-quote mt-5 pt-5">
+									<div className="default-heading h-lg text-center mt-5 pt-5">
+										<h2><span className="color-default">¡GRACIAS!</span></h2>
 									</div>
-									<div class="flex justify-center mb-5 mt-5">
+									<div className="flex justify-center mb-5 mt-5">
 										<Image src="/images/line2.png" alt="" height='50' width='50' />
 									</div>
-									<div class="default-heading text-center">
+									<div className="default-heading text-center">
 										<h2 className='mb-5 mt-5'><span>Estamos preparando tu propuesta.</span></h2>
 										<h2>En breve nos comunicaremos contigo.</h2>
 									</div>
-									<div class="mb-4 text-center mt-5 pt-5">
-										<MyLink href="/myaccount/quote" class="btn-red capitalize">Regresar</MyLink>
+									<div className="mb-4 text-center mt-5 pt-5">
+										<MyLink href="/myaccount/quote" className="btn-red capitalize">Regresar</MyLink>
 									</div>
 								</div>
 							</div>

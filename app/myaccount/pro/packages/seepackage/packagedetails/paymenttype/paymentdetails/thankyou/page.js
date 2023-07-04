@@ -1,6 +1,6 @@
 import LeftNav from '@/components/LeftNav'
 import Image from 'next/image'
-import MyLink from '@/components/mylink';
+import MyLink from '@/app/components/MyLink';
 
 export default function Home() {
   return (

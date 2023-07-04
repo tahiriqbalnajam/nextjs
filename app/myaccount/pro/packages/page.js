@@ -1,6 +1,6 @@
 import LeftNav from '@/components/LeftNav'
 import Image from 'next/image'
-import MyLink from '@/components/mylink';
+import MyLink from '@/app/components/MyLink';
 
 export default function Home() {
   return (
@@ -15,28 +15,28 @@ export default function Home() {
                     </aside>
                     <div  className="w-4/5">
                         <div className="main-content-area ">
-                            <div class="pro-section mt-5">
-                            <div class="default-heading">
+                            <div className="pro-section mt-5">
+                            <div className="default-heading">
                                 <h2><span>Misma Plataforma</span> muchos<br />beneficios más.</h2>
                             </div>
-                            <div class="pro-packages pro-packages2">
-                                <div class="flex flex-wrap ">
-                                    <div class="md:w-[50%]  pr-4 pl-4 sm:w-full">
-                                        <div class="ads-price-box">
+                            <div className="pro-packages pro-packages2">
+                                <div className="flex flex-wrap ">
+                                    <div className="md:w-[50%]  pr-4 pl-4 sm:w-full">
+                                        <div className="ads-price-box">
                                             <h3>Plus</h3>
                                             <Image height='80' width='80' src="/images/line.png" alt="" />
                                             <MyLink href="/myaccount/pro/packages/seepackage">Ver paquetes</MyLink>
                                         </div>
                                     </div>
-                                    <div class="md:w-[50%]  pr-4 pl-4 sm:w-full">
-                                        <div class="ads-price-box">
+                                    <div className="md:w-[50%]  pr-4 pl-4 sm:w-full">
+                                        <div className="ads-price-box">
                                             <h3>Pro</h3>
                                             <Image height='80' width='80' src="/images/line.png" alt="" />
                                             <MyLink href="/myaccount/pro/packages/seepackage">Ver paquetes</MyLink>
                                         </div>
                                     </div>
-                                    <div class="md:w-[100%] mt-10 pr-4 pl-4 sm:w-full text-center">
-                                        <p class="fw-semibold text-[21px] font-bold">Conoce los paquetes tenemos para cuando<br />tienes más de un anuncio premium.</p>
+                                    <div className="md:w-[100%] mt-10 pr-4 pl-4 sm:w-full text-center">
+                                        <p className="fw-semibold text-[21px] font-bold">Conoce los paquetes tenemos para cuando<br />tienes más de un anuncio premium.</p>
                                     </div>
                                 </div>
                             </div>

@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import ExploraDropdownMenu from '@/components/exploratogglemenu.js';
+import ExploraDropdownMenu from '@/components/ExploraToggleMenu.js';
 import MyaccountFooter from './components/MyaccountFooter';
-import Page from './myaccount/mainpage/page.js'
-import PopupForm from './components/popupform.js';
+import Page from './myaccount/mainpage/page.js';
+import Popupforms from '@/components/PopupForm.js';
 
 export default function Home() {
   return (
@@ -34,7 +34,7 @@ export default function Home() {
               <div className="hidden lg:block">
                 <div className="flex items-center ml-4 md:ml-6">
                   <div className="header-btn text-[#ffffff] ">
-                    <PopupForm />
+                    <Popupforms />
                   </div>
                 </div>
               </div>

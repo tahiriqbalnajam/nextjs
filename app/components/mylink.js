@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Loader from './loader.js';
+import Loader from './Loader.js';
 
 const MyLink = ({ href, className, children, ...rest }) => {
   const [showSection, setShowSection] = useState(false);

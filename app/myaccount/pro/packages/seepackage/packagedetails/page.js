@@ -1,6 +1,6 @@
 import Input from '@/components/TextInput'
 import LeftNav from '@/components/LeftNav'
-import MyLink from '@/components/mylink';
+import MyLink from '@/app/components/MyLink';
 
 export default function Home() {
   return (
@@ -15,57 +15,57 @@ export default function Home() {
                     </aside>
                     <div  className="w-4/5">
                         <div className="main-content-area w-full">
-                            <div class="pro-section mt-5">
-                                <div class="default-heading">
+                            <div className="pro-section mt-5">
+                                <div className="default-heading">
                                     <h2>Paquetes / <span>PRO</span></h2>
-                                    <h3 class="color-default mt-2"><span>PRO<small> $89,99/mes</small></span></h3>
+                                    <h3 className="color-default mt-2"><span>PRO<small> $89,99/mes</small></span></h3>
                                 </div>
-                                <div class="pro-packages-list">
-                                    <form class="default-form">
-                                        <div class="mb-4">
+                                <div className="pro-packages-list">
+                                    <form className="default-form">
+                                        <div className="mb-4">
                                             <label className='pl-2' for="">Calle</label>
                                             <Input type="text" placeholder="Nombre de la calle"/>
                                         </div>
-                                        <div class="flex flex-wrap">
-                                            <div class="md:w-1/2  sm:w-full pr-4">
-                                                <div class="mb-4">
+                                        <div className="flex flex-wrap">
+                                            <div className="md:w-1/2  sm:w-full pr-4">
+                                                <div className="mb-4">
                                                     <label className='pl-2' for="">No Exterior</label>
                                                     <Input type="text" placeholder="45654"/>
                                                 </div>
                                             </div>
-                                            <div class="md:w-1/2  sm:w-full pl-4">
-                                                <div class="mb-4">
+                                            <div className="md:w-1/2  sm:w-full pl-4">
+                                                <div className="mb-4">
                                                     <label className='pl-2' for="">No Interior</label>
                                                     <Input type="text" placeholder="22"/>
                                                 </div>
                                             </div>
-                                            <div class="md:w-1/2 sm:w-full pr-4">
-                                                <div class="mb-4">
+                                            <div className="md:w-1/2 sm:w-full pr-4">
+                                                <div className="mb-4">
                                                     <label for="">Colonia</label>
                                                     <Input type="text" placeholder="55 12345678"/>
                                                 </div>
                                             </div>
-                                            <div class="md:w-1/2 sm:w-full pl-4">
-                                                <div class="mb-4">
+                                            <div className="md:w-1/2 sm:w-full pl-4">
+                                                <div className="mb-4">
                                                     <label className='pl-2' for="">Alcaldía / Municipio</label>
                                                     <Input type="text" placeholder="05300"/>
                                                 </div>
                                             </div>
-                                            <div class="md:w-1/2 sm:w-full pr-4">
-                                                <div class="mb-4">
+                                            <div className="md:w-1/2 sm:w-full pr-4">
+                                                <div className="mb-4">
                                                     <label className='pl-2' for="">Código Postal</label>
                                                     <Input type="text" placeholder="005300"/>
                                                 </div>
                                             </div>
-                                            <div class="md:w-1/2 sm:w-full pl-4">
-                                                <div class="mb-4">
+                                            <div className="md:w-1/2 sm:w-full pl-4">
+                                                <div className="mb-4">
                                                     <label className='pl-2' for="">Estado</label>
                                                     <Input type="text" placeholder="CDMX"/>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="mb-4 text-center">
-                                            <MyLink href="myaccount/pro/packages/seepackage/packagedetails/paymenttype" class="btn-red">Siguiente</MyLink>
+                                        <div className="mb-4 text-center">
+                                            <MyLink href="myaccount/pro/packages/seepackage/packagedetails/paymenttype" className="btn-red">Siguiente</MyLink>
                                         </div>
                                     </form>
                                 </div>

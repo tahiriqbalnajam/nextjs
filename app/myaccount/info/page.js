@@ -1,7 +1,7 @@
 import Input from '@/components/TextInput'
 import Image from 'next/image'
 import LeftNav from '@/components/LeftNav'
-import MyLink from '@/components/mylink';
+import MyLink from '@/app/components/MyLink';
 
 export default function Home() {
   return (
@@ -55,8 +55,8 @@ export default function Home() {
                                     <Input type='email' placeholder="CDMX"/>
                                 </div>
                             </div>
-                            <div class="mb-4 text-center">
-                                <a href='#' class="btn-red" data-bs-toggle="modal" data-bs-target="#profileditModal">Guardar Cambios</a>
+                            <div className="mb-4 text-center">
+                                <a href='#' className="btn-red" data-bs-toggle="modal" data-bs-target="#profileditModal">Guardar Cambios</a>
                             </div>
                         </form>
                     </div>

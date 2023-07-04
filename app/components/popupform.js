@@ -3,9 +3,9 @@ import Link from 'next/link';
 import Image from 'next/image'
 import Input from '@/components/TextInput'
 import React, { useState } from 'react';
-import MyLink from '@/components/mylink';
+import MyLink from '@/app/components/MyLink';
 
-const PopupForm = () => {
+const PopupForms = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const togglePopup = () => {
@@ -76,4 +76,4 @@ const PopupForm = () => {
   );
 };
 
-export default PopupForm;
+export default PopupForms;

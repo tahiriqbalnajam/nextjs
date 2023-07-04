@@ -5,7 +5,7 @@ import InputMail from './MailInput.js'
 import SubmitButton from './SubmitButton.js'
 import DropdownMenu from './togglemenu.js';
 import Settingtogglemenu from './settingtogglemenu.js';
-import MyLink from '@/components/mylink';
+import MyLink from '@/app/components/MyLink.js';
 
 export default function Nav() {
 	

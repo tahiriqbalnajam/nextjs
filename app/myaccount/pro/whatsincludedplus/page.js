@@ -2,7 +2,7 @@ import Input from '@/components/TextInput'
 import LeftNav from '@/components/LeftNav'
 import Button from '@/components/Button'
 import Link from 'next/link'
-import MyLink from '@/components/mylink';
+import MyLink from '@/app/components/MyLink';
 
 export default function Home() {
   return (

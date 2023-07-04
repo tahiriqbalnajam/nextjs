@@ -2,7 +2,7 @@ import Image from 'next/image';
 import LeftNav from '@/components/LeftNav'
 import Input from '@/components/TextInput'
 import TextArea from '@/components/TextArea'
-import MyLink from '@/components/mylink';
+import MyLink from '@/app/components/MyLink';
 
 import '../../../../../css/style.css'
 

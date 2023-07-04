@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import LeftNav from '@/components/LeftNav'
-import MyLink from '@/components/mylink';
+import MyLink from '@/app/components/MyLink';
 
 
 export default function Home() {
@@ -16,32 +16,32 @@ export default function Home() {
                     </aside>
                     <div  className="w-4/5">
                         <div  className="flex items-center justify-between mb-16">
-                            <div class="main-content-area w-full">
-                                <div class="your-ads">
-                                    <div class="default-heading">
+                            <div className="main-content-area w-full">
+                                <div className="your-ads">
+                                    <div className="default-heading">
                                         <h2>Locación / <span>Terraza</span></h2>
                                     </div>
-                                    <div class="ads-packages">
+                                    <div className="ads-packages">
                                         <p>Puedes arrastrar las imágenes para ordenarlas</p>
-                                        <div class="flex flex-wrap ">
-                                            <div class="md:w-1/3 pr-4 sm:w-full ">
-                                                <div class="ads-price-box free-active">
+                                        <div className="flex flex-wrap ">
+                                            <div className="md:w-1/3 pr-4 sm:w-full ">
+                                                <div className="ads-price-box free-active">
                                                     <h3>Gratis</h3>
                                                     <p>Tu plan Actual</p>
                                                     <Image height='60' width='60' src="/images/line2.png" alt="" /> 
                                                     <MyLink href="/myaccount/your-ads/selectaguy/selectcategory/locationswithdate/packages/readypackage">Continuar Así</MyLink>
                                                 </div>
                                             </div>
-                                            <div class="md:w-1/3 pr-2 pl-2 sm:w-full ">
-                                                <div class="ads-price-box">
+                                            <div className="md:w-1/3 pr-2 pl-2 sm:w-full ">
+                                                <div className="ads-price-box">
                                                     <h3>Gratis</h3>
                                                     <h4>$19.99<span>/mes</span></h4>
                                                     <Image height='60' width='60' src="/images/line.png" alt="" />
                                                     <MyLink href="/myaccount/your-ads/selectaguy/selectcategory/locationswithdate/packages/readypackage">Empezar ahora</MyLink>
                                                 </div>
                                             </div>
-                                            <div class="md:w-1/3 pl-4 sm:w-full ">
-                                                <div class="ads-price-box">
+                                            <div className="md:w-1/3 pl-4 sm:w-full ">
+                                                <div className="ads-price-box">
                                                     <h3>Pro</h3>
                                                     <h4>$29.99<span>/mes</span></h4>
                                                     <Image height='60' width='60' src="/images/line.png" alt="" />

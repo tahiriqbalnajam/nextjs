@@ -1,8 +1,8 @@
 import Input from '@/components/TextInput'
 import TextArea from '@/components/TextArea'
 import Serviceslider from '@/components/ServiceSlider'
-import Whattheysay_slider from '@/components/Whattheysayslider'
-import MyLink from '@/components/mylink';
+import Whattheysay_slider from '@/app/components/WhattheySaySlider'
+import MyLink from '@/app/components/MyLink';
 
 const Servicesfeatured = [
     {
@@ -174,8 +174,8 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section class="container min-w-lg mx-auto sm:px-4 mb-5">
-                <div class="our-testimonials px-20 border">              
+            <section className="container min-w-lg mx-auto sm:px-4 mb-5">
+                <div className="our-testimonials px-20 border">              
                     <Whattheysay_slider images={Whattheysay_sliders} heading={Whattheysay_sliders_heading} />
                 </div>
             </section>

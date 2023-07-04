@@ -1670,7 +1670,8 @@ p{
 	font-size: 20px;
 }
 .registermodal .social-logins .google-login img {
-	width: 30px;
+	width: 19px;
+    height: 33px;
 }
 .social-logins .facebook-login .facebookicon,
 .social-logins .google-login .googleicon {
@@ -2331,7 +2332,7 @@ a button.pl-0.pr-0 {
 .googleicon img {
     height: 48px;
 	position: relative;
-    top: 9px;
+    top: 18px;
 }
 
 .main-header svg{
@@ -2510,4 +2511,8 @@ select.block.appearance-none.w-full.py-1.px-2.mb-1.text-base.leading-normal.bg-w
     position: absolute;
     top: -70px;
     right: 52px;
+}
+
+.container  .w-4\/5 {
+    margin-top: 56px;
 }

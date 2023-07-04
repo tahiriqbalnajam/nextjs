@@ -1,13 +1,12 @@
 import Input from '@/components/TextInput'
 import Image from 'next/image'
 import Button from '@/components/Button'
-import QoutesImageSlider from '@/components/qoutes-slider'
+import QoutesImageSlider from '@/app/components/QoutesSlider'
 import Serviceslider from '@/app/components/ServiceSlider'
 import ElservicioSlider from '@/app/components/ElservicioSlider'
 import LocationsServiceSlider from '@/app/components/LocationsServiceSlider'
 import Whattheysay_slider from '@/components/TestimonialsElservicioSlider'
-import Link from 'next/link'
-import MyLink from '@/components/mylink';
+import MyLink from '@/app/components/MyLink';
 
 const Servicesfeatured = [
     {
@@ -303,8 +302,8 @@ export default function Home() {
                     </ul>
                     <ElservicioSlider/>
                 </div>
-                <div class="text-center">
-							<MyLink class="btn-red btn-locations" href="/myaccount/mainpage/mainpageservices">
+                <div className="text-center">
+							<MyLink className="btn-red btn-locations" href="/myaccount/mainpage/mainpageservices">
 								VER TODO
 							</MyLink>
 						</div>
@@ -349,37 +348,37 @@ export default function Home() {
             </div>
         </section>
 
-        <section class="section-cta bg-white">
-            <div class="container mx-auto sm:px-4">
-                <div class="large-heading text-center">
-                    <h2 class="uppercase">ANÚNCIATE</h2>
+        <section className="section-cta bg-white">
+            <div className="container mx-auto sm:px-4">
+                <div className="large-heading text-center">
+                    <h2 className="uppercase">ANÚNCIATE</h2>
                 </div>
-                <div class="cta-wrapper">
-                    <div class="cta-thumb">
-                        <div class="thumb-inner">
+                <div className="cta-wrapper">
+                    <div className="cta-thumb">
+                        <div className="thumb-inner">
                             <Image className="img-cta w-full" alt="" src="/images/ctaa.jpg" height='592' width='344' />
                         </div>
                     </div>
-                    <div class="cta-box">
-                        <div class="inner-content">
-                            <div class="default-heading mb-4 text-center">
+                    <div className="cta-box">
+                        <div className="inner-content">
+                            <div className="default-heading mb-4 text-center">
                                 <h2><span>Ofrece</span> tus servicios</h2>
                             </div>
-                            <p class="text-center">
+                            <p className="text-center">
                                 Miles de usuarios cotizando justo lo que tú ofreces.
                             </p>
-                            <span class="dividers">/</span>
+                            <span className="dividers">/</span>
                             <p>
                                 Ya sea que tengas una locación que se puede usar para eventos, 
                                 algún servicio o simplemente algún talento que quieras mostrar, 
                                 One Night Guest es el lugar indicado para ti. 
                             </p>
-                            <p class="mt-4">
+                            <p className="mt-4">
                                 Sólo tienes que registrarte y mostrarte al mundo, 
                                 crea tu anuncio perfecto ¡ES GRATIS!
                             </p>
-                            <div class="text-center">
-                                <a class="btn-cta btn-red" href="/">
+                            <div className="text-center">
+                                <a className="btn-cta btn-red" href="/">
                                     CONOCER PLANES
                                 </a>
                             </div>
@@ -388,9 +387,9 @@ export default function Home() {
                 </div>
             </div>
         </section>
-        <section class="our-testimonials mt-5">
-            <div class="container2 pl-[21.5%] pr-[22%] " >
-            <div class="default-heading">
+        <section className="our-testimonials mt-5">
+            <div className="container2 pl-[21.5%] pr-[22%] " >
+            <div className="default-heading">
 				<h2><span>Lo que dicen</span> de nosotros</h2>
 			</div>
                 <Whattheysay_slider />

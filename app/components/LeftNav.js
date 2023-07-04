@@ -1,7 +1,7 @@
 "use client";
 import Image from 'next/image';
 import Link from 'next/link';
-import MyLink from '@/components/mylink';
+import MyLink from '@/app/components/MyLink';
 import { usePathname } from 'next/navigation';
 import classNames from "classnames";
 import '../css/style.css';
