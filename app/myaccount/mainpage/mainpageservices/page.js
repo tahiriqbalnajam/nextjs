@@ -492,9 +492,9 @@ export default function Home() {
                                 crea tu anuncio perfecto ¡ES GRATIS!
                             </p>
                             <div className="text-center">
-                                <a className="btn-cta btn-red" href="/">
+                                <MyLink className="btn-cta btn-red" href="/myaccount/mainpage/profilepro">
                                     CONOCER PLANES
-                                </a>
+                                </MyLink>
                             </div>
                         </div>
                     </div>

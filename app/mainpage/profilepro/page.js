@@ -8,156 +8,9 @@ import LocationsServiceSlider from '@/app/components/LocationsServiceSlider'
 import Whattheysay_slider from '@/components/TestimonialsElservicioSlider'
 import MyLink from '@/app/components/MyLink';
 
-const Servicesfeatured = [
-    {
-      url: '/images/services1.jpg',
-      heading: 'Propiedades',
-      paragraph: '75 Listados',
-    },
-    {
-      url: '/images/services2.jpg',
-      heading: 'Barcos',
-      paragraph: '56 Listados',
-    },
-{
-      url: '/images/services3.jpg',
-      heading: 'Jardines',
-      paragraph: '22 Listados',
-    },
-{
-      url: '/images/services4.jpg',
-      heading: 'Salones de Fiestas',
-      paragraph: '33 Listados',
-    },
-{
-      url: '/images/services1.jpg',
-      heading: 'Propiedades',
-      paragraph: '75 Listados',
-    },
-{
-      url: '/images/services2.jpg',
-      heading: 'Barcos',
-      paragraph: '56 Listados',
-    },
-{
-      url: '/images/services3.jpg',
-      heading: 'Jardines',
-      paragraph: '22 Listados',
-    },
-{
-      url: '/images/services4.jpg',
-      heading: 'Salones de Fiestas',
-      paragraph: '33 Listados',
-    },
-  ];
-
-const Theidealservice = [
-    {
-      url: '/images/services1-1.jpg',
-      heading: 'Propiedades',
-      paragraph: '75 Listados',
-    },
-    {
-      url: '/images/services2-2.jpg',
-      heading: 'Barcos',
-      paragraph: '56 Listados',
-    },
-{
-      url: '/images/services3-3.jpg',
-      heading: 'Jardines',
-      paragraph: '22 Listados',
-    },
-{
-      url: '/images/services4-4.jpg',
-      heading: 'Salones de Fiestas',
-      paragraph: '33 Listados',
-    },
-{
-      url: '/images/services1-1.jpg',
-      heading: 'Propiedades',
-      paragraph: '75 Listados',
-    },
-{
-      url: '/images/services2-2.jpg',
-      heading: 'Barcos',
-      paragraph: '56 Listados',
-    },
-{
-      url: '/images/services3-3.jpg',
-      heading: 'Jardines',
-      paragraph: '22 Listados',
-    },{
-      url: '/images/services4-4.jpg',
-      heading: 'Salones de Fiestas',
-      paragraph: '33 Listados',
-    }
-  ];	
-
-
-  const locations = [
-    {
-      url: '/images/location1.jpg',
-      heading: 'Bares',
-      paragraph: '26 Listados',
-    },
-    {
-      url: '/images/location2.jpg',
-      heading: 'Terrazas',
-      paragraph: '22 Listados',
-    },
- {
-      url: '/images/location3.jpg',
-      heading: 'Restaurantes',
-      paragraph: '9 Listados',
-    },
- {
-      url: '/images/location4.jpg',
-      heading: 'Transporte',
-      paragraph: '33 Listados',
-    },
- {
-      url: '/images/location1.jpg',
-      heading: 'Terrazas',
-      paragraph: '22 Listados',
-    },
- {
-      url: '/images/location2.jpg',
-      heading: 'Terrazas',
-      paragraph: '22 Listados',
-    },
- {
-      url: '/images/location3.jpg',
-      heading: 'Restaurantes',
-      paragraph: '9 Listados',
-    },
- {
-      url: '/images/location4.jpg',
-      heading: 'Transporte',
-      paragraph: '33 Listados',
-    },
-  ];
-
-  const Whattheysay_sliders = [
-    {
-        url: '/images/testimonial1.png',
-        heading: 'Propiedades1',
-        paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam',
-      },
-    {
-        url: '/images/testimonial1.png',
-        heading: 'Propiedades2',
-        paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam',
-      },
-    {
-        url: '/images/testimonial1.png',
-        heading: 'Propiedades3',
-        paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam',
-      }
-  ];
-
 export default function Home() {
   return (
-    <div className='bg-white mainfrontpage'>
+    <div className='bg-white mainfrontpage pro'>
         <section id="main-banner">
             <div className="container mx-auto sm:px-4">
                 <div className="banner-content">
@@ -266,7 +119,7 @@ export default function Home() {
                     <div className="default-heading">
                         <h2><span>Servicios</span>  destacados</h2>
                     </div>
-                    <Serviceslider images={Servicesfeatured} />
+                    <Serviceslider/>
                 </div>
             </div>
         </section>
@@ -304,10 +157,10 @@ export default function Home() {
                     <ElservicioSlider/>
                 </div>
                 <div className="text-center">
-                    <MyLink className="btn-red btn-locations" href="/mainpage/mainpageservices">
-                        VER TODO
-                    </MyLink>
-                </div>
+							<MyLink className="btn-red btn-locations" href="/mainpage/mainpageservices">
+								VER TODO
+							</MyLink>
+						</div>
             </div>
         </section>
 
@@ -381,15 +234,95 @@ export default function Home() {
                                 crea tu anuncio perfecto ¡ES GRATIS!
                             </p>
                             <div className="text-center">
-                                <MyLink className="btn-cta btn-red" href="/mainpage/profilepro">
+                                <a className="btn-cta btn-red" href="#">
                                     CONOCER PLANES
-                                </MyLink>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
+                <hr />
             </div>
         </section>
+        <section className="our-pricings">
+            <div className="container mx-auto sm:px-4">
+                <div className="large-heading text-end mt-12">
+                    <h2 className="uppercase mb-4">PERFIL PRO</h2>
+                </div>
+                <div className="flex flex-wrap mt-[156px]">
+                    <div className="lg:w-1/2 pr-4 pl-4 md:w-4/5">
+                        <div className="default-heading mb-0">
+                            <h2>
+                                <span className='mb-4'>Misma Plataforma</span>   
+                                muchos beneficios más.
+                            </h2>
+                            <h4 className="pe-3">
+                                Por medio de nuestra plataforma miles de usuarios pueden conectarse 
+                                conociendo las distintas opciones y los mejores costos de los 
+                                servicios que se ofrecen. 
+                                <a className="links" href="/">
+                                    ¡Haz que siempre te miren primero!
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div className="flex flex-wrap ">
+                    <div className="lg:w-1/3 pr-4 pl-4 md:w-1/2 pricings-cols">
+                        <div className="prings-card">
+                            <h2 className="text-center text-[2rem] font-bold mt-4">Gratis</h2>
+                            <h2 className="amount text-center text-[2rem] font-bold">
+                                $0.00 <span className='text-[2rem] font-normal'>/Mes</span>
+                            </h2>
+                            <ul className="pricings-list">
+                                <li>Lorem Ipsum</li>
+                                <li>Lorem Ipsum</li>
+                                <li>Lorem Ipsum</li>
+                            </ul>
+                            <a className="btn-pricings" href="/">
+                                EMPEZAR AHORA
+                            </a>
+                        </div>
+                    </div>
+                    <div className="lg:w-1/3 pr-4 pl-4 md:w-1/2 pricings-cols">
+                        <div className="prings-card">
+                            <h2 className="text-center text-[2rem] font-bold mt-4">Plus</h2>
+                            <h2 className="amount text-center text-[2rem] font-bold">
+                                $19.99 <span className='text-[2rem] font-normal'>/Mes</span>
+                            </h2>
+                            <ul className="pricings-list">
+                                <li>Lorem Ipsum</li>
+                                <li>Lorem Ipsum</li>
+                                <li>Lorem Ipsum</li>
+                                <li>Lorem Ipsum</li>
+                            </ul>
+                            <a className="btn-pricings" href="/">
+                                SEAMOS PLUS
+                            </a>
+                        </div>
+                    </div>
+                    <div className="lg:w-1/3 pr-4 pl-4 md:w-1/2 pricings-cols">
+                        <div className="prings-card">
+                            <span className="reco-tag">Recomendado</span>
+                            <h2 className="text-center text-[2rem] font-bold mt-4">Pro</h2>
+                            <h2 className="amount text-center text-[2rem] font-bold">
+                                $29.99 <span className='text-[2rem] font-normal'>/Mes</span>
+                            </h2>
+                            <ul className="pricings-list">
+                                <li>Lorem Ipsum</li>
+                                <li>Lorem Ipsum</li>
+                                <li>Lorem Ipsum</li>
+                                <li>Lorem Ipsum</li>
+                                <li>Lorem Ipsum</li>
+                            </ul>
+                            <a className="btn-pricings" href="/">
+                                ANUNCIA PRO
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+	    </section>
         <section className="our-testimonials mt-5">
             <div className="container2 pl-[21.5%] pr-[22%] " >
             <div className="default-heading">

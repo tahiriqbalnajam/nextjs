@@ -304,7 +304,7 @@ export default function Home() {
                     <ElservicioSlider/>
                 </div>
                 <div className="text-center">
-                    <MyLink className="btn-red btn-locations" href="/mainpage/mainpageservices">
+                    <MyLink className="btn-red btn-locations" href="/myaccount/mainpage/mainpageservices">
                         VER TODO
                     </MyLink>
                 </div>
@@ -381,7 +381,7 @@ export default function Home() {
                                 crea tu anuncio perfecto ¡ES GRATIS!
                             </p>
                             <div className="text-center">
-                                <MyLink className="btn-cta btn-red" href="/mainpage/profilepro">
+                                <MyLink className="btn-cta btn-red" href="/myaccount/mainpage/profilepro">
                                     CONOCER PLANES
                                 </MyLink>
                             </div>

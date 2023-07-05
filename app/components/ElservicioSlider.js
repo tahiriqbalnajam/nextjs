@@ -85,7 +85,7 @@ for (const [i, item] of image_text.entries()) {
 		<div className="features-box">
 			<div class="img-box">
 		  		<Image width={331} height={246} src={item.url} alt="" />
-				  <a href="#" class="img-tag">{item.link}</a>
+				  {item.link && (<a href={item.link} className="img-tag">{item.link}</a>)}
 				  </div>
 		  <h4>{item.heading}</h4>
 		  <p>{item.paragraph}</p>
