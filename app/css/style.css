@@ -2577,8 +2577,8 @@ button.owl-next:hover{
     background: #fff;
     padding: 1px 20px;
     position: absolute;
-    top: 62px;
-    left: -50.9%;
+    top: 56px;
+    left: -52.9%;
     z-index: 5;
     transform: translateX(100%);
     transition: ease all 0.5s;
@@ -2615,4 +2615,5 @@ button.owl-next:hover{
 }
 .img-icon.icon-bg.lowerdots {
     bottom: 0;
+	right: 4px;
 }
