@@ -2372,14 +2372,14 @@ ul.py-1.bg-white.rounded-md.shadow-xs.absolute.-left-0 {
     left: 32px;
 }
 
-#main-banner ul li a:hover {
+.exploratoggle ul li a:hover {
     background-color: red;
     color: white;
 }
 
-.main-header ul li a:hover,
-.main-header li a:focus,
-.main-header ul li a.active,
+.exploratoggle ul li a:hover,
+.exploratoggle li a:focus,
+.exploratoggle ul li a.active,
 .togglesubpages ul li a:hover,
 .togglesubpages li a:focus,
 .togglesubpages ul li a.active{
@@ -2613,4 +2613,15 @@ button.owl-next:hover{
 .img-icon.icon-bg.lowerdots {
     bottom: 0;
 	right: 4px;
+}
+
+.mainpagealldropdown li a:focus,
+.mainpagealldropdown ul li a.active,
+.mainpagealldropdown ul li a:hover {
+    background-color: white !important;
+    color: red !important;
+}
+
+ul.priceclass{
+	left: 63.4%;
 }

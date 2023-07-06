@@ -24,7 +24,7 @@ const togglemenu = () => {
   }, []);
 
   return (
-    <div className="relative" ref={ref}>
+    <div className="relative exploratoggle" ref={ref}>
       <button onClick={toggleMenu} className="flex flex-row items-center px-3 py-2 ml-4 text-base font-medium text-white bold rounded-md hover:text-colorRed focus:outline-none">
         <span className="mx-2">EXPLORA</span>
         <svg onClick={toggleMenu} xmlns="http://www.w3.org/2000/svg" className="w-6 h-5 mt-1 transform rotate-0" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

@@ -7,6 +7,7 @@ import ElservicioSlider from '@/app/components/ElservicioSlider'
 import LocationsServiceSlider from '@/app/components/LocationsServiceSlider'
 import Whattheysay_slider from '@/components/TestimonialsElservicioSlider'
 import MyLink from '@/app/components/MyLink';
+import MainPageAllDropdowns from '@/app/components/MainPageAllDropdowns';
 
 const Servicesfeatured = [
     {
@@ -155,6 +156,29 @@ const Theidealservice = [
       }
   ];
 
+  const wheretoggletext = [
+    {
+        text: 'Todo México',
+    },
+    {
+        text: 'Todo México',
+    },
+    {
+        text: 'Todo México',
+    }
+  ];
+  const pricetoggletext = [
+    {
+        text: '$0 - $5,000',
+    },
+    {
+        text: '$0 - $5,000',
+    },
+    {
+        text: '$0 - $5,000',
+    }
+  ];
+
 export default function Home() {
   return (
     <div className='bg-white mainfrontpage'>
@@ -172,32 +196,9 @@ export default function Home() {
                                         <Input type="text" className='bg-white h-12 p-3 w-full border-none focus:outline-none focus:shadow-outline' placeholder="Ej. Comida, Salón de fiestas, audio" />
                                     </div>
                                 </div>
-                                <div className="md:w-1/4 pr-4 sm:w-full pl-4 pt-4 pb-2">
-                                    <div className="mb-0">
-                                        <label>Dónde</label>
-                                        <div className="field-icon">
-                                            <select className="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded">
-                                                <option value="">Todo México</option>
-                                                <option value="">Todo México</option>
-                                                <option value="">Todo México</option>
-                                            </select>
-                                            <span><i className="fa-solid fa-chevron-down"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="md:w-1/4 pr-4 sm:w-full pl-4 pt-4 pb-2">
-                                    <div className="mb-0">
-                                        <label>Precio</label>
-                                        <div className="field-icon">
-                                            <select className="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded">
-                                                <option value="">$0 - $5,000</option>
-                                                <option value="">$0 - $5,000</option>
-                                                <option value="">$0 - $5,000</option>
-                                            </select>
-                                            <span><i className="fa-solid fa-chevron-down"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
+                                <MainPageAllDropdowns toggletext={wheretoggletext} heading="Dónde" customclass="whereclass"/>
+
+                                <MainPageAllDropdowns toggletext={pricetoggletext} heading="Precio" customclass="priceclass"/>
                             </div>
                         </div>
                         <Button text='Buscar' className= 'ml-8 text-[25px] text-white bg-salmon hover:bg-[#f82c2f] focus:ring-4 focus:bg-[#f82c2f] font-medium px-10 py-5 dark:bg-[#f82c2f] dark:hover:bg-[#f82c2f] focus:outline-none  dark:focus:bg-[#f82c2f]' />
