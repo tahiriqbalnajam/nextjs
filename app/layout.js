@@ -8,6 +8,7 @@ import './css/style.css';
 //import './css/responsive.css';
 import './css/styles.css';
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {

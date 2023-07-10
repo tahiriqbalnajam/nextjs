@@ -50,10 +50,10 @@ const image_text = [
 for (const [i, item] of image_text.entries()) {
 	list.push(
 	  <div className="item">
-		<div class="tesimonial-card">
-			<div class="card-inner">
-			<Image width={331} height={246} src={item.url} alt="" class="testimonial-thumb" />
-				<span class="testimonial-quote mb-8">
+		<div className="tesimonial-card">
+			<div className="card-inner">
+			<Image width={331} height={246} src={item.url} alt="" className="testimonial-thumb" />
+				<span className="testimonial-quote mb-8">
 					<Image width={50} height={50} src='/images/newqoute.png' alt=""/>
 				</span>
 			<h4>{item.heading}</h4>
@@ -65,10 +65,23 @@ for (const [i, item] of image_text.entries()) {
   }
 
 const ElservicioServiceslider = () => {
+  const navText = [
+    '<div className="text-[#ff5a5e] qoutesvg"><svg className="h-4 text-[#ff5a5e] dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/></svg>',
+    '<span><svg className="h-4 text-[#ff5a5e] dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/></svg></span></div>'
+  ];
   return (
     <div className="mt-10 whattheysaymain">
-      <OwlCarousel responsive={Responsive} className='owl-theme features-slider' autoplay={false} loop margin={10} nav={true} dots={false} navText={['<div className="slidersarrows"><i class=" fa-solid fa-chevron-left text-[#ff5a5e]"></i>','<i class="fa-solid fa-chevron-right text-[#ff5a5e] pl-3"></i> </div>']}> 
-		{list}
+      <OwlCarousel
+        responsive={Responsive}
+        className="owl-theme"
+        autoplay={false}
+        loop
+        margin={10}
+        nav={true}
+        dots={false}
+        navText={navText}
+      > 
+        {list}
       </OwlCarousel>
     </div>
   );

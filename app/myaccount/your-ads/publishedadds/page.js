@@ -148,7 +148,7 @@ export default function Home() {
 
             <section className="container min-w-lg mx-auto sm:px-4 mb-5">
                 <div className="our-testimonials p-12 border">
-                <div class="default-heading">
+                <div className="default-heading">
                     <h2>
                         <span>Reseñas</span>
                     </h2>

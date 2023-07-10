@@ -15,7 +15,7 @@ module.exports = {
       },
       colors: {
         'salmon': '#FF5A5E',
-      },
+      }
     },
   },
   plugins: [],

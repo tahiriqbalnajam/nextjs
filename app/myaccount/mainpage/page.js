@@ -197,9 +197,9 @@ export default function Home() {
                                         <Input type="text" className='bg-white h-12 p-3 w-full border-none focus:outline-none focus:shadow-outline' placeholder="Ej. Comida, Salón de fiestas, audio" />
                                     </div>
                                 </div>
-                                <MainPageAllDropdowns toggletext={wheretoggletext} heading="Dónde" customclass="whereclass"/>
+                                <MainPageAllDropdowns toggletext={wheretoggletext} heading="Dónde" customclassName="whereclass"/>
 
-                                <MainPageAllDropdowns toggletext={pricetoggletext} heading="Precio" customclass="priceclass"/>
+                                <MainPageAllDropdowns toggletext={pricetoggletext} heading="Precio" customclassName="priceclass"/>
                             </div>
                         </div>
                         <Button text='Buscar' className= 'ml-8 text-[25px] text-white bg-salmon hover:bg-[#f82c2f] focus:ring-4 focus:bg-[#f82c2f] font-medium px-10 py-5 dark:bg-[#f82c2f] dark:hover:bg-[#f82c2f] focus:outline-none  dark:focus:bg-[#f82c2f]' />

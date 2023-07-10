@@ -39,7 +39,7 @@ const togglemenu = ({toggletext,heading, customclass}) => {
         <label>{heading}</label>
         <div onClick={toggleMenu} className="flex flex-row items-center pt-4 hover:text-colorRed focus:outline-none">
             <span onClick={toggleMenu} className="mx-2">Todo México</span>
-            <span onClick={toggleMenu} className='relative right-[-110px] top-[1px] text-[red]'><i class="fa-solid fa-chevron-down"></i></span>
+            <span onClick={toggleMenu} className='relative right-[-110px] top-[1px] text-[red]'><i className="fa-solid fa-chevron-down"></i></span>
         </div>
 
         {isOpen && (

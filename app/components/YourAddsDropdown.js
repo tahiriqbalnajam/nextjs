@@ -26,13 +26,13 @@ const togglemenu = () => {
 
   return (
     <div className="togglesubpages" ref={ref}>
-        <div class="img-icon icon-bg " onClick={toggleMenu}>  
+        <div className="img-icon icon-bg " onClick={toggleMenu}>  
          <i className="fa-solid fa-ellipsis"></i>  
         </div>
         
       {isOpen && (
-       <div class="popup-wrapp">
-            <div class="menu-link pb-6">
+       <div className="popup-wrapp">
+            <div className="menu-link pb-6">
                 <a href="#"><span className='flex md:inline-flex'><Image height='30' width='50' src="/images/Renombrar-anuncion.png" alt="" /></span> Renombrar anuncio</a>
                 <a href="#"><span className='flex md:inline-flex'><Image height='50' width='50' src="/images/ver-anucio.png" alt="" /></span> Ver Anucio Publicado</a>
                 <a href="#"><span className='flex md:inline-flex'><Image height='50' width='50' src="/images/duplicar-anuncio.png" alt="" /></span> Duplicar anuncio</a>
@@ -42,7 +42,7 @@ const togglemenu = () => {
                 <a href="#"><span className='flex md:inline-flex'><Image height='50' width='50' src="/images/transferir-anuncio.png" alt="" /></span> Transferir anuncio</a>
                 <a href="#"><span className='flex md:inline-flex'><Image height='50' width='50' src="/images/compartir.png" alt="" /></span> Compartir</a>
             </div>
-            <div class="img-icon icon-bg lowerdots" onClick={toggleMenu}>  
+            <div className="img-icon icon-bg lowerdots" onClick={toggleMenu}>  
                 <i className="fa-solid fa-ellipsis"></i>  
             </div>
         </div>

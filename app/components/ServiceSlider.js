@@ -84,13 +84,25 @@ for (const [i, item] of image_text.entries()) {
 	  </div>
 	);
   }
-
+  const navText = [
+    '<div className="text-[#ff5a5e] qoutesvg"><svg className="h-4 text-[#ff5a5e] dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/></svg>',
+    '<span><svg className="h-4 text-[#ff5a5e] dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/></svg></span></div>'
+  ];
 const ServiceSlider = () => {
   return (
-    <div className="mt-10 serviceslider">
+    <div className="mt-10 allmainsliders">
 		
-      <OwlCarousel responsive={Responsive} className='owl-theme features-slider' autoplay={false} loop margin={10} nav={true} dots={false} navText={['<div className="slidersarrows"><i class="slidersarrows-left fa-solid fa-chevron-left text-[#ff5a5e]"></i>','<i class="slidersarrowsright fa-solid fa-chevron-right text-[#ff5a5e] pl-3"></i> </div>']}> 
-	  {list}
+    <OwlCarousel
+        responsive={Responsive}
+        className="owl-theme"
+        autoplay={false}
+        loop
+        margin={10}
+        nav={true}
+        dots={false}
+        navText={navText}
+      > 
+        {list}
       </OwlCarousel>
     </div>
   );

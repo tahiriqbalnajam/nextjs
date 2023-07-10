@@ -17,7 +17,7 @@ export default function Home() {
                         <div className="main-content-area ">
                             <div className="pro-section mt-5">
                             <div className="default-heading">
-                                <h2><span>Misma Plataforma</span> muchos<br />beneficios más.</h2>
+                                <h2><span className='mb-2'>Misma Plataforma</span> muchos<br />beneficios más.</h2>
                             </div>
                             <div className="pro-packages pro-packages2">
                                 <div className="flex flex-wrap ">

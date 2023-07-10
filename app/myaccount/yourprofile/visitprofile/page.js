@@ -176,7 +176,7 @@ export default function Home() {
             </section>
             <section className="container min-w-lg mx-auto sm:px-4 mb-5">
                 <div className="our-testimonials px-20 border">  
-                    <div class="default-heading"><h2><span>Reseñas</span></h2></div>            
+                    <div className="default-heading"><h2><span>Reseñas</span></h2></div>            
                     <Whattheysay_slider />
                 </div>
             </section>

@@ -34,6 +34,9 @@ export default function Home() {
 									<label for="">Presupuesto</label>
 									<Input type="password" className="block appearance-none mt-1 h-14 w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-[#797979] " placeholder="$0.00" />
 								</div>
+								<div className="mb-4">
+									<label htmlFor="">Presupuesto</label>
+								</div>
 								<QoutesImageSlider />
 								<div className="mb-4">
 									<label for="">Creemos que estos también te podrían interesar</label>

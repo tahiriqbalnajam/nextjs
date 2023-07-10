@@ -828,7 +828,6 @@ p{
 	margin-top: 50px;
 }
 
-
 /* ================================= */
 /* ------------ FooterCSS ---------- */
 /* ================================= */
@@ -2247,14 +2246,10 @@ a button.pl-0.pr-0 {
     font-weight: 400;
 }
 
-
-
-
 .publishedadds .section-terrece .terrece-col p {
     font-size: 22px;
     line-height: normal;
 }
-
 
 .publishedadds .leftright {
     position: relative;
@@ -2280,7 +2275,6 @@ a button.pl-0.pr-0 {
     color: #FF5A60;
     font-size: 55px;
 }
-
 
 .publishedadds .location-meta li {
     display: flex;
@@ -2455,7 +2449,6 @@ select.block.appearance-none.w-full.py-1.px-2.mb-1.text-base.leading-normal.bg-w
 	padding-right: 0;
 }
 
-
 .qoutetellus .fimage img {
     max-width: 35px;
 }
@@ -2464,41 +2457,41 @@ select.block.appearance-none.w-full.py-1.px-2.mb-1.text-base.leading-normal.bg-w
 	max-width: 35px;
 }
 
-
-
-.slidersarrows-left {
+button div svg {
     position: absolute;
     left: -34px;
     top: 57px;
     font-size: 32px;
     font-weight: 600;
+	width: 16px;
+	color: #ff5a5e;
 }
 
-.slidersarrowsright{
+span svg{
 	position: absolute;
     right: -34px;
     top: 57px;
     font-size: 32px;
     font-weight: 600;
+	width: 16px;
+	color: #ff5a5e;
 }
 
-
-.qoutetellus .slidersarrows-left {
-    position: absolute;
-    right: -91%;
-    top: -41px;
+.qoutetellus button div svg {
+	position: relative;
+    top: -170px;
+    left: 345px;
     font-size: 24px;
     font-weight: 600;
+	width: 12px;
 }
 
-.qoutetellus .slidersarrowsright{
+.qoutetellus span svg{
 	position: absolute;
-    right: 0px;
-    top: -41px;
-    font-size: 24px;
-    font-weight: 600;
+    right: 17px;
+    top: -53px;
+	width: 12px
 }
-
 
 .qoutetellus .sliderdiv p{
 	font-size: 9px !important;
@@ -2527,7 +2520,6 @@ button.owl-next:hover{
 	background-color: unset !important;
 }
 
-
 .whattheysaymain .features-slider .owl-nav .owl-next{
 	right:-50px;
 }
@@ -2536,32 +2528,6 @@ button.owl-next:hover{
 	font-weight: 500 !important;
 }
 
-
-.popup-wrapp-btn {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	background: #fff;
-	-webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
-	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-	height: 55px;
-	width: 55px;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	cursor: pointer;
-	position: fixed;
-	right: 15px;
-	bottom: 15px;
-}
 .popup-wrapp-btn span {
 	height: 8px;
 	width: 8px;
@@ -2624,4 +2590,28 @@ button.owl-next:hover{
 
 ul.priceclass{
 	left: 63.4%;
+}
+
+.allmainsliders button div svg {
+    position: absolute;
+    left: -34px;
+    top: 163px;
+    font-size: 32px;
+    font-weight: 600;
+    width: 16px;
+    color: #ff5a5e;
+}
+
+.allmainsliders span svg {
+    right: -34px;
+    top: 163px;
+}
+
+.whattheysaymain button div svg, .whattheysaymain span svg {
+	width: 10px;
+	top: 16px;
+}
+
+.whattheysaymain button div svg{
+	left: 20px;
 }
