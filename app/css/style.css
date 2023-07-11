@@ -54,10 +54,7 @@ p{
 .container-lg{
     max-width:1370px;
 }
-.btn-red {
-	background: #FF5A5E;
-	color: #fff;
-}
+
 .btn-red-outline {
 	color: #FF5A5E;
 	border: 1px solid #FF5A5E;

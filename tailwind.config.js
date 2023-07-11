@@ -14,9 +14,26 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        'salmon': '#FF5A5E',
-      }
+        salmon: '#FF5A5E',
+      },
+      customClass: {
+        btnred: {
+          backgroundColor: '#f2f2f2',
+          color: '#000',
+          fontSize: '20px',
+          padding: '1rem',
+        },
+      },
     },
   },
-  plugins: [],
-}
+  plugins: [
+    function ({ addComponents, theme }) {
+      addComponents({
+        '.btn-red': {
+          backgroundColor: '#FF5A5E',
+          color: '#fff',
+        },
+      });
+    },
+  ],
+};
