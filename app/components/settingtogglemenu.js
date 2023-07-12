@@ -26,7 +26,7 @@ const settingtogglemenu = () => {
 
 
   return (
-        <div className="relative ml-3 " ref={ref}>
+        <div className="relative ml-3 settingtogglemenu" ref={ref}>
                     <div>
                     <button onClick={toggleMenu} className="flex items-center max-w-xs text-base text-white rounded-full focus:outline-none focus:shadow-solid"
                         id="user-menu" aria-label="User menu" >
@@ -39,9 +39,9 @@ const settingtogglemenu = () => {
     </div>
 
           {isOpen && (
-            <div className="absolute right-0 w-48 mt-2 origin-top-right rounded-md shadow-lg z-[999]">
-            <div className="py-1 bg-white rounded-md shadow-xs">
-            <ul className="py-1 bg-white rounded-md shadow-xs">
+            <div className="absolute right-0 w-48 origin-top-right rounded-md shadow-lg z-[999]">
+            <div className=" bg-white rounded-md shadow-xs">
+            <ul className="bg-white rounded-md shadow-xs">
               <li>
               <a href="#" className="flex flex-row items-center px-4 py-2 text-base text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
                           <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

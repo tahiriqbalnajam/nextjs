@@ -1,6 +1,6 @@
 import Input from '@/components/TextInput'
 import TextArea from '@/components/TextArea'
-import Serviceslider from '@/components/ServiceSlider'
+import YouProfileServiceSlider from '@/components/YouProfileServiceSlider'
 import Whattheysay_slider from '@/app/components/TestimonialsElservicioSlider'
 import MyLink from '@/app/components/MyLink';
 
@@ -104,10 +104,12 @@ export default function Home() {
             <section className="mycustomsection"></section>
             <section className="section-terrece">
                 <div className="container min-w-lg mx-auto sm:px-4">
-                    <div className="large-heading">
-                        <h2> <MyLink href="/myaccount/yourprofile" className="backlink"><i className="fa-solid fa-angle-left"></i></MyLink> Terraza</h2>
+                    <div className="large-heading mb-8">
+                        <h2> Terraza</h2>
                     </div>
-                    <Serviceslider images={Servicesfeatured} />
+                    <div className='visitprofileslider'>
+                    <YouProfileServiceSlider/>
+                    </div>
                     <div className="flex flex-wrap ">
                         <div className="xl:w-2/3 pr-4 pl-4 lg:w-3/5">
                             <div className="terrece-col">

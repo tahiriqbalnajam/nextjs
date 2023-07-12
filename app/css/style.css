@@ -2373,7 +2373,11 @@ ul.py-1.bg-white.rounded-md.shadow-xs.absolute.-left-0 {
 .exploratoggle ul li a.active,
 .togglesubpages ul li a:hover,
 .togglesubpages li a:focus,
-.togglesubpages ul li a.active{
+.togglesubpages ul li a.active,
+
+.settingtogglemenu ul li a:hover,
+.settingtogglemenu li a:focus,
+.settingtogglemenu ul li a.active{
 	background:#FF5A5E !important;
 	color:#fff !important;
 	border-radius: 0.25rem;
@@ -2589,8 +2593,6 @@ ul.priceclass{
 	left: 63.4%;
 }
 
-
-
 .allmainsliders span svg {
     right: -34px;
     top: 163px;
@@ -2603,4 +2605,13 @@ ul.priceclass{
 
 .whattheysaymain button div svg{
 	left: 20px;
+}
+
+.visitprofileslider button div svg {
+    left: 0;
+    top: 218px;
+}
+.visitprofileslider span svg {
+    left: 25px;
+    top: 218px;
 }
