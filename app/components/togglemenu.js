@@ -32,7 +32,7 @@ const togglemenu = () => {
         </svg>
       </button>
       {isOpen && (
-        <ul className="py-1 bg-white rounded-md shadow-xs absolute -left-0">
+        <ul className="py-1 bg-white rounded-md shadow-xs absolute -left-0 z-[999]">
           <li>
             <a href="#" className="flex flex-row items-center px-4 py-2 text-base text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
               User1

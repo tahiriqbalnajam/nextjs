@@ -3,6 +3,7 @@ import LeftNav from '@/components/LeftNav'
 import Input from '@/components/TextInput'
 import TextArea from '@/components/TextArea'
 import MyLink from '@/app/components/MyLink';
+import SoloCornProPopup from '@/app/components/SoloCornProPopup';
 
 import '../../../../../css/style.css'
 
@@ -72,10 +73,10 @@ export default function Home() {
                                                 </div>
                                             </div>
                                             <div  className="mb-4">
-                                                <Input type="text"  className="h-[60px] block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" placeholder="Escribe un titulo para tu anuncio"/>
+                                                <Input type="text"  className="h-[60px] block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-[#9ca3af] border border-gray-200 rounded" placeholder="Escribe un titulo para tu anuncio"/>
                                             </div>
                                             <div  className="mb-4">
-                                                <TextArea rows='6' cols='4' placeholder="La descripción perfecta para mostrar lo que ofreces" className='block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded' />
+                                                <TextArea rows='6' cols='4' placeholder="La descripción perfecta para mostrar lo que ofreces" className='block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-[#9ca3af] border border-gray-200 rounded' />
                                             </div>
                                             <div  className="mb-4">
                                                 <div  className="custom-radio-button">
@@ -87,13 +88,13 @@ export default function Home() {
                                                 <div  className="md:w-1/2 pr-4 pl-4 sm:w-full mt-4 mb-4">
                                                     <div  className="mb-4">
                                                         <label>Precio</label>
-                                                        <Input  type="text"  className="h-[60px] block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" placeholder="$0.00" />
+                                                        <Input  type="text"  className="h-[60px] block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-[#9ca3af] border border-gray-200 rounded" placeholder="$0.00" />
                                                     </div>
                                                 </div>
                                                 <div  className="md:w-1/2 pr-4 pl-4 sm:w-full mt-4 mb-4">
                                                     <div  className="mb-4">
                                                         <label>Precio de Temporada</label>
-                                                        <Input  type="text"  className="h-[60px] block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" placeholder="Porcentaje %" />
+                                                        <Input  type="text"  className="h-[60px] block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-[#9ca3af] border border-gray-200 rounded" placeholder="Porcentaje %" />
                                                         <p>Coloca el signo de más (+) o menos (-) de acuerdo al porcentaje que quieras aumentar o reducir en tu precio habitual.</p>
                                                     </div>
                                                 </div>
@@ -110,7 +111,7 @@ export default function Home() {
                                                             <div  className="md:w-1/3 sm:w-full pr-4">
                                                                 <div  className="mb-4">
                                                                     <div  className="field-icon">
-                                                                        <select  className="pl-4 text-[20px] block h-[70px] w-[100px] appearance-none py-1 px-2 mb-1 leading-normal bg-white text-gray-800 border border-gray-200 rounded">
+                                                                        <select  className="pl-4 text-[20px] block h-[70px] w-[100px] appearance-none py-1 px-2 mb-1 leading-normal bg-white text-[#9ca3af] border border-gray-200 rounded">
                                                                             <option value="">1</option>
                                                                             <option value="">2</option>
                                                                             <option value="">3</option>
@@ -127,7 +128,7 @@ export default function Home() {
                                                             <div  className="md:w-1/3 sm:w-full pr-4 pl-4">
                                                                 <div  className="mb-4">
                                                                     <div  className="field-icon">
-                                                                        <select  className="pl-4 text-[20px] block h-[70px] w-[100px] appearance-none py-1 px-2 mb-1 leading-normal bg-white text-gray-800 border border-gray-200 rounded">
+                                                                        <select  className="pl-4 text-[20px] block h-[70px] w-[100px] appearance-none py-1 px-2 mb-1 leading-normal bg-white text-[#9ca3af] border border-gray-200 rounded">
                                                                             <option value="">Mes</option>
                                                                             <option value="">Mes</option>
                                                                             <option value="">Mes</option>
@@ -139,7 +140,7 @@ export default function Home() {
                                                             <div  className="md:w-1/3 sm:w-full pr-4 pl-4">
                                                                 <div  className="mb-4">
                                                                     <div  className="field-icon">
-                                                                        <select  className="pl-4 text-[20px] block h-[70px] w-[100px] appearance-none py-1 px-2 mb-1 leading-normal bg-white text-gray-800 border border-gray-200 rounded">
+                                                                        <select  className="pl-4 text-[20px] block h-[70px] w-[100px] appearance-none py-1 px-2 mb-1 leading-normal bg-white text-[#9ca3af] border border-gray-200 rounded">
                                                                             <option value="">Año</option>
                                                                             <option value="">Año</option>
                                                                             <option value="">Año</option>
@@ -156,7 +157,7 @@ export default function Home() {
                                                         <div  className="md:w-1/3 sm:w-full pr-4 ">
                                                             <div  className="mb-4">
                                                                 <div  className="field-icon">
-                                                                <select  className="pl-4 text-[20px] block h-[70px] w-[100px] appearance-none py-1 px-2 mb-1 leading-normal bg-white text-gray-800 border border-gray-200 rounded">
+                                                                <select  className="pl-4 text-[20px] block h-[70px] w-[100px] appearance-none py-1 px-2 mb-1 leading-normal bg-white text-[#9ca3af] border border-gray-200 rounded">
                                                                         <option value="">Día</option>
                                                                         <option value="">Día</option>
                                                                         <option value="">Día</option>
@@ -168,7 +169,7 @@ export default function Home() {
                                                         <div  className="md:w-1/3 sm:w-full pr-4 pl-4">
                                                             <div  className="mb-4">
                                                                 <div  className="field-icon">
-                                                                <select  className="pl-4 text-[20px] block h-[70px] w-[100px] appearance-none py-1 px-2 mb-1 leading-normal bg-white text-gray-800 border border-gray-200 rounded">
+                                                                <select  className="pl-4 text-[20px] block h-[70px] w-[100px] appearance-none py-1 px-2 mb-1 leading-normal bg-white text-[#9ca3af] border border-gray-200 rounded">
                                                                         <option value="">Mes</option>
                                                                         <option value="">Mes</option>
                                                                         <option value="">Mes</option>
@@ -180,7 +181,7 @@ export default function Home() {
                                                         <div  className="md:w-1/3 sm:w-full pr-4 pl-4">
                                                             <div  className="mb-4">
                                                                 <div  className="field-icon">
-                                                                <select  className="pl-4 text-[20px] block h-[70px] w-[100px] appearance-none py-1 px-2 mb-1 leading-normal bg-white text-gray-800 border border-gray-200 rounded">
+                                                                <select  className="pl-4 text-[20px] block h-[70px] w-[100px] appearance-none py-1 px-2 mb-1 leading-normal bg-white text-[#9ca3af] border border-gray-200 rounded">
                                                                         <option value="">Año</option>
                                                                         <option value="">Año</option>
                                                                         <option value="">Año</option>
@@ -197,7 +198,7 @@ export default function Home() {
                                                         <div  className="mb-4">
                                                             <label>Ubicación</label>
                                                             <div  className="field-icon">
-                                                                <select  className="h-[60px] block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded">
+                                                                <select  className="h-[60px] block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-[#9ca3af] border border-gray-200 rounded">
                                                                     <option value="">País</option>
                                                                     <option value="">País</option>
                                                                     <option value="">País</option>
@@ -209,7 +210,7 @@ export default function Home() {
                                                     <div  className="md:w-1/2 pr-4 pl-4 sm:w-full">
                                                         <div  className="mb-4">
                                                             <label>Máximo de reservaciones por día</label>
-                                                            <Input type="text"  className="mt-[9px] h-[60px] block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" placeholder="0"/>
+                                                            <Input type="text"  className="mt-[9px] h-[60px] block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-[#9ca3af] border border-gray-200 rounded" placeholder="0"/>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -221,7 +222,7 @@ export default function Home() {
                                                     <div  className="md:w-1/2 pr-4 sm:w-full">
                                                         <div  className="mb-4">
                                                             <div  className="field-icon">
-                                                                <select  className="h-[60px] block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded">
+                                                                <select  className="h-[60px] block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-[#9ca3af] border border-gray-200 rounded">
                                                                     <option value="">Escoge una red</option>
                                                                     <option value="">Escoge una red</option>
                                                                     <option value="">Escoge una red</option>
@@ -232,7 +233,7 @@ export default function Home() {
                                                     </div>
                                                     <div  className="md:w-1/2 pr-4 pl-4 sm:w-full">
                                                         <div  className="mb-4">
-                                                            <Input type="text"  className="h-[60px] mt-[9px] block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" placeholder="Pega tu link aquí"/>
+                                                            <Input type="text"  className="h-[60px] mt-[9px] block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-[#9ca3af] border border-gray-200 rounded" placeholder="Pega tu link aquí"/>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -241,7 +242,7 @@ export default function Home() {
                                                         <label>Tu Sitio Web <i  className="fa-solid fa-lock"></i> <small  className="color-default">Solo con PRO</small></label>
                                                         <p>Coloca el link de tus redes sociales</p>
                                                     </div>
-                                                    <Input type="text"  className="h-[60px] block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" placeholder="Pega tu link aquí" />
+                                                    <SoloCornProPopup />
                                                 </div>
                                                 <div  className="mb-4 w-full flex justify-center">
                                                     <MyLink href="/myaccount/your-ads/selectaguy/selectcategory"  className="btn-red-outline me-0 mt-2 lg:me-2">Atrás</MyLink>

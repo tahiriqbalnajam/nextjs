@@ -2589,15 +2589,7 @@ ul.priceclass{
 	left: 63.4%;
 }
 
-.allmainsliders button div svg {
-    position: absolute;
-    left: -34px;
-    top: 163px;
-    font-size: 32px;
-    font-weight: 600;
-    width: 16px;
-    color: #ff5a5e;
-}
+
 
 .allmainsliders span svg {
     right: -34px;

@@ -35,7 +35,7 @@ export default function Nav() {
 							</div>
 						</div>
 						<div className="hidden lg:block">
-							<div className="flex items-center ml-4 md:ml-6">
+							<div className="flex items-center ml-4 md:ml-6 ">
 								<Settingtogglemenu /> 
 							</div>
 						</div>

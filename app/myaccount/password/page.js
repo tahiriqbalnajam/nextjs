@@ -33,14 +33,17 @@ export default function Home() {
                                 <div  className="mb-12">
                                     <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Tu contraseña actual</label>
                                     <Input placeholder="**********" type="password"/>
+                                    <span className='relative left-[89%] top-[-37%] text-[#a3a3a3]'><i className="fa-solid fa-eye"></i></span>
                                 </div>
                                 <div  className="mb-12">
                                     <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Nueva Contraseña</label>
                                     <Input placeholder="**********" type="password"/>
+                                    <span className='relative left-[89%] top-[-37%] text-[#a3a3a3]'><i className="fa-solid fa-eye"></i></span>
                                 </div>
                                 <div  className="mb-12">
                                     <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Repite nueva contraseña</label>
                                     <Input placeholder="**********" type="password"/>
+                                    <span className='relative left-[89%] top-[-37%] text-[#a3a3a3]'><i className="fa-solid fa-eye"></i></span>
                                 </div>
                                 <div  className="mb-12 container mx-0 min-w-full flex flex-col items-center">
                                     <MyLink href='/myaccount/info'>

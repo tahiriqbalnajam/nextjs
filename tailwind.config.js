@@ -33,6 +33,15 @@ module.exports = {
           backgroundColor: '#FF5A5E',
           color: '#fff',
         },
+        '.allmainsliders button div svg': {
+          position: 'absolute',
+          left: '-34px',
+          top: '163px',
+          fontsize: '32px',
+          fontweight: '600',
+          width: '16px',
+          color: '#ff5a5e',
+        },
       });
     },
   ],

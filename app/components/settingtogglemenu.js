@@ -1,26 +1,45 @@
 "use client";
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
+
 const settingtogglemenu = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const ref = useRef(null);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (!ref.current?.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleOutsideClick);
+
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, []);
+
+
+
   return (
-        <div className="relative ml-3">
+        <div className="relative ml-3 " ref={ref}>
                     <div>
                     <button onClick={toggleMenu} className="flex items-center max-w-xs text-base text-white rounded-full focus:outline-none focus:shadow-solid"
                         id="user-menu" aria-label="User menu" >
                         <img className="w-14 h-14 rounded-full border-red-200" src="/images/profile-img.png" alt="" />
                         <p className="ml-2 uppercase">BERNARDO GONZALEZ</p>
-            <svg xmlns="http://www.w3.org/2000/svg" onClick={toggleMenu} className="w-6 h-4 transform rotate-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" onClick={toggleMenu} className="w-6 h-4 transform rotate-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
                       </button>
     </div>
 
           {isOpen && (
-            <div className="absolute right-0 w-48 mt-2 origin-top-right rounded-md shadow-lg">
+            <div className="absolute right-0 w-48 mt-2 origin-top-right rounded-md shadow-lg z-[999]">
             <div className="py-1 bg-white rounded-md shadow-xs">
             <ul className="py-1 bg-white rounded-md shadow-xs">
               <li>

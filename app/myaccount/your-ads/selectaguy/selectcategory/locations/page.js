@@ -4,6 +4,7 @@ import Input from '@/components/TextInput'
 import TextArea from '@/components/TextArea'
 import MyLink from '@/app/components/MyLink';
 import '../../../../../css/style.css'
+import SoloCornProPopup from '@/app/components/SoloCornProPopup';
 
 export default function Home() {
   return (
@@ -83,13 +84,13 @@ export default function Home() {
                                                 </div>
                                             </div>
                                             <div  className="flex flex-wrap mt-4 mb-4">
-                                                <div  className="md:w-1/2 pr-4 pl-4 sm:w-full mt-4 mb-4">
+                                                <div  className="md:w-1/2 pr-4 sm:w-full mt-4 mb-4">
                                                     <div  className="mb-4">
                                                         <label>Precio</label>
                                                         <Input  type="text"  className="h-[50px] block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200  " placeholder="$0.00" />
                                                     </div>
                                                 </div>
-                                                <div  className="md:w-1/2 pr-4 pl-4 sm:w-full mt-4 mb-4">
+                                                <div  className="md:w-1/2 pl-4 sm:w-full mt-4 mb-4">
                                                     <div  className="mb-4">
                                                         <label>Precio de Temporada</label>
                                                         <Input  type="text"  className="h-[50px] block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200  " placeholder="Porcentaje %" />
@@ -107,7 +108,7 @@ export default function Home() {
                                                         <div  className="mb-4">
                                                             <label>Ubicación</label>
                                                             <div  className="field-icon">
-                                                                <select  className="h-[64px] block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200  ">
+                                                                <select  className="h-[64px] block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-[#9ca3af] border border-gray-200  ">
                                                                     <option value="">País</option>
                                                                     <option value="">País</option>
                                                                     <option value="">País</option>
@@ -116,10 +117,10 @@ export default function Home() {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div  className="md:w-1/2 pr-4 pl-4 sm:w-full">
+                                                    <div  className="md:w-1/2 pl-4 sm:w-full">
                                                         <div  className="mb-4">
                                                             <label>Máximo de reservaciones por día</label>
-                                                            <Input type="text" className="mt-[9px] h-[66px] block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 " placeholder="0"/>
+                                                            <Input type="text" className="mt-[9px] h-[66px] block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-[#9ca3af] border border-gray-200 " placeholder="0"/>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -131,7 +132,7 @@ export default function Home() {
                                                     <div  className="md:w-1/2 pr-4 sm:w-full">
                                                         <div  className="mb-4">
                                                             <div  className="field-icon">
-                                                                <select  className="h-[64px] block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200  ">
+                                                                <select  className="h-[64px] block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-[#9ca3af] border border-gray-200  ">
                                                                     <option value="">Escoge una red</option>
                                                                     <option value="">Escoge una red</option>
                                                                     <option value="">Escoge una red</option>
@@ -140,19 +141,20 @@ export default function Home() {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div  className="md:w-1/2 pr-4 pl-4 sm:w-full">
+                                                    <div  className="md:w-1/2 pl-4 sm:w-full">
                                                         <div  className="mb-4">
                                                             <Input type="text"  className="block h-[66px] appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 mt-[9px]" placeholder="Pega tu link aquí"/>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 
-                                                <div  className="mb-6 mylove flex flex-wrap w-full">
+                                                <div  className="mb-6 flex flex-wrap w-full">
                                                     <div  className="mb-2 mt-4">
                                                         <label>Tu Sitio Web <i  className="fa-solid fa-lock"></i> <small  className="color-default">Solo con PRO</small></label>
                                                         <p>Coloca el link de tus redes sociales</p>
                                                     </div>
-                                                    <Input type="text"  className="block h-[66px] appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200  " placeholder="Pega tu link aquí" />
+                                                    <SoloCornProPopup />
+                                                    
                                                 </div>
                                                 <div  className="mb-4 w-full flex justify-center">
                                                     <MyLink href="/myaccount/your-ads/selectaguy/selectcategory"  className="btn-red-outline me-0 mt-2 lg:me-2">Atrás</MyLink>
