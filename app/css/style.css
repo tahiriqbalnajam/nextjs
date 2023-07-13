@@ -1197,7 +1197,7 @@ p{
     cursor: pointer;
     line-height: 20px;
     display: inline-block;
-    color: #666;
+    color: #000000;
 }
 .custom-radio-button [type="radio"]:checked + label:before,
 .custom-radio-button [type="radio"]:not(:checked) + label:before {
@@ -2215,7 +2215,7 @@ section.locations-section.bg-white {
     display: flex;
     align-items: flex-start;
     font-size: 24px;
-    margin-top: 50px;
+    margin-top: 34px;
 }
 
 .visitprofile .our-testimonials {
@@ -2614,4 +2614,7 @@ ul.priceclass{
 .visitprofileslider span svg {
     left: 25px;
     top: 218px;
+}
+li.personal {
+    margin-top: -2px !important;
 }
