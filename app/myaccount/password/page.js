@@ -1,9 +1,8 @@
 import Image from 'next/image';
-import Link from 'next/link';
-import Input from '../../components/TextInput'
-import Button from '../../components/Button'
-import InputMail from '../../components/MailInput.js';
-import LeftNav from '../../components/LeftNav';
+import Input from '@/components/TextInput'
+import Button from '@/components/Button'
+import LeftNav from '@/components/LeftNav';
+import MyLink from '@/app/components/MyLink';
 
 export default function Home() {
   return (
@@ -16,8 +15,6 @@ export default function Home() {
                            <LeftNav />
                         </div>
                     </aside>
-
-                    
                     <div  className="w-4/5 pl-28">
                         <div  className="flex items-center justify-between mb-16">
                             <div  className="flex items-center">
@@ -36,18 +33,22 @@ export default function Home() {
                                 <div  className="mb-12">
                                     <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Tu contraseña actual</label>
                                     <Input placeholder="**********" type="password"/>
-                                    
+                                    <span className='relative left-[89%] top-[-37%] text-[#a3a3a3]'><i className="fa-solid fa-eye"></i></span>
                                 </div>
                                 <div  className="mb-12">
                                     <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Nueva Contraseña</label>
                                     <Input placeholder="**********" type="password"/>
+                                    <span className='relative left-[89%] top-[-37%] text-[#a3a3a3]'><i className="fa-solid fa-eye"></i></span>
                                 </div>
                                 <div  className="mb-12">
                                     <label for="name"  className="block mb-1 text-lg font-bold text-colorBlack">Repite nueva contraseña</label>
                                     <Input placeholder="**********" type="password"/>
+                                    <span className='relative left-[89%] top-[-37%] text-[#a3a3a3]'><i className="fa-solid fa-eye"></i></span>
                                 </div>
                                 <div  className="mb-12 container mx-0 min-w-full flex flex-col items-center">
-                                    <Button type="submit" button="primary" text="Actualizar"/>
+                                    <MyLink href='/myaccount/info'>
+                                        <Button type="submit" button="primary" text="Actualizar"/>
+                                    </MyLink>
                                 </div>
                             </div>
                         </form>

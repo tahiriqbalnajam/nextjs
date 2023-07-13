@@ -54,10 +54,7 @@ p{
 .container-lg{
     max-width:1370px;
 }
-.btn-red {
-	background: #FF5A5E;
-	color: #fff;
-}
+
 .btn-red-outline {
 	color: #FF5A5E;
 	border: 1px solid #FF5A5E;
@@ -423,13 +420,14 @@ p{
 	background:rgba(255, 72, 89, 1);
 }
 .service-box img {
-	max-width: 62px;
+	max-width: 72px;
 	margin: 0 auto;
 }
 .service-box p{
 	margin:10px 0 0 0;
-	font-size:12px;
+	font-size:13px;
 	color:#fff;
+	font-weight: 600 !important;
 }
 .service-slider .owl-nav .owl-prev,
 .service-slider .owl-nav .owl-next {
@@ -504,7 +502,7 @@ p{
 	color:#000;
 }
 .how-does-work-box hr{
-	border-color:#707070;
+	border-color:#e6e5e5;
 	margin-top:47px;
 	margin-bottom:75px;
 	max-width:1150px;
@@ -534,15 +532,15 @@ p{
 .features-slider .owl-nav .owl-prev,
 .features-slider .owl-nav .owl-next {
 	position: absolute;
-	top: 35%;
+	top: 25%;
 	color:rgba(235, 90, 94, 1) !important;
 	font-size: 30px !important;
 }
 .features-slider .owl-nav .owl-prev{
-	left:-50px;
+	left:-9px;
 }
 .features-slider .owl-nav .owl-next{
-	right:-50px;
+	right:-5px;
 }
 .site-gallery .features-box {
 	margin-bottom: 50px;
@@ -618,7 +616,7 @@ p{
 	margin: 0 auto;
 	border: none;
 	height: 2px;
-	background: #707070;
+	background: #e6e5e5;
 }
 .cta-wrapper {
 	position: relative;
@@ -648,8 +646,8 @@ p{
 	height: 80%;
 	display: inline-block;
 	position: absolute;
-	right: -10px;
-	top: -10px;
+	right: -18px;
+	top: -18px;
 	z-index: -1;
 }
 .cta-wrapper .cta-box {
@@ -809,7 +807,7 @@ p{
 	color: #FF5A60;
 	font-size: 50px;
 	margin-left: auto;
-	margin-top: -50px;
+	margin-top: -75px;
 }
 .owl-buttons {
 	position: relative;
@@ -826,7 +824,6 @@ p{
 .owl-testimonial {
 	margin-top: 50px;
 }
-
 
 /* ================================= */
 /* ------------ FooterCSS ---------- */
@@ -847,7 +844,7 @@ p{
 	margin-top: 20px;
 }
 .social-icons .sociallink {
-	width: 27px;
+	width: 39px;
 	height: 27px;
 	display: inline-block;
 	background: #FFFFFF;
@@ -855,7 +852,7 @@ p{
 	color: #000;
 	text-align: center;
 	line-height: 27px;
-	font-size: 18px;
+	font-size: 27px;
 	margin-right: 12px;
 	transition: all .5s ease;
 }
@@ -987,7 +984,7 @@ p{
 /** My Account Inner **/
 .main-content-area {
 	width: 100%;
-	padding-left: 190px;
+	padding-left: 170px;
 	overflow-x: hidden;
 }
 .my-account-innaer-wrapp {
@@ -1133,7 +1130,7 @@ p{
 }
 .input-btn button{
 	width:315px;
-	height:70px;
+	height:64px;
 	border:3px solid #FF5A5E;
 	background:#fff;
 	font-size:25px;
@@ -1535,7 +1532,7 @@ p{
 	border-radius:40px;
 	border:4px solid #FF5A60;
 	text-align: center;
-	padding:50px 40px;
+	padding:35px 24px;
 	margin-top:30px;
 }
 .ads-price-box h3{
@@ -1570,7 +1567,7 @@ p{
 	color: #FF5A60;
 	font-size: 20px;
 	line-height: 29px;
-	padding: 10px 18px;
+	padding: 10px 10px;
 	border-radius: 10px;
 	font-weight: bold;
 }
@@ -1669,7 +1666,8 @@ p{
 	font-size: 20px;
 }
 .registermodal .social-logins .google-login img {
-	width: 30px;
+	width: 19px;
+    height: 33px;
 }
 .social-logins .facebook-login .facebookicon,
 .social-logins .google-login .googleicon {
@@ -1912,7 +1910,7 @@ p{
 	font-weight: 400;
 }
 .terrece-col .custom-video {
-	height: 400px;
+	height: 293px;
 	margin-top: 50px;
 }
 
@@ -2107,4 +2105,513 @@ p{
 .modal-profiledit .middle-content {
 	padding: 40px 0;
 	min-height: 410px;
+}
+
+.pro-section .default-heading h2 {
+    font-size: 32px;
+    color: #000000;
+    font-weight: 400;
+}
+.pro-section .default-form .label-bg label {
+    font-size: 30px;
+    line-height: 46px;
+}
+
+.mainfrontpage .myclass i.fa-solid.fa-chevron-left.text-red-600 {
+    position: absolute;
+    left: -5px;
+    bottom: 172px;
+    font-size: 34px;
+}
+.mainfrontpage .myclass i.fa-solid.fa-chevron-right.text-red-600.pl-3 {
+    position: absolute;
+    bottom: 172px;
+    font-size: 34px;
+    right: 5px;
+}
+label.text-left.absolute {
+    visibility: hidden;
+}
+
+.features-services.bg-white {
+    padding: 1px;
+}
+.services-section {
+    /* padding-top: 100px; */
+    padding-bottom: 1px;
+}
+section.locations-section.bg-white {
+    padding-bottom: 1px;
+}
+.mydivclass.bg-white {
+    padding-top: -15px;
+    background-color: white;
+    padding: 80px;
+}
+
+
+.pro-packages2 .ads-price-box {
+    background: #FF5A60;
+    border-radius: 0;
+    border: 4px solid #FF5A60;
+    text-align: center;
+    padding: 100px 40px;
+    margin-top: 30px;
+}
+
+.pro-section .default-heading h2 {
+    font-size: 40px;
+    color: #000000;
+    font-weight: 400;
+}
+.packagedetails .input-btn button {
+    width: 227px;
+}
+
+.btn-red, .btn-red-outline
+.thankyou .btn-red, .btn-red-outline {
+    font-size: 20px;
+    text-transform: none;
+}
+
+.readypackage .btn-red, .readypackage .btn-red-outline {
+    text-transform: none;
+}
+
+
+.visitprofile .section-terrece .terrece-col p {
+    font-size: 22px;
+    line-height: normal;
+}
+
+
+.visitprofile .leftright {
+    position: relative;
+    left: 61px;
+    bottom: -40px;
+}
+
+.visitprofile .rightleft {
+	position: relative;
+    left: -1110px;
+    margin-top: 40px;
+}
+
+.visitprofile .leftright i {
+    font-size: 27px;
+}
+
+.visitprofile .rightleft i {
+    font-size: 27px;
+}
+
+.visitprofile .terrece-col .highlighted-price {
+    color: #FF5A60;
+    font-size: 55px;
+}
+
+
+.visitprofile .location-meta li {
+    display: flex;
+    align-items: flex-start;
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+.visitprofile .our-testimonials {
+    position: relative;
+    background: #F4F4F4;
+    padding: 130px 55px 190px 60px;
+}
+
+.visitprofile .terrece-col .custom-video {
+    height: 339px;
+    margin-top: 50px;
+}
+
+.visitprofile .section-terrece .terrece-col {
+    padding-top: 35px;
+}
+
+a button.pl-0.pr-0 {
+    width: 224px;
+}
+
+.openservicetomail .default-heading h2 {
+    font-size: 34px;
+    color: #000000;
+    font-weight: 400;
+}
+
+.publishedadds .section-terrece .terrece-col p {
+    font-size: 22px;
+    line-height: normal;
+}
+
+.publishedadds .leftright {
+    position: relative;
+    left: 61px;
+    bottom: -40px;
+}
+
+.publishedadds .rightleft {
+	position: relative;
+    left: -1078px;
+    margin-top: 40px;
+}
+
+.publishedadds .leftright i {
+    font-size: 27px;
+}
+
+.publishedadds .rightleft i {
+    font-size: 27px;
+}
+
+.publishedadds .terrece-col .highlighted-price {
+    color: #FF5A60;
+    font-size: 55px;
+}
+
+.publishedadds .location-meta li {
+    display: flex;
+    align-items: flex-start;
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+.publishedadds .our-testimonials {
+    position: relative;
+    background: #F4F4F4;
+    padding: 130px 55px 190px 60px;
+}
+
+.publishedadds .terrece-col .custom-video {
+    height: 339px;
+    margin-top: 50px;
+}
+
+.publishedadds .section-terrece .terrece-col {
+    padding-top: 35px;
+}
+
+.text-center.myclassloader {
+    position: absolute;
+    top: 167px;
+	left: 46%;
+}
+
+.myclassloader span.sr-onlys {
+    color: #e90b10 !important;
+	background: rgb(0 0 0 / 0%);
+}
+
+.popuppaddinga {
+	padding-left: 5px !important;
+}
+
+.popclass {
+    padding: 19px 45px !important;
+    text-transform: none !important;
+    font-size: 22px !important;
+}
+
+.IniciarSesión{
+	color: black;
+}
+
+.googleicon img {
+    height: 48px;
+	position: relative;
+    top: 18px;
+}
+
+.main-header svg{
+    padding-top: -22px;
+    color: red;
+    margin-top: 0;
+}
+
+.main-header .text-base {
+    font-size: 15px !important;
+    line-height: 1.5rem;
+    font-weight: 900 !important;
+}
+
+.main-header svg {
+    padding-bottom: 3px;
+}
+
+.main-header .mx-2 {
+    margin-right: 0 !important;
+}
+
+.main-header2 .container {
+    max-width: 100%;
+}
+
+.main-header2  .text-gray-300{
+	color: white !important;
+}
+
+ul.py-1.bg-white.rounded-md.shadow-xs.absolute.-left-0 {
+    width: max-content;
+}
+
+ul.py-1.bg-white.rounded-md.shadow-xs.absolute.-left-0 {
+    position: absolute;
+    left: 32px;
+}
+
+.exploratoggle ul li a:hover {
+    background-color: red;
+    color: white;
+}
+
+.exploratoggle ul li a:hover,
+.exploratoggle li a:focus,
+.exploratoggle ul li a.active,
+.togglesubpages ul li a:hover,
+.togglesubpages li a:focus,
+.togglesubpages ul li a.active,
+
+.settingtogglemenu ul li a:hover,
+.settingtogglemenu li a:focus,
+.settingtogglemenu ul li a.active{
+	background:#FF5A5E !important;
+	color:#fff !important;
+	border-radius: 0.25rem;
+}
+
+.main-header .py-1,.togglesubpages .py-1{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+input.bg-white.h-12.p-3.w-full.border-none.focus\:outline-none.focus\:shadow-outline {
+    padding-left: 0;
+}
+
+.field-icon span {
+    padding-right: 12px;
+}
+
+select.block.appearance-none.w-full.py-1.px-2.mb-1.text-base.leading-normal.bg-white.text-gray-800.border.border-gray-200.rounded {
+    padding-left: 12px;
+}
+.md\:w-1\/4.pr-4.sm\:w-full.pl-4.pt-4 {
+    border-left: 1px solid #ccc;
+}
+
+.field-icon {
+    margin-top: 9px;
+}
+
+@font-face {
+	font-family: 'MyFont';
+	src: url('/fonts/font.woff2') format('woff2'),
+		 url('/fonts/font.woff') format('woff');
+  }
+  
+  body {
+	font-family: 'Ubuntu', sans-serif !important ;
+  }
+  
+  #main-banner .container {
+    max-width: 1312px !important;
+}
+
+.visited { 
+	pointer-events: none;
+  }
+  
+.main-content-area2 label.text-left.absolute {
+    visibility: visible;
+}
+
+.add-image-upload.active.img-added {
+    border: none;
+}
+
+.our-testimonials.px-20.border {
+	border-color: #eeeeee !important;
+}
+.mainfrontpage select, .mainfrontpage ul#myTab, .mainfrontpage ul#locationTabs {
+    border: none;
+	padding-left: 0 !important;
+}
+
+.qoutetellus .fimage{
+	padding-left: 0;
+	max-width: 15%;
+}
+
+.qoutetellus .lastimage{
+	padding-right: 0;
+}
+
+.qoutetellus .fimage img {
+    max-width: 35px;
+}
+
+.qoutetellus .your-event .service-box img{
+	max-width: 35px;
+}
+
+button div svg {
+    position: absolute;
+    left: -34px;
+    top: 57px;
+    font-size: 32px;
+    font-weight: 600;
+	width: 16px;
+	color: #ff5a5e;
+}
+
+span svg{
+	position: absolute;
+    right: -34px;
+    top: 57px;
+    font-size: 32px;
+    font-weight: 600;
+	width: 16px;
+	color: #ff5a5e;
+}
+
+.qoutetellus button div svg {
+	position: relative;
+    top: -170px;
+    left: 345px;
+    font-size: 24px;
+    font-weight: 600;
+	width: 12px;
+}
+
+.qoutetellus span svg{
+	position: absolute;
+    right: 17px;
+    top: -53px;
+	width: 12px
+}
+
+.qoutetellus .sliderdiv p{
+	font-size: 9px !important;
+	font-weight: 600 !important;
+}
+
+.qoutetellus .service-box2 p {
+	font-size: 11px !important;
+}
+
+.whattheysaymain .owl-nav {
+    position: absolute;
+    top: -70px;
+    right: 52px;
+}
+
+.container .w-4\/5 {
+    margin-top: 56px;
+}
+
+button.owl-prev:hover {
+    background-color: unset !important;
+}
+
+button.owl-next:hover{
+	background-color: unset !important;
+}
+
+.whattheysaymain .features-slider .owl-nav .owl-next{
+	right:-50px;
+}
+
+.mainfrontpage.pro .our-pricings .default-heading h4 {
+	font-weight: 500 !important;
+}
+
+.popup-wrapp-btn span {
+	height: 8px;
+	width: 8px;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	background:#FF5A5E;
+	margin: 0 1.5px;
+}
+.popup-wrapp {
+    width: 197px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background: #fff;
+    padding: 10px 20px;
+    position: absolute;
+    top: 28px;
+    left: -76.9%;
+    z-index: 5;
+    transform: translateX(100%);
+    transition: ease all 0.5s;
+}
+.popup-wrapp.active{
+	-webkit-transform: translateX(-15px);
+	-ms-transform: translateX(-15px);
+	transform: translateX(-15px);
+}
+.popup-wrapp .menu-link a{
+	display: block;
+    font-size: 13px;
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 5px 0;
+}
+.popup-wrapp .menu-link a img{
+	width:14px;
+	margin-right:10px;
+}
+.menu-link hr {
+    background: #ff5a60;
+    height: 2px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 111%;
+    left: -8px;
+    position: relative;
+}
+
+.img-icon.icon-bg.lowerdots {
+    bottom: 0;
+	right: 4px;
+}
+
+.mainpagealldropdown li a:focus,
+.mainpagealldropdown ul li a.active,
+.mainpagealldropdown ul li a:hover {
+    background-color: white !important;
+    color: red !important;
+}
+
+ul.priceclass{
+	left: 63.4%;
+}
+
+.allmainsliders span svg {
+    right: -34px;
+    top: 163px;
+}
+
+.whattheysaymain button div svg, .whattheysaymain span svg {
+	width: 10px;
+	top: 16px;
+}
+
+.whattheysaymain button div svg{
+	left: 20px;
+}
+
+.visitprofileslider button div svg {
+    left: 0;
+    top: 218px;
+}
+.visitprofileslider span svg {
+    left: 25px;
+    top: 218px;
 }
