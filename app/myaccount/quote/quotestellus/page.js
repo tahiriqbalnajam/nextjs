@@ -37,24 +37,7 @@ export default function Home() {
 								<div className="mb-4">
 									<label htmlFor="">Presupuesto</label>
 								</div>
-								<QoutesImageSlider />
-								<div className="mb-4">
-									<label for="">Creemos que estos también te podrían interesar</label>
-									<div className="flex flex-wrap mt-3 custom-col20">
-										<div className="relative flex-grow max-w-[108px] flex-1 pl-[12px]">
-											<div className="service-box service-box2">
-												<Image src="/images/propiedades.png" alt="" height='40' width='40' />
-												<p>Propiedades</p>
-											</div>
-										</div>
-										<div className="relative flex-grow max-w-[117px] flex-1 pl-[20px]">
-											<div className="service-box service-box2">
-												<Image src="/images/propiedades.png" alt="" height='40' width='40' />
-												<p>Propiedades</p>
-											</div>
-										</div>
-									</div>
-								</div>
+								<QoutesImageSlider  checkpage="addonclick"/>
 								<div className="mb-4">
 									<label for="">Mensaje</label>
 									<TextArea id="mytextarea" name="w3review" rows="6" cols="50" />

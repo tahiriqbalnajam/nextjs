@@ -1,5 +1,4 @@
 "use client"; 
-
 import React, { useState, useEffect } from 'react';
 var $ = require('jquery');
 if (typeof window !== 'undefined') {
@@ -112,50 +111,51 @@ export default class QoutesImageSlider extends React.Component {
 
   }
   render() {
-      return (
-          <>
-          <div className="mb-10 mt-10 sliderdiv">
-              
-              <OwlCarousel
-              responsive={Responsive}
-              className="owl-theme"
-              autoplay={false}
-              loop
-              margin={10}
-              nav={true}
-              dots={false}
-              navText={navText}
-              > 
-              {
-                image_text.map((item, index) => (
-                  <div className='item' key={index} onClick={() => this.handleItemClick(item.id)}>
-                    <div className="service-box">
-                      <Image width={331} height={246} src={item.url} alt="" />
-                      <p>{item.paragraph}</p>
-                    </div>
+    const { checkpage } = this.props;
+    return (
+        <>
+        <div className="mb-10 mt-10 sliderdiv">
+            
+            <OwlCarousel
+            responsive={Responsive}
+            className="owl-theme"
+            autoplay={false}
+            loop
+            margin={10}
+            nav={true}
+            dots={false}
+            navText={navText}
+            > 
+            {
+              image_text.map((item, index) => (
+                <div className='item' key={index} onClick={() => this.handleItemClick(item.id)}>
+                  <div className="service-box">
+                    <Image width={331} height={246} src={item.url} alt="" />
+                    <p>{item.paragraph}</p>
                   </div>
-                ))
-              }
-              </OwlCarousel>
-          </div>
-          { this.state.selectedItemsList.length > 0 &&
-            <div className="mb-4">
-                <label>Creemos que estos también te podrían interesar</label>
-                <div className="flex flex-wrap mt-3 custom-col20">
-                  {
-                    this.state.selectedItemsList.map((item, index) => (
-                      <div className="relative flex-grow max-w-[108px] flex-1 pl-[12px]" key={index} onClick={() => this.handleRemoveItem(item.id)}>
-                        <div className="service-box service-box2">
-                          <Image width={331} height={246} src={item.url} alt="" />
-                          <p>{item.paragraph}</p>
-                        </div>
-                      </div>
-                    ))
-                  }
                 </div>
-            </div>
-          }
-          </>
-      )
+              ))
+            }
+            </OwlCarousel>
+        </div>
+        { this.state.selectedItemsList.length > 0 && checkpage=="addonclick" &&
+          <div className="mb-4">
+              <label>Creemos que estos también te podrían interesar</label>
+              <div className="flex flex-wrap mt-3 custom-col20">
+                {
+                  this.state.selectedItemsList.map((item, index) => (
+                    <div className="relative flex-grow max-w-[108px] flex-1 pl-[12px]" key={index} onClick={() => this.handleRemoveItem(item.id)}>
+                      <div className="service-box service-box2">
+                        <Image width={331} height={246} src={item.url} alt="" />
+                        <p>{item.paragraph}</p>
+                      </div>
+                    </div>
+                  ))
+                }
+              </div>
+          </div>
+        }
+        </>
+    )
   };
 }
