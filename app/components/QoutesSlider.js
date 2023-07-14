@@ -115,7 +115,6 @@ export default class QoutesImageSlider extends React.Component {
     return (
         <>
         <div className="mb-10 mt-10 sliderdiv">
-            
             <OwlCarousel
             responsive={Responsive}
             className="owl-theme"
