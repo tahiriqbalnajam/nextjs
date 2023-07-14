@@ -138,21 +138,23 @@ export default class QoutesImageSlider extends React.Component {
               }
               </OwlCarousel>
           </div>
-          <div className="mb-4">
-              <label>Creemos que estos también te podrían interesar</label>
-              <div className="flex flex-wrap mt-3 custom-col20">
-                {
-                  this.state.selectedItemsList.map((item, index) => (
-                    <div className="relative flex-grow max-w-[108px] flex-1 pl-[12px]" key={index} onClick={() => this.handleRemoveItem(item.id)}>
-                      <div className="service-box service-box2">
-                        <Image width={331} height={246} src={item.url} alt="" />
-                        <p>{item.paragraph}</p>
+          { this.state.selectedItemsList.length > 0 &&
+            <div className="mb-4">
+                <label>Creemos que estos también te podrían interesar</label>
+                <div className="flex flex-wrap mt-3 custom-col20">
+                  {
+                    this.state.selectedItemsList.map((item, index) => (
+                      <div className="relative flex-grow max-w-[108px] flex-1 pl-[12px]" key={index} onClick={() => this.handleRemoveItem(item.id)}>
+                        <div className="service-box service-box2">
+                          <Image width={331} height={246} src={item.url} alt="" />
+                          <p>{item.paragraph}</p>
+                        </div>
                       </div>
-                    </div>
-                  ))
-                }
-              </div>
-          </div>
+                    ))
+                  }
+                </div>
+            </div>
+          }
           </>
       )
   };
