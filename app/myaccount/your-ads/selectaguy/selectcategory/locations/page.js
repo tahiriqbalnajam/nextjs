@@ -5,6 +5,19 @@ import TextArea from '@/components/TextArea'
 import MyLink from '@/app/components/MyLink';
 import '../../../../../css/style.css'
 import SoloCornProPopup from '@/app/components/SoloCornProPopup';
+import Dropdowns from '@/app/components/MainPageAllDropdowns';
+
+const toggletext = [
+    {
+        text: 'Escoge una red',
+    },
+    {
+        text: 'Escoge una red',
+    },
+    {
+        text: 'Escoge una red',
+    }
+  ];
 
 export default function Home() {
   return (
@@ -108,7 +121,6 @@ export default function Home() {
                                                         <Input type="text" className="mt-[9px] h-[66px] block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-[#9ca3af] border border-gray-200 " placeholder="Donde te encuentras?"/>
                                                     </div>
                                                 </div>
-
                                                 <div  className="md:w-1/2 pr-4 sm:w-full mt-4 mb-4">
                                                     <div  className="mb-4">
                                                         <label>Capicaded</label>
@@ -121,7 +133,6 @@ export default function Home() {
                                                         <Input type="text" className="mt-2 h-[50px] block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200  " placeholder="Por cuantas horas ofreces tus servicios" />
                                                     </div>
                                                 </div>
-
                                                 <div  className="md:w-1/2 pr-4 sm:w-full mt-4 mb-4">
                                                     <div  className="mb-4">
                                                         <label>Tipos de eventos</label>
@@ -134,27 +145,14 @@ export default function Home() {
                                                         <Input type="text" className="mt-2 h-[50px] block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200  " placeholder="Horario de servicio" />
                                                     </div>
                                                 </div>
-
-
                                                 <div  className="mb-2 mt-4">
                                                     <label>Tus Redes Sociales <i  className="fa-solid fa-lock"></i> <small  className="color-default">Solo con Premium & Pro</small></label>
                                                     <p>Coloca el link de tus redes sociales</p>
                                                 </div>
-
-                                                
-
                                                 <div  className="flex flex-wrap mt-4 mb-4 w-full">
                                                     <div  className="md:w-1/2 pr-4 sm:w-full">
-                                                        <div  className="mb-4">
-                                                            <div  className="field-icon">
-                                                                <select  className="h-[64px] block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-[#9ca3af] border border-gray-200  ">
-                                                                    <option value="">Escoge una red</option>
-                                                                    <option value="">Escoge una red</option>
-                                                                    <option value="">Escoge una red</option>
-                                                                </select>
-                                                                <span><i  className="fa-solid fa-chevron-down"></i></span>
-                                                            </div>
-                                                        </div>
+                                                    <Dropdowns toggletext={toggletext} firstitem="Escoge una red" customclassName="locationdtoggle"/>
+                                                        
                                                     </div>
                                                     <div  className="md:w-1/2 pl-4 sm:w-full">
                                                         <div  className="mb-4">
@@ -162,22 +160,17 @@ export default function Home() {
                                                         </div>
                                                     </div>
                                                 </div>
-
-                                                
-                                                
                                                 <div  className="mb-6 flex flex-wrap w-full">
                                                     <div  className="mb-2 mt-4">
                                                         <label>Tu Sitio Web <i  className="fa-solid fa-lock"></i> <small  className="color-default">Solo con PRO</small></label>
                                                         <p>Coloca el link de tus redes sociales</p>
                                                     </div>
                                                     <SoloCornProPopup />
-                                                    
                                                 </div>
                                                 <div  className="mb-4 w-full flex justify-center">
                                                     <MyLink href="/myaccount/your-ads/selectaguy/selectcategory"  className="btn-red-outline me-0 mt-2 lg:me-2">Atrás</MyLink>
                                                     <MyLink href="/myaccount/your-ads/selectaguy/selectcategory/locationswithdate"  className="btn-red mt-2 ms-0 lg:ms-2">Siguiente</MyLink>
                                                 </div>
-
                                             </div>
                                         </form>
                                     </div>

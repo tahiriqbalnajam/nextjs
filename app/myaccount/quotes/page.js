@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Input from '../../components/TextInput'
 import LeftNav from '../../components/LeftNav'
 import Button from '../../components/Button'
-import QoutesImageSlider from '../../components/qoutes-slider'
+import QoutesImageSlider from '../../components/QoutesSlider'
 
 import '../../css/style.css';
 

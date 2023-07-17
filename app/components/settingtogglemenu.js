@@ -1,7 +1,8 @@
 "use client";
 import { useState, useEffect, useRef } from 'react';
+import Image from 'next/image'
 
-const settingtogglemenu = () => {
+const Settingtogglemenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef(null);
 
@@ -30,7 +31,7 @@ const settingtogglemenu = () => {
                     <div>
                     <button onClick={toggleMenu} className="flex items-center max-w-xs text-base text-white rounded-full focus:outline-none focus:shadow-solid"
                         id="user-menu" aria-label="User menu" >
-                        <img className="w-14 h-14 rounded-full border-red-200" src="/images/profile-img.png" alt="" />
+                        <Image width="50" height="50" className="w-14 h-14 rounded-full border-red-200" src="/images/profile-img.png" alt="" />
                         <p className="ml-2 uppercase">BERNARDO GONZALEZ</p>
                         <svg xmlns="http://www.w3.org/2000/svg" onClick={toggleMenu} className="w-6 h-4 transform rotate-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                           <polyline points="6 9 12 15 18 9"></polyline>
@@ -79,4 +80,4 @@ const settingtogglemenu = () => {
   );
 };
 
-export default settingtogglemenu;
+export default Settingtogglemenu;

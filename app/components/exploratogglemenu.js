@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from 'react';
 
-const togglemenu = () => {
+const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef(null);
 
@@ -54,4 +54,4 @@ const togglemenu = () => {
   );
 };
 
-export default togglemenu;
+export default Navigation;

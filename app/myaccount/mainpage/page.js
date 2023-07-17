@@ -9,7 +9,6 @@ import Whattheysay_slider from '@/components/TestimonialsElservicioSlider'
 import MyLink from '@/app/components/MyLink';
 import MainPageAllDropdowns from '@/app/components/MainPageAllDropdowns';
 
-
 const Servicesfeatured = [
     {
       url: '/images/services1.jpg',
@@ -94,7 +93,6 @@ const Theidealservice = [
       paragraph: '33 Listados',
     }
   ];	
-
 
   const locations = [
     {

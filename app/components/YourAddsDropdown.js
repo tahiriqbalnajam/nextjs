@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image'
 
-const togglemenu = () => {
+const Togglemenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef(null);
 
@@ -51,4 +51,4 @@ const togglemenu = () => {
   );
 };
 
-export default togglemenu;
+export default Togglemenu;
